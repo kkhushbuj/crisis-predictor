@@ -1,0 +1,12 @@
+event,date,expected_direction,average_score,2008_GFC_early
+2008_GFC_early,2008-06-15,bearish,-0.64
+2008_GFC_peak,2008-10-15,bearish,-2.14
+2011_Euro_Crisis,2011-09-01,bearish,-1.64
+2018_Trade_War,2018-12-15,bearish,-0.93
+COVID_early,2020-02-20,bearish,0.79
+COVID_peak,2020-03-23,bearish,-3.79
+Ukraine_2022,2022-03-08,bearish,-3.93
+SVB_2023,2023-03-13,bearish,-0.71
+Calm_2017,2017-06-15,neutral,0.86
+Calm_2019_H1,2019-03-15,mixed,0.5
+Calm_2024,2024-06-15,neutral,0.57

@@ -1,0 +1,11 @@
+streamlit
+plotly
+pandas
+numpy
+yfinance
+fredapi
+langgraph
+langchain-openai
+python-dotenv
+diskcache
+pydantic
