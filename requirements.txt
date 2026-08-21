@@ -6,6 +6,10 @@ yfinance
 fredapi
 langgraph
 langchain-openai
+langchain-community
+faiss-cpu
 python-dotenv
 diskcache
 pydantic
+tavily-python
+duckduckgo-search
