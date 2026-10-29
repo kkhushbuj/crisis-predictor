@@ -173,3 +173,10 @@ html { background: var(--ground); }
   .msg, .msg.thinking .dots i, .msg.thinking .think-label, .msg.streaming::after { animation: none; }
   .msg.thinking .think-label { color: var(--ink-2); background: none; }
 }
+
+/* ---------- changing view on the analysis page: the old view fades out, the new one rises in ---------- */
+@keyframes fadeout { to { opacity: 0; transform: translateY(-10px); } }
+.fading-out { animation: fadeout 0.22s ease both !important; pointer-events: none; }
+/* signals appear gently as each group of the analysis arrives */
+#groups > * { animation: rise 0.5s cubic-bezier(0.2, 0.7, 0.2, 1) backwards; }
+@media (prefers-reduced-motion: reduce) { .fading-out, #groups > * { animation: none !important; } }

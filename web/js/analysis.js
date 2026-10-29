@@ -63,14 +63,23 @@ function renderHistory() {
     b.addEventListener("click", () => {
       if (running) return;
       currentId = id;
-      showResult(result, { animate: false, fromHistory: true, chat: chat || [] });
+      fadeOutCurrent().then(() => showResult(result, { animate: false, fromHistory: true, chat: chat || [] }));
     });
     host.append(b);
   });
 }
 
 /* ---------------------------------------------------------------- views */
+const VIEWS = ["view-idle", "view-run", "view-answer"];
+/* The page that is showing fades out first (about a fifth of a second), so changing view never snaps. showView then swaps and the new view fades in. */
+function fadeOutCurrent() {
+  const cur = VIEWS.map($).find((v) => !v.hidden);
+  if (!cur || reduceMotion) return Promise.resolve();
+  cur.classList.add("fading-out");
+  return new Promise((resolve) => setTimeout(resolve, 220));
+}
 function showView(name) {
+  VIEWS.forEach((id) => $(id).classList.remove("fading-out"));
   $("view-idle").hidden = name !== "idle";
   $("view-run").hidden = name !== "run";
   $("view-answer").hidden = name !== "answer";
@@ -324,6 +333,7 @@ async function startAnalysis(resumeId = null) {
   setStages(chips, 0);
   updateScored();
   $("bar").style.width = "4%";
+  await fadeOutCurrent();
   showView("run");
   window.scrollTo({ top: 0, behavior: "auto" });
 
@@ -368,6 +378,7 @@ async function startAnalysis(resumeId = null) {
         } else if (ev.type === "result") {
           finished = true;
           writeJob(null);
+          await fadeOutCurrent();
           currentId = saveHistory(ev.result);
           showResult(ev.result, { animate: true });
         } else if (ev.type === "error") {
@@ -554,7 +565,7 @@ async function main() {
   }
   $("limit-note").textContent = `Each visitor can run ${config.limits.analyses_per_hour} analyses per hour, which keeps the service free for everyone. Your results are kept only for this visit.`;
   $("run").addEventListener("click", () => startAnalysis());
-  $("again").addEventListener("click", () => { currentId = null; resetResult(); showView("idle"); renderHistory(); window.scrollTo({ top: 0 }); });
+  $("again").addEventListener("click", () => { fadeOutCurrent().then(() => { currentId = null; resetResult(); showView("idle"); renderHistory(); window.scrollTo({ top: 0 }); }); });
   $("clear-hist").addEventListener("click", () => { writeHistory([]); renderHistory(); });
   $("ask-form").addEventListener("submit", (e) => {
     e.preventDefault();
