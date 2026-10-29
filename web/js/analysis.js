@@ -124,7 +124,14 @@ function setStages(chips, doneCount) {
     c.classList.toggle("active", i === doneCount);
   });
   const line = $("status-line");
-  if (line) line.textContent = STATUS_TEXT[Math.min(doneCount, STATUS_TEXT.length - 1)];
+  const text = STATUS_TEXT[Math.min(doneCount, STATUS_TEXT.length - 1)];
+  if (line && line.textContent !== text) {
+    if (reduceMotion || !line.textContent) line.textContent = text;
+    else { // the old line fades out, the new one fades in
+      line.classList.add("swap");
+      setTimeout(() => { line.textContent = text; line.classList.remove("swap"); }, 250);
+    }
+  }
 }
 
 /* ---------------------------------------------------------------- factor rows */
