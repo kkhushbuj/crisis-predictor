@@ -240,14 +240,14 @@ function setSort(mode, animate = false) {
     if (worst) buildFlat();
     showing.hidden = false;
     const toH = showing.offsetHeight;
-    showing.querySelectorAll(".factor").forEach((r, i) => r.style.setProperty("--i", i)); // the rows rise in one after another
+    showing.querySelectorAll(".factor, .group h3").forEach((r, i) => r.style.setProperty("--i", i)); // headings and rows rise in one after another, in reading order
     showing.classList.add("swap-in");
     showing.style.overflow = "hidden";
     showing.style.height = `${fromH}px`;
     showing.getBoundingClientRect(); // draw the starting size before changing it
-    showing.style.transition = "height 0.6s cubic-bezier(0.2, 0.7, 0.2, 1)";
+    showing.style.transition = "height 0.55s cubic-bezier(0.2, 0.7, 0.2, 1)";
     showing.style.height = `${toH}px`;
-    setTimeout(() => { if (token === sortToken) clearSwapStyles(showing); }, 1400);
+    setTimeout(() => { if (token === sortToken) clearSwapStyles(showing); }, 1300);
   }, 190);
 }
 
