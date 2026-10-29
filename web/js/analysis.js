@@ -86,6 +86,7 @@ function fadeOutCurrent() {
 }
 function showView(name) {
   VIEWS.forEach((id) => $(id).classList.remove("fading-out"));
+  queueMini();
   $("view-idle").hidden = name !== "idle";
   $("view-run").hidden = name !== "run";
   $("view-answer").hidden = name !== "answer";
@@ -255,6 +256,19 @@ function setSort(mode, animate = false) {
     showing.style.height = `${toH}px`;
     setTimeout(() => { if (token === sortToken) clearSwapStyles(showing); }, 1300);
   }, 190);
+}
+
+/* The small score bar under the header. It appears once the big score has scrolled up behind the header, and goes away only after the
+   big score has come well back into view (a 120 px gap), so small scroll moves near the trigger point cannot make it flicker on and off. */
+let miniOn = false, miniQueued = false;
+function checkMini() {
+  miniQueued = false;
+  const bottom = $("score-num").getBoundingClientRect().bottom;
+  const want = !$("view-answer").hidden && (miniOn ? bottom < 190 : bottom < 70);
+  if (want !== miniOn) { miniOn = want; $("mini-bar").classList.toggle("show", want); }
+}
+function queueMini() {
+  if (!miniQueued) { miniQueued = true; requestAnimationFrame(checkMini); }
 }
 
 function updateMini(result, zone) {
@@ -623,9 +637,8 @@ async function main() {
     $("facts").append(el("div", { class: "fact" }, el("b", { text: String(v) }), el("span", { text: t })));
   });
   document.querySelectorAll("#sig-sort button").forEach((b) => b.addEventListener("click", () => setSort(b.dataset.mode, true)));
-  if ("IntersectionObserver" in window) {
-    new IntersectionObserver(([e]) => $("mini-bar").classList.toggle("show", !e.isIntersecting && !$("view-answer").hidden), { rootMargin: "-70px 0px 0px 0px" }).observe($("score-num"));
-  }
+  window.addEventListener("scroll", queueMini, { passive: true });
+  window.addEventListener("resize", queueMini);
   $("limit-note").textContent = `Each visitor can run ${config.limits.analyses_per_hour} analyses per hour, which keeps the service free for everyone. Your results are kept only for this visit.`;
   $("run").addEventListener("click", () => startAnalysis());
   $("again").addEventListener("click", () => { fadeOutCurrent().then(() => { currentId = null; resetResult(); showView("idle"); renderHistory(); window.scrollTo({ top: 0 }); }); });

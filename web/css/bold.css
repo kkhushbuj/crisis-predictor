@@ -109,7 +109,7 @@ section.block { padding-block: clamp(60px, 8vw, 120px); }
 .answer .scale { margin-top: 36px; }
 
 /* floats under the header, so showing or hiding it never moves the page (that caused a jerk loop) */
-.mini-bar { position: absolute; top: 100%; left: 0; right: 0; display: flex; align-items: center; gap: 16px; background: var(--ink); color: #fff; padding: 8px var(--gutter); font-weight: 650; opacity: 0; transform: translateY(-12px); pointer-events: none; transition: opacity 0.2s ease, transform 0.2s ease; }
+.mini-bar { position: absolute; top: 100%; left: 0; right: 0; display: flex; align-items: center; gap: 16px; background: var(--ink); color: #fff; padding: 8px var(--gutter); font-weight: 650; opacity: 0; transform: translateY(-12px); pointer-events: none; transition: opacity 0.25s ease, transform 0.25s cubic-bezier(0.2, 0.7, 0.2, 1); will-change: opacity, transform; }
 .mini-bar.show { opacity: 1; transform: none; pointer-events: auto; }
 .mini-bar b { font-family: var(--font-display); font-stretch: 82%; font-weight: 800; font-size: 1.6rem; line-height: 1; font-variant-numeric: tabular-nums; }
 .mini-bar i { width: 14px; height: 14px; background: var(--c, var(--stress)); }
