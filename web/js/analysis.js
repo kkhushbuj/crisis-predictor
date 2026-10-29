@@ -200,12 +200,7 @@ function updateScored() {
   $("scored").textContent = `${done} of ${total} signals scored`;
 }
 
-function setSort(mode) {
-  document.querySelectorAll("#sig-sort button").forEach((b) => b.classList.toggle("on", b.dataset.mode === mode));
-  const worst = mode === "worst" && current;
-  $("flat").hidden = !worst;
-  $("groups").hidden = !!worst;
-  if (!worst) return;
+function buildFlat() {
   const flat = $("flat");
   flat.textContent = "";
   const rows = [];
@@ -216,6 +211,44 @@ function setSort(mode) {
     row.querySelector(".f-name").append(el("span", { class: "f-cat", text: cat }));
     flat.append(row);
   });
+}
+
+/* Switching between "By category" and "Most worrying first": the list on screen fades out, the other one fades in, and the height
+   glides from the old size to the new one, so nothing snaps and the page below does not jump. */
+let sortToken = 0;
+const clearSwapStyles = (n) => { n.classList.remove("fade-out"); ["height", "overflow", "opacity", "transition"].forEach((p) => n.style.removeProperty(p)); };
+function setSort(mode, animate = false) {
+  document.querySelectorAll("#sig-sort button").forEach((b) => b.classList.toggle("on", b.dataset.mode === mode));
+  const worst = mode === "worst" && current;
+  const showing = worst ? $("flat") : $("groups");
+  const hiding = worst ? $("groups") : $("flat");
+  const token = ++sortToken; // a quick second click cancels the first change
+  clearSwapStyles(showing);
+  clearSwapStyles(hiding);
+  if (!animate || reduceMotion || hiding.hidden || !showing.hidden) {
+    if (worst) buildFlat();
+    hiding.hidden = true;
+    showing.hidden = false;
+    return;
+  }
+  const fromH = hiding.offsetHeight;
+  hiding.classList.add("fade-out");
+  setTimeout(() => {
+    if (token !== sortToken) return;
+    clearSwapStyles(hiding);
+    hiding.hidden = true;
+    if (worst) buildFlat();
+    showing.hidden = false;
+    const toH = showing.offsetHeight;
+    showing.style.overflow = "hidden";
+    showing.style.height = `${fromH}px`;
+    showing.style.opacity = "0";
+    showing.getBoundingClientRect(); // draw the starting size before changing it
+    showing.style.transition = "height 0.5s cubic-bezier(0.2, 0.7, 0.2, 1), opacity 0.4s ease";
+    showing.style.height = `${toH}px`;
+    showing.style.opacity = "1";
+    setTimeout(() => { if (token === sortToken) clearSwapStyles(showing); }, 560);
+  }, 190);
 }
 
 function updateMini(result, zone) {
@@ -583,7 +616,7 @@ async function main() {
   [[nFactors, "signals scored"], [config.categories.length, "categories"], ["45s", "about, start to finish"]].forEach(([v, t]) => {
     $("facts").append(el("div", { class: "fact" }, el("b", { text: String(v) }), el("span", { text: t })));
   });
-  document.querySelectorAll("#sig-sort button").forEach((b) => b.addEventListener("click", () => setSort(b.dataset.mode)));
+  document.querySelectorAll("#sig-sort button").forEach((b) => b.addEventListener("click", () => setSort(b.dataset.mode, true)));
   if ("IntersectionObserver" in window) {
     new IntersectionObserver(([e]) => $("mini-bar").classList.toggle("show", !e.isIntersecting && !$("view-answer").hidden), { rootMargin: "-70px 0px 0px 0px" }).observe($("score-num"));
   }
