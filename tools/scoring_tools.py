@@ -13,10 +13,10 @@ from tools.external_tools import get_tariff_sanctions_news, get_geopolitical_ris
 
 # --- Category weights (locked, sum to 100) ---
 CATEGORY_WEIGHTS = {
-    "credit_systemic": 30,
-    "liquidity_shock": 30,
+    "credit_systemic": 32.5,
+    "liquidity_shock": 32.5,
     "macro": 20,
-    "geopolitical": 20,
+    "geopolitical": 15,
 }
 
 CATEGORY_FACTORS = {

@@ -1,0 +1,1702 @@
+{
+  "2000-09-04": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2000-09-04, the 10Y-2Y spread was nan%",
+      "hy_spread": "As of 2000-09-04, the Baa-10Y credit spread was nan%",
+      "bank_rel": "As of 2000-09-04, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +3.0%",
+      "repo_stress": "As of 2000-09-04, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2000-09-04, M2 money supply YoY growth was 6.27%",
+      "vix": "As of 2000-09-04, the VIX was 17.5",
+      "drawdown": "As of 2000-09-04, the S&P 500 was -0.4% from its all-time high to that point",
+      "gold_momentum": "As of this date, insufficient gold price history to compute 20-day momentum — treat as neutral.",
+      "dxy": "As of 2000-09-04, US Dollar Index's 20-day momentum was +0.5%",
+      "jobless": "As of 2000-09-04, initial jobless claims 4-week trend change was -1.6%",
+      "cpi": "As of 2000-09-04, CPI YoY deviation from its 6-month trend was 0.08 percentage points",
+      "oil": "Data unavailable"
+    }
+  },
+  "2000-11-24": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2000-11-24, the 10Y-2Y spread was -0.23%",
+      "hy_spread": "As of 2000-11-24, the Baa-10Y credit spread was 2.63%",
+      "bank_rel": "As of 2000-11-24, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +7.3%",
+      "repo_stress": "As of 2000-11-24, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2000-11-24, M2 money supply YoY growth was 5.87%",
+      "vix": "As of 2000-11-24, the VIX was 27.7",
+      "drawdown": "As of 2000-11-24, the S&P 500 was -13.4% from its all-time high to that point",
+      "gold_momentum": "As of 2000-11-24, gold's 20-day price change was +0.0%",
+      "dxy": "As of 2000-11-24, US Dollar Index's 20-day momentum was -0.3%",
+      "jobless": "As of 2000-11-24, initial jobless claims 4-week trend change was +12.5%",
+      "cpi": "As of 2000-11-24, CPI YoY deviation from its 6-month trend was 0.06 percentage points",
+      "oil": "As of 2000-11-24, oil price's 20-day absolute move was 7.4%"
+    }
+  },
+  "2000-11-30": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2000-11-30, the 10Y-2Y spread was -0.13%",
+      "hy_spread": "As of 2000-11-30, the Baa-10Y credit spread was 2.64%",
+      "bank_rel": "As of 2000-11-30, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +10.9%",
+      "repo_stress": "As of 2000-11-30, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2000-11-30, M2 money supply YoY growth was 5.87%",
+      "vix": "As of 2000-11-30, the VIX was 27.5",
+      "drawdown": "As of 2000-11-30, the S&P 500 was -12.1% from its all-time high to that point",
+      "gold_momentum": "As of 2000-11-30, gold's 20-day price change was +0.8%",
+      "dxy": "As of 2000-11-30, US Dollar Index's 20-day momentum was +0.9%",
+      "jobless": "As of 2000-11-30, initial jobless claims 4-week trend change was +18.3%",
+      "cpi": "As of 2000-11-30, CPI YoY deviation from its 6-month trend was 0.06 percentage points",
+      "oil": "As of 2000-11-30, oil price's 20-day absolute move was 5.5%"
+    }
+  },
+  "2000-12-05": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2000-12-05, the 10Y-2Y spread was -0.06%",
+      "hy_spread": "As of 2000-12-05, the Baa-10Y credit spread was 2.69%",
+      "bank_rel": "As of 2000-12-05, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +8.7%",
+      "repo_stress": "As of 2000-12-05, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2000-12-05, M2 money supply YoY growth was 6.21%",
+      "vix": "As of 2000-12-05, the VIX was 27.8",
+      "drawdown": "As of 2000-12-05, the S&P 500 was -13.3% from its all-time high to that point",
+      "gold_momentum": "As of 2000-12-05, gold's 20-day price change was +2.4%",
+      "dxy": "As of 2000-12-05, US Dollar Index's 20-day momentum was -1.7%",
+      "jobless": "As of 2000-12-05, initial jobless claims 4-week trend change was +2.1%",
+      "cpi": "As of 2000-12-05, CPI YoY deviation from its 6-month trend was 0.02 percentage points",
+      "oil": "As of 2000-12-05, oil price's 20-day absolute move was 3.8%"
+    }
+  },
+  "2000-12-20": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2000-12-20, the 10Y-2Y spread was -0.16%",
+      "hy_spread": "As of 2000-12-20, the Baa-10Y credit spread was 2.87%",
+      "bank_rel": "As of 2000-12-20, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +13.0%",
+      "repo_stress": "As of 2000-12-20, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2000-12-20, M2 money supply YoY growth was 6.21%",
+      "vix": "As of 2000-12-20, the VIX was 27.2",
+      "drawdown": "As of 2000-12-20, the S&P 500 was -14.5% from its all-time high to that point",
+      "gold_momentum": "As of 2000-12-20, gold's 20-day price change was +1.5%",
+      "dxy": "As of 2000-12-20, US Dollar Index's 20-day momentum was -4.0%",
+      "jobless": "As of 2000-12-20, initial jobless claims 4-week trend change was +6.6%",
+      "cpi": "As of 2000-12-20, CPI YoY deviation from its 6-month trend was 0.02 percentage points",
+      "oil": "As of 2000-12-20, oil price's 20-day absolute move was 19.1%"
+    }
+  },
+  "2001-06-13": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2001-06-13, the 10Y-2Y spread was 1.20%",
+      "hy_spread": "As of 2001-06-13, the Baa-10Y credit spread was 2.67%",
+      "bank_rel": "As of 2001-06-13, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +0.7%",
+      "repo_stress": "As of 2001-06-13, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2001-06-13, M2 money supply YoY growth was 8.51%",
+      "vix": "As of 2001-06-13, the VIX was 20.7",
+      "drawdown": "As of 2001-06-13, the S&P 500 was -17.8% from its all-time high to that point",
+      "gold_momentum": "As of 2001-06-13, gold's 20-day price change was +1.2%",
+      "dxy": "As of 2001-06-13, US Dollar Index's 20-day momentum was +2.1%",
+      "jobless": "As of 2001-06-13, initial jobless claims 4-week trend change was +5.4%",
+      "cpi": "As of 2001-06-13, CPI YoY deviation from its 6-month trend was 0.17 percentage points",
+      "oil": "As of 2001-06-13, oil price's 20-day absolute move was 1.6%"
+    }
+  },
+  "2001-07-06": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2001-07-06, the 10Y-2Y spread was 1.25%",
+      "hy_spread": "As of 2001-07-06, the Baa-10Y credit spread was 2.69%",
+      "bank_rel": "As of 2001-07-06, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +3.2%",
+      "repo_stress": "As of 2001-07-06, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2001-07-06, M2 money supply YoY growth was 8.73%",
+      "vix": "As of 2001-07-06, the VIX was 20.1",
+      "drawdown": "As of 2001-07-06, the S&P 500 was -20.2% from its all-time high to that point",
+      "gold_momentum": "As of 2001-07-06, gold's 20-day price change was -0.2%",
+      "dxy": "As of 2001-07-06, US Dollar Index's 20-day momentum was +1.5%",
+      "jobless": "As of 2001-07-06, initial jobless claims 4-week trend change was -3.0%",
+      "cpi": "As of 2001-07-06, CPI YoY deviation from its 6-month trend was 0.48 percentage points",
+      "oil": "As of 2001-07-06, oil price's 20-day absolute move was 2.5%"
+    }
+  },
+  "2001-07-11": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2001-07-11, the 10Y-2Y spread was 1.24%",
+      "hy_spread": "As of 2001-07-11, the Baa-10Y credit spread was 2.74%",
+      "bank_rel": "As of 2001-07-11, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +3.9%",
+      "repo_stress": "As of 2001-07-11, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2001-07-11, M2 money supply YoY growth was 8.73%",
+      "vix": "As of 2001-07-11, the VIX was 23.2",
+      "drawdown": "As of 2001-07-11, the S&P 500 was -22.6% from its all-time high to that point",
+      "gold_momentum": "As of 2001-07-11, gold's 20-day price change was -0.6%",
+      "dxy": "As of 2001-07-11, US Dollar Index's 20-day momentum was -0.4%",
+      "jobless": "As of 2001-07-11, initial jobless claims 4-week trend change was -2.4%",
+      "cpi": "As of 2001-07-11, CPI YoY deviation from its 6-month trend was 0.48 percentage points",
+      "oil": "As of 2001-07-11, oil price's 20-day absolute move was 5.3%"
+    }
+  },
+  "2001-07-19": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2001-07-19, the 10Y-2Y spread was 1.15%",
+      "hy_spread": "As of 2001-07-19, the Baa-10Y credit spread was 2.78%",
+      "bank_rel": "As of 2001-07-19, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +4.3%",
+      "repo_stress": "As of 2001-07-19, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2001-07-19, M2 money supply YoY growth was 8.73%",
+      "vix": "As of 2001-07-19, the VIX was 23.6",
+      "drawdown": "As of 2001-07-19, the S&P 500 was -20.9% from its all-time high to that point",
+      "gold_momentum": "As of 2001-07-19, gold's 20-day price change was -1.1%",
+      "dxy": "As of 2001-07-19, US Dollar Index's 20-day momentum was -1.5%",
+      "jobless": "As of 2001-07-19, initial jobless claims 4-week trend change was +2.8%",
+      "cpi": "As of 2001-07-19, CPI YoY deviation from its 6-month trend was 0.48 percentage points",
+      "oil": "As of 2001-07-19, oil price's 20-day absolute move was 9.4%"
+    }
+  },
+  "2001-09-03": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2001-09-03, the 10Y-2Y spread was nan%",
+      "hy_spread": "As of 2001-09-03, the Baa-10Y credit spread was nan%",
+      "bank_rel": "As of 2001-09-03, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +2.0%",
+      "repo_stress": "As of 2001-09-03, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2001-09-03, M2 money supply YoY growth was 10.30%",
+      "vix": "As of 2001-09-03, the VIX was 24.9",
+      "drawdown": "As of 2001-09-03, the S&P 500 was -25.8% from its all-time high to that point",
+      "gold_momentum": "As of 2001-09-03, gold's 20-day price change was +2.4%",
+      "dxy": "As of 2001-09-03, US Dollar Index's 20-day momentum was -2.3%",
+      "jobless": "As of 2001-09-03, initial jobless claims 4-week trend change was +0.2%",
+      "cpi": "As of 2001-09-03, CPI YoY deviation from its 6-month trend was 0.41 percentage points",
+      "oil": "As of 2001-09-03, oil price's 20-day absolute move was 1.5%"
+    }
+  },
+  "2001-09-10": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2001-09-10, the 10Y-2Y spread was 1.31%",
+      "hy_spread": "As of 2001-09-10, the Baa-10Y credit spread was 2.99%",
+      "bank_rel": "As of 2001-09-10, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +2.4%",
+      "repo_stress": "As of 2001-09-10, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2001-09-10, M2 money supply YoY growth was 10.30%",
+      "vix": "As of 2001-09-10, the VIX was 31.0",
+      "drawdown": "As of 2001-09-10, the S&P 500 was -28.9% from its all-time high to that point",
+      "gold_momentum": "As of 2001-09-10, gold's 20-day price change was -0.1%",
+      "dxy": "As of 2001-09-10, US Dollar Index's 20-day momentum was -1.1%",
+      "jobless": "As of 2001-09-10, initial jobless claims 4-week trend change was +3.6%",
+      "cpi": "As of 2001-09-10, CPI YoY deviation from its 6-month trend was 0.41 percentage points",
+      "oil": "As of 2001-09-10, oil price's 20-day absolute move was 1.4%"
+    }
+  },
+  "2001-10-08": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2001-10-08, the 10Y-2Y spread was nan%",
+      "hy_spread": "As of 2001-10-08, the Baa-10Y credit spread was nan%",
+      "bank_rel": "As of 2001-10-08, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -1.4%",
+      "repo_stress": "As of 2001-10-08, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2001-10-08, M2 money supply YoY growth was 9.70%",
+      "vix": "As of 2001-10-08, the VIX was 33.4",
+      "drawdown": "As of 2001-10-08, the S&P 500 was -29.9% from its all-time high to that point",
+      "gold_momentum": "As of 2001-10-08, gold's 20-day price change was +7.3%",
+      "dxy": "As of 2001-10-08, US Dollar Index's 20-day momentum was -0.7%",
+      "jobless": "As of 2001-10-08, initial jobless claims 4-week trend change was +16.7%",
+      "cpi": "As of 2001-10-08, CPI YoY deviation from its 6-month trend was 0.69 percentage points",
+      "oil": "As of 2001-10-08, oil price's 20-day absolute move was 16.9%"
+    }
+  },
+  "2001-12-07": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2001-12-07, the 10Y-2Y spread was 2.01%",
+      "hy_spread": "As of 2001-12-07, the Baa-10Y credit spread was 2.96%",
+      "bank_rel": "As of 2001-12-07, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -1.2%",
+      "repo_stress": "As of 2001-12-07, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2001-12-07, M2 money supply YoY growth was 10.41%",
+      "vix": "As of 2001-12-07, the VIX was 23.7",
+      "drawdown": "As of 2001-12-07, the S&P 500 was -23.6% from its all-time high to that point",
+      "gold_momentum": "As of 2001-12-07, gold's 20-day price change was -2.0%",
+      "dxy": "As of 2001-12-07, US Dollar Index's 20-day momentum was +0.4%",
+      "jobless": "As of 2001-12-07, initial jobless claims 4-week trend change was +5.7%",
+      "cpi": "As of 2001-12-07, CPI YoY deviation from its 6-month trend was 0.67 percentage points",
+      "oil": "As of 2001-12-07, oil price's 20-day absolute move was 6.9%"
+    }
+  },
+  "2001-12-17": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2001-12-17, the 10Y-2Y spread was 2.05%",
+      "hy_spread": "As of 2001-12-17, the Baa-10Y credit spread was 2.97%",
+      "bank_rel": "As of 2001-12-17, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -0.7%",
+      "repo_stress": "As of 2001-12-17, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2001-12-17, M2 money supply YoY growth was 10.41%",
+      "vix": "As of 2001-12-17, the VIX was 24.6",
+      "drawdown": "As of 2001-12-17, the S&P 500 was -26.5% from its all-time high to that point",
+      "gold_momentum": "As of 2001-12-17, gold's 20-day price change was +0.1%",
+      "dxy": "As of 2001-12-17, US Dollar Index's 20-day momentum was -1.3%",
+      "jobless": "As of 2001-12-17, initial jobless claims 4-week trend change was -9.7%",
+      "cpi": "As of 2001-12-17, CPI YoY deviation from its 6-month trend was 0.67 percentage points",
+      "oil": "As of 2001-12-17, oil price's 20-day absolute move was 2.3%"
+    }
+  },
+  "2002-03-06": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2002-03-06, the 10Y-2Y spread was 1.80%",
+      "hy_spread": "As of 2002-03-06, the Baa-10Y credit spread was 2.91%",
+      "bank_rel": "As of 2002-03-06, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +3.3%",
+      "repo_stress": "As of 2002-03-06, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2002-03-06, M2 money supply YoY growth was 8.43%",
+      "vix": "As of 2002-03-06, the VIX was 20.3",
+      "drawdown": "As of 2002-03-06, the S&P 500 was -25.0% from its all-time high to that point",
+      "gold_momentum": "As of 2002-03-06, gold's 20-day price change was +1.6%",
+      "dxy": "As of 2002-03-06, US Dollar Index's 20-day momentum was -0.7%",
+      "jobless": "As of 2002-03-06, initial jobless claims 4-week trend change was -3.0%",
+      "cpi": "As of 2002-03-06, CPI YoY deviation from its 6-month trend was 0.19 percentage points",
+      "oil": "As of 2002-03-06, oil price's 20-day absolute move was 15.5%"
+    }
+  },
+  "2002-04-05": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2002-04-05, the 10Y-2Y spread was 1.73%",
+      "hy_spread": "As of 2002-04-05, the Baa-10Y credit spread was 2.85%",
+      "bank_rel": "As of 2002-04-05, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +5.9%",
+      "repo_stress": "As of 2002-04-05, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2002-04-05, M2 money supply YoY growth was 7.07%",
+      "vix": "As of 2002-04-05, the VIX was 19.8",
+      "drawdown": "As of 2002-04-05, the S&P 500 was -26.3% from its all-time high to that point",
+      "gold_momentum": "As of 2002-04-05, gold's 20-day price change was +2.6%",
+      "dxy": "As of 2002-04-05, US Dollar Index's 20-day momentum was -0.0%",
+      "jobless": "As of 2002-04-05, initial jobless claims 4-week trend change was +22.2%",
+      "cpi": "As of 2002-04-05, CPI YoY deviation from its 6-month trend was 0.17 percentage points",
+      "oil": "As of 2002-04-05, oil price's 20-day absolute move was 14.9%"
+    }
+  },
+  "2002-05-08": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2002-05-08, the 10Y-2Y spread was 1.92%",
+      "hy_spread": "As of 2002-05-08, the Baa-10Y credit spread was 2.86%",
+      "bank_rel": "As of 2002-05-08, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +9.6%",
+      "repo_stress": "As of 2002-05-08, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2002-05-08, M2 money supply YoY growth was 7.61%",
+      "vix": "As of 2002-05-08, the VIX was 21.9",
+      "drawdown": "As of 2002-05-08, the S&P 500 was -31.3% from its all-time high to that point",
+      "gold_momentum": "As of 2002-05-08, gold's 20-day price change was +4.3%",
+      "dxy": "As of 2002-05-08, US Dollar Index's 20-day momentum was -3.1%",
+      "jobless": "As of 2002-05-08, initial jobless claims 4-week trend change was -8.1%",
+      "cpi": "As of 2002-05-08, CPI YoY deviation from its 6-month trend was 0.12 percentage points",
+      "oil": "As of 2002-05-08, oil price's 20-day absolute move was 3.2%"
+    }
+  },
+  "2002-06-24": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2002-06-24, the 10Y-2Y spread was 1.94%",
+      "hy_spread": "As of 2002-06-24, the Baa-10Y credit spread was 3.03%",
+      "bank_rel": "As of 2002-06-24, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +7.3%",
+      "repo_stress": "As of 2002-06-24, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2002-06-24, M2 money supply YoY growth was 7.20%",
+      "vix": "As of 2002-06-24, the VIX was 27.2",
+      "drawdown": "As of 2002-06-24, the S&P 500 was -35.2% from its all-time high to that point",
+      "gold_momentum": "As of 2002-06-24, gold's 20-day price change was +0.7%",
+      "dxy": "As of 2002-06-24, US Dollar Index's 20-day momentum was -4.1%",
+      "jobless": "As of 2002-06-24, initial jobless claims 4-week trend change was -3.7%",
+      "cpi": "As of 2002-06-24, CPI YoY deviation from its 6-month trend was 0.21 percentage points",
+      "oil": "As of 2002-06-24, oil price's 20-day absolute move was 1.5%"
+    }
+  },
+  "2002-07-02": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2002-07-02, the 10Y-2Y spread was 1.99%",
+      "hy_spread": "As of 2002-07-02, the Baa-10Y credit spread was 3.18%",
+      "bank_rel": "As of 2002-07-02, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +6.7%",
+      "repo_stress": "As of 2002-07-02, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2002-07-02, M2 money supply YoY growth was 7.40%",
+      "vix": "As of 2002-07-02, the VIX was 27.1",
+      "drawdown": "As of 2002-07-02, the S&P 500 was -36.6% from its all-time high to that point",
+      "gold_momentum": "As of 2002-07-02, gold's 20-day price change was -3.9%",
+      "dxy": "As of 2002-07-02, US Dollar Index's 20-day momentum was -4.3%",
+      "jobless": "As of 2002-07-02, initial jobless claims 4-week trend change was +2.1%",
+      "cpi": "As of 2002-07-02, CPI YoY deviation from its 6-month trend was 0.15 percentage points",
+      "oil": "As of 2002-07-02, oil price's 20-day absolute move was 6.8%"
+    }
+  },
+  "2002-08-07": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2002-08-07, the 10Y-2Y spread was 2.37%",
+      "hy_spread": "As of 2002-08-07, the Baa-10Y credit spread was 3.35%",
+      "bank_rel": "As of 2002-08-07, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +2.4%",
+      "repo_stress": "As of 2002-08-07, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2002-08-07, M2 money supply YoY growth was 7.51%",
+      "vix": "As of 2002-08-07, the VIX was 42.0",
+      "drawdown": "As of 2002-08-07, the S&P 500 was -43.7% from its all-time high to that point",
+      "gold_momentum": "As of 2002-08-07, gold's 20-day price change was -3.4%",
+      "dxy": "As of 2002-08-07, US Dollar Index's 20-day momentum was +2.9%",
+      "jobless": "As of 2002-08-07, initial jobless claims 4-week trend change was -0.8%",
+      "cpi": "As of 2002-08-07, CPI YoY deviation from its 6-month trend was 0.33 percentage points",
+      "oil": "As of 2002-08-07, oil price's 20-day absolute move was 4.1%"
+    }
+  },
+  "2002-08-21": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2002-08-21, the 10Y-2Y spread was 2.08%",
+      "hy_spread": "As of 2002-08-21, the Baa-10Y credit spread was 3.32%",
+      "bank_rel": "As of 2002-08-21, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +3.7%",
+      "repo_stress": "As of 2002-08-21, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2002-08-21, M2 money supply YoY growth was 7.51%",
+      "vix": "As of 2002-08-21, the VIX was 29.6",
+      "drawdown": "As of 2002-08-21, the S&P 500 was -38.6% from its all-time high to that point",
+      "gold_momentum": "As of 2002-08-21, gold's 20-day price change was -1.3%",
+      "dxy": "As of 2002-08-21, US Dollar Index's 20-day momentum was +0.6%",
+      "jobless": "As of 2002-08-21, initial jobless claims 4-week trend change was +5.3%",
+      "cpi": "As of 2002-08-21, CPI YoY deviation from its 6-month trend was 0.33 percentage points",
+      "oil": "As of 2002-08-21, oil price's 20-day absolute move was 14.4%"
+    }
+  },
+  "2002-09-05": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2002-09-05, the 10Y-2Y spread was 1.96%",
+      "hy_spread": "As of 2002-09-05, the Baa-10Y credit spread was 3.47%",
+      "bank_rel": "As of 2002-09-05, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +3.5%",
+      "repo_stress": "As of 2002-09-05, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2002-09-05, M2 money supply YoY growth was 5.73%",
+      "vix": "As of 2002-09-05, the VIX was 37.4",
+      "drawdown": "As of 2002-09-05, the S&P 500 was -41.5% from its all-time high to that point",
+      "gold_momentum": "As of 2002-09-05, gold's 20-day price change was +3.1%",
+      "dxy": "As of 2002-09-05, US Dollar Index's 20-day momentum was -2.4%",
+      "jobless": "As of 2002-09-05, initial jobless claims 4-week trend change was +1.5%",
+      "cpi": "As of 2002-09-05, CPI YoY deviation from its 6-month trend was 0.07 percentage points",
+      "oil": "As of 2002-09-05, oil price's 20-day absolute move was 4.0%"
+    }
+  },
+  "2007-12-05": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2007-12-05, the 10Y-2Y spread was 1.02%",
+      "hy_spread": "As of 2007-12-05, the Baa-10Y credit spread was 2.58%",
+      "bank_rel": "As of 2007-12-05, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -8.9%",
+      "repo_stress": "As of 2007-12-05, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2007-12-05, M2 money supply YoY growth was 5.70%",
+      "vix": "As of 2007-12-05, the VIX was 23.8",
+      "drawdown": "As of 2007-12-05, the S&P 500 was -6.5% from its all-time high to that point",
+      "gold_momentum": "As of 2007-12-05, gold's 20-day price change was -0.8%",
+      "dxy": "As of 2007-12-05, US Dollar Index's 20-day momentum was -1.0%",
+      "jobless": "As of 2007-12-05, initial jobless claims 4-week trend change was +5.2%",
+      "cpi": "As of 2007-12-05, CPI YoY deviation from its 6-month trend was 0.92 percentage points",
+      "oil": "As of 2007-12-05, oil price's 20-day absolute move was 6.0%"
+    }
+  },
+  "2007-12-10": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2007-12-10, the 10Y-2Y spread was 0.98%",
+      "hy_spread": "As of 2007-12-10, the Baa-10Y credit spread was 2.59%",
+      "bank_rel": "As of 2007-12-10, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -7.8%",
+      "repo_stress": "As of 2007-12-10, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2007-12-10, M2 money supply YoY growth was 5.70%",
+      "vix": "As of 2007-12-10, the VIX was 20.9",
+      "drawdown": "As of 2007-12-10, the S&P 500 was -3.9% from its all-time high to that point",
+      "gold_momentum": "As of 2007-12-10, gold's 20-day price change was -4.9%",
+      "dxy": "As of 2007-12-10, US Dollar Index's 20-day momentum was +1.1%",
+      "jobless": "As of 2007-12-10, initial jobless claims 4-week trend change was -0.3%",
+      "cpi": "As of 2007-12-10, CPI YoY deviation from its 6-month trend was 0.92 percentage points",
+      "oil": "As of 2007-12-10, oil price's 20-day absolute move was 7.5%"
+    }
+  },
+  "2008-05-07": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2008-05-07, the 10Y-2Y spread was 1.56%",
+      "hy_spread": "As of 2008-05-07, the Baa-10Y credit spread was 3.05%",
+      "bank_rel": "As of 2008-05-07, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -5.4%",
+      "repo_stress": "As of 2008-05-07, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2008-05-07, M2 money supply YoY growth was 6.49%",
+      "vix": "As of 2008-05-07, the VIX was 18.2",
+      "drawdown": "As of 2008-05-07, the S&P 500 was -9.4% from its all-time high to that point",
+      "gold_momentum": "As of 2008-05-07, gold's 20-day price change was -4.2%",
+      "dxy": "As of 2008-05-07, US Dollar Index's 20-day momentum was +1.1%",
+      "jobless": "As of 2008-05-07, initial jobless claims 4-week trend change was +4.5%",
+      "cpi": "As of 2008-05-07, CPI YoY deviation from its 6-month trend was 0.00 percentage points",
+      "oil": "As of 2008-05-07, oil price's 20-day absolute move was 12.3%"
+    }
+  },
+  "2008-07-29": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2008-07-29, the 10Y-2Y spread was 1.44%",
+      "hy_spread": "As of 2008-07-29, the Baa-10Y credit spread was 3.13%",
+      "bank_rel": "As of 2008-07-29, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -16.0%",
+      "repo_stress": "As of 2008-07-29, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2008-07-29, M2 money supply YoY growth was 6.46%",
+      "vix": "As of 2008-07-29, the VIX was 24.2",
+      "drawdown": "As of 2008-07-29, the S&P 500 was -21.1% from its all-time high to that point",
+      "gold_momentum": "As of 2008-07-29, gold's 20-day price change was -0.2%",
+      "dxy": "As of 2008-07-29, US Dollar Index's 20-day momentum was +0.4%",
+      "jobless": "As of 2008-07-29, initial jobless claims 4-week trend change was +10.7%",
+      "cpi": "As of 2008-07-29, CPI YoY deviation from its 6-month trend was 1.07 percentage points",
+      "oil": "As of 2008-07-29, oil price's 20-day absolute move was 11.0%"
+    }
+  },
+  "2008-08-08": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2008-08-08, the 10Y-2Y spread was 1.43%",
+      "hy_spread": "As of 2008-08-08, the Baa-10Y credit spread was 3.23%",
+      "bank_rel": "As of 2008-08-08, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -9.1%",
+      "repo_stress": "As of 2008-08-08, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2008-08-08, M2 money supply YoY growth was 5.57%",
+      "vix": "As of 2008-08-08, the VIX was 21.1",
+      "drawdown": "As of 2008-08-08, the S&P 500 was -19.1% from its all-time high to that point",
+      "gold_momentum": "As of 2008-08-08, gold's 20-day price change was -7.5%",
+      "dxy": "As of 2008-08-08, US Dollar Index's 20-day momentum was +2.8%",
+      "jobless": "As of 2008-08-08, initial jobless claims 4-week trend change was +20.8%",
+      "cpi": "As of 2008-08-08, CPI YoY deviation from its 6-month trend was 0.69 percentage points",
+      "oil": "As of 2008-08-08, oil price's 20-day absolute move was 15.3%"
+    }
+  },
+  "2008-12-05": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2008-12-05, the 10Y-2Y spread was 1.74%",
+      "hy_spread": "As of 2008-12-05, the Baa-10Y credit spread was 6.07%",
+      "bank_rel": "As of 2008-12-05, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -19.0%",
+      "repo_stress": "As of 2008-12-05, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2008-12-05, M2 money supply YoY growth was 9.63%",
+      "vix": "As of 2008-12-05, the VIX was 63.6",
+      "drawdown": "As of 2008-12-05, the S&P 500 was -46.0% from its all-time high to that point",
+      "gold_momentum": "As of 2008-12-05, gold's 20-day price change was +3.0%",
+      "dxy": "As of 2008-12-05, US Dollar Index's 20-day momentum was +2.2%",
+      "jobless": "As of 2008-12-05, initial jobless claims 4-week trend change was +8.0%",
+      "cpi": "As of 2008-12-05, CPI YoY deviation from its 6-month trend was 3.45 percentage points",
+      "oil": "As of 2008-12-05, oil price's 20-day absolute move was 33.1%"
+    }
+  },
+  "2009-01-12": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2009-01-12, the 10Y-2Y spread was 1.60%",
+      "hy_spread": "As of 2009-01-12, the Baa-10Y credit spread was 5.71%",
+      "bank_rel": "As of 2009-01-12, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -12.4%",
+      "repo_stress": "As of 2009-01-12, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2009-01-12, M2 money supply YoY growth was 10.26%",
+      "vix": "As of 2009-01-12, the VIX was 42.8",
+      "drawdown": "As of 2009-01-12, the S&P 500 was -43.1% from its all-time high to that point",
+      "gold_momentum": "As of 2009-01-12, gold's 20-day price change was +5.8%",
+      "dxy": "As of 2009-01-12, US Dollar Index's 20-day momentum was -3.3%",
+      "jobless": "As of 2009-01-12, initial jobless claims 4-week trend change was -2.7%",
+      "cpi": "As of 2009-01-12, CPI YoY deviation from its 6-month trend was 2.61 percentage points",
+      "oil": "As of 2009-01-12, oil price's 20-day absolute move was 6.2%"
+    }
+  },
+  "2009-01-26": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2009-01-26, the 10Y-2Y spread was 1.85%",
+      "hy_spread": "As of 2009-01-26, the Baa-10Y credit spread was 5.60%",
+      "bank_rel": "As of 2009-01-26, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -32.8%",
+      "repo_stress": "As of 2009-01-26, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2009-01-26, M2 money supply YoY growth was 10.26%",
+      "vix": "As of 2009-01-26, the VIX was 47.3",
+      "drawdown": "As of 2009-01-26, the S&P 500 was -46.8% from its all-time high to that point",
+      "gold_momentum": "As of 2009-01-26, gold's 20-day price change was +6.9%",
+      "dxy": "As of 2009-01-26, US Dollar Index's 20-day momentum was +5.4%",
+      "jobless": "As of 2009-01-26, initial jobless claims 4-week trend change was +9.9%",
+      "cpi": "As of 2009-01-26, CPI YoY deviation from its 6-month trend was 2.61 percentage points",
+      "oil": "As of 2009-01-26, oil price's 20-day absolute move was 19.2%"
+    }
+  },
+  "2010-06-09": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2010-06-09, the 10Y-2Y spread was 2.46%",
+      "hy_spread": "As of 2010-06-09, the Baa-10Y credit spread was 3.00%",
+      "bank_rel": "As of 2010-06-09, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -0.4%",
+      "repo_stress": "As of 2010-06-09, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2010-06-09, M2 money supply YoY growth was 1.99%",
+      "vix": "As of 2010-06-09, the VIX was 33.7",
+      "drawdown": "As of 2010-06-09, the S&P 500 was -32.1% from its all-time high to that point",
+      "gold_momentum": "As of 2010-06-09, gold's 20-day price change was +3.6%",
+      "dxy": "As of 2010-06-09, US Dollar Index's 20-day momentum was +5.0%",
+      "jobless": "As of 2010-06-09, initial jobless claims 4-week trend change was +1.8%",
+      "cpi": "As of 2010-06-09, CPI YoY deviation from its 6-month trend was 0.94 percentage points",
+      "oil": "As of 2010-06-09, oil price's 20-day absolute move was 6.3%"
+    }
+  },
+  "2010-07-09": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2010-07-09, the 10Y-2Y spread was 2.44%",
+      "hy_spread": "As of 2010-07-09, the Baa-10Y credit spread was 3.07%",
+      "bank_rel": "As of 2010-07-09, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -3.5%",
+      "repo_stress": "As of 2010-07-09, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2010-07-09, M2 money supply YoY growth was 2.07%",
+      "vix": "As of 2010-07-09, the VIX was 25.7",
+      "drawdown": "As of 2010-07-09, the S&P 500 was -31.6% from its all-time high to that point",
+      "gold_momentum": "As of 2010-07-09, gold's 20-day price change was -2.7%",
+      "dxy": "As of 2010-07-09, US Dollar Index's 20-day momentum was -4.6%",
+      "jobless": "As of 2010-07-09, initial jobless claims 4-week trend change was -1.1%",
+      "cpi": "As of 2010-07-09, CPI YoY deviation from its 6-month trend was 0.51 percentage points",
+      "oil": "As of 2010-07-09, oil price's 20-day absolute move was 1.4%"
+    }
+  },
+  "2011-09-19": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2011-09-19, the 10Y-2Y spread was 1.81%",
+      "hy_spread": "As of 2011-09-19, the Baa-10Y credit spread was 3.31%",
+      "bank_rel": "As of 2011-09-19, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -9.0%",
+      "repo_stress": "As of 2011-09-19, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2011-09-19, M2 money supply YoY growth was 9.56%",
+      "vix": "As of 2011-09-19, the VIX was 31.0",
+      "drawdown": "As of 2011-09-19, the S&P 500 was -22.3% from its all-time high to that point",
+      "gold_momentum": "As of 2011-09-19, gold's 20-day price change was -0.4%",
+      "dxy": "As of 2011-09-19, US Dollar Index's 20-day momentum was +3.2%",
+      "jobless": "As of 2011-09-19, initial jobless claims 4-week trend change was +1.7%",
+      "cpi": "As of 2011-09-19, CPI YoY deviation from its 6-month trend was 0.28 percentage points",
+      "oil": "As of 2011-09-19, oil price's 20-day absolute move was 6.8%"
+    }
+  },
+  "2015-09-10": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2015-09-10, the 10Y-2Y spread was 1.48%",
+      "hy_spread": "As of 2015-09-10, the Baa-10Y credit spread was 3.12%",
+      "bank_rel": "As of 2015-09-10, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -0.4%",
+      "repo_stress": "As of 2015-09-10, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2015-09-10, M2 money supply YoY growth was 5.66%",
+      "vix": "As of 2015-09-10, the VIX was 26.2",
+      "drawdown": "As of 2015-09-10, the S&P 500 was -8.9% from its all-time high to that point",
+      "gold_momentum": "As of 2015-09-10, gold's 20-day price change was -0.5%",
+      "dxy": "As of 2015-09-10, US Dollar Index's 20-day momentum was -1.3%",
+      "jobless": "As of 2015-09-10, initial jobless claims 4-week trend change was -0.4%",
+      "cpi": "As of 2015-09-10, CPI YoY deviation from its 6-month trend was 0.09 percentage points",
+      "oil": "As of 2015-09-10, oil price's 20-day absolute move was 2.5%"
+    }
+  },
+  "2015-09-15": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2015-09-15, the 10Y-2Y spread was 1.46%",
+      "hy_spread": "As of 2015-09-15, the Baa-10Y credit spread was 3.16%",
+      "bank_rel": "As of 2015-09-15, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -0.8%",
+      "repo_stress": "As of 2015-09-15, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2015-09-15, M2 money supply YoY growth was 5.66%",
+      "vix": "As of 2015-09-15, the VIX was 24.2",
+      "drawdown": "As of 2015-09-15, the S&P 500 was -8.3% from its all-time high to that point",
+      "gold_momentum": "As of 2015-09-15, gold's 20-day price change was -0.5%",
+      "dxy": "As of 2015-09-15, US Dollar Index's 20-day momentum was -1.4%",
+      "jobless": "As of 2015-09-15, initial jobless claims 4-week trend change was -5.4%",
+      "cpi": "As of 2015-09-15, CPI YoY deviation from its 6-month trend was 0.09 percentage points",
+      "oil": "As of 2015-09-15, oil price's 20-day absolute move was 3.5%"
+    }
+  },
+  "2015-10-14": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2015-10-14, the 10Y-2Y spread was 1.42%",
+      "hy_spread": "As of 2015-10-14, the Baa-10Y credit spread was 3.31%",
+      "bank_rel": "As of 2015-10-14, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -3.2%",
+      "repo_stress": "As of 2015-10-14, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2015-10-14, M2 money supply YoY growth was 5.45%",
+      "vix": "As of 2015-10-14, the VIX was 17.7",
+      "drawdown": "As of 2015-10-14, the S&P 500 was -6.0% from its all-time high to that point",
+      "gold_momentum": "As of 2015-10-14, gold's 20-day price change was +5.7%",
+      "dxy": "As of 2015-10-14, US Dollar Index's 20-day momentum was -0.9%",
+      "jobless": "As of 2015-10-14, initial jobless claims 4-week trend change was +0.4%",
+      "cpi": "As of 2015-10-14, CPI YoY deviation from its 6-month trend was 0.01 percentage points",
+      "oil": "As of 2015-10-14, oil price's 20-day absolute move was 4.6%"
+    }
+  },
+  "2015-11-02": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2015-11-02, the 10Y-2Y spread was 1.43%",
+      "hy_spread": "As of 2015-11-02, the Baa-10Y credit spread was 3.18%",
+      "bank_rel": "As of 2015-11-02, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -3.0%",
+      "repo_stress": "As of 2015-11-02, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2015-11-02, M2 money supply YoY growth was 5.88%",
+      "vix": "As of 2015-11-02, the VIX was 15.1",
+      "drawdown": "As of 2015-11-02, the S&P 500 was -2.4% from its all-time high to that point",
+      "gold_momentum": "As of 2015-11-02, gold's 20-day price change was +0.4%",
+      "dxy": "As of 2015-11-02, US Dollar Index's 20-day momentum was +1.2%",
+      "jobless": "As of 2015-11-02, initial jobless claims 4-week trend change was +3.0%",
+      "cpi": "As of 2015-11-02, CPI YoY deviation from its 6-month trend was 0.23 percentage points",
+      "oil": "As of 2015-11-02, oil price's 20-day absolute move was 2.3%"
+    }
+  },
+  "2015-11-12": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2015-11-12, the 10Y-2Y spread was 1.43%",
+      "hy_spread": "As of 2015-11-12, the Baa-10Y credit spread was 3.19%",
+      "bank_rel": "As of 2015-11-12, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -1.4%",
+      "repo_stress": "As of 2015-11-12, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2015-11-12, M2 money supply YoY growth was 5.88%",
+      "vix": "As of 2015-11-12, the VIX was 16.1",
+      "drawdown": "As of 2015-11-12, the S&P 500 was -2.6% from its all-time high to that point",
+      "gold_momentum": "As of 2015-11-12, gold's 20-day price change was -8.1%",
+      "dxy": "As of 2015-11-12, US Dollar Index's 20-day momentum was +5.4%",
+      "jobless": "As of 2015-11-12, initial jobless claims 4-week trend change was +4.2%",
+      "cpi": "As of 2015-11-12, CPI YoY deviation from its 6-month trend was 0.23 percentage points",
+      "oil": "As of 2015-11-12, oil price's 20-day absolute move was 8.0%"
+    }
+  },
+  "2015-12-07": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2015-12-07, the 10Y-2Y spread was 1.29%",
+      "hy_spread": "As of 2015-12-07, the Baa-10Y credit spread was 3.15%",
+      "bank_rel": "As of 2015-12-07, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +1.0%",
+      "repo_stress": "As of 2015-12-07, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2015-12-07, M2 money supply YoY growth was 5.74%",
+      "vix": "As of 2015-12-07, the VIX was 14.8",
+      "drawdown": "As of 2015-12-07, the S&P 500 was -1.8% from its all-time high to that point",
+      "gold_momentum": "As of 2015-12-07, gold's 20-day price change was -1.8%",
+      "dxy": "As of 2015-12-07, US Dollar Index's 20-day momentum was +0.4%",
+      "jobless": "As of 2015-12-07, initial jobless claims 4-week trend change was +1.4%",
+      "cpi": "As of 2015-12-07, CPI YoY deviation from its 6-month trend was 0.36 percentage points",
+      "oil": "As of 2015-12-07, oil price's 20-day absolute move was 11.6%"
+    }
+  },
+  "2016-01-06": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2016-01-06, the 10Y-2Y spread was 1.19%",
+      "hy_spread": "As of 2016-01-06, the Baa-10Y credit spread was 3.26%",
+      "bank_rel": "As of 2016-01-06, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +0.3%",
+      "repo_stress": "As of 2016-01-06, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2016-01-06, M2 money supply YoY growth was 6.06%",
+      "vix": "As of 2016-01-06, the VIX was 19.3",
+      "drawdown": "As of 2016-01-06, the S&P 500 was -5.4% from its all-time high to that point",
+      "gold_momentum": "As of 2016-01-06, gold's 20-day price change was -0.6%",
+      "dxy": "As of 2016-01-06, US Dollar Index's 20-day momentum was +1.1%",
+      "jobless": "As of 2016-01-06, initial jobless claims 4-week trend change was -2.5%",
+      "cpi": "As of 2016-01-06, CPI YoY deviation from its 6-month trend was 0.79 percentage points",
+      "oil": "As of 2016-01-06, oil price's 20-day absolute move was 10.0%"
+    }
+  },
+  "2022-04-29": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2022-04-29, the 10Y-2Y spread was 0.19%",
+      "hy_spread": "As of 2022-04-29, the Baa-10Y credit spread was 2.05%",
+      "bank_rel": "As of 2022-04-29, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -5.3%",
+      "repo_stress": "As of 2022-04-29, SOFR minus Fed target upper bound was -0.220%",
+      "m2_growth": "As of 2022-04-29, M2 money supply YoY growth was 7.81%",
+      "vix": "As of 2022-04-29, the VIX was 30.0",
+      "drawdown": "As of 2022-04-29, the S&P 500 was -10.6% from its all-time high to that point",
+      "gold_momentum": "As of 2022-04-29, gold's 20-day price change was -2.2%",
+      "dxy": "As of 2022-04-29, US Dollar Index's 20-day momentum was +6.0%",
+      "jobless": "As of 2022-04-29, initial jobless claims 4-week trend change was -2.3%",
+      "cpi": "As of 2022-04-29, CPI YoY deviation from its 6-month trend was 0.50 percentage points",
+      "oil": "As of 2022-04-29, oil price's 20-day absolute move was 2.3%"
+    }
+  },
+  "2022-05-31": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2022-05-31, the 10Y-2Y spread was 0.32%",
+      "hy_spread": "As of 2022-05-31, the Baa-10Y credit spread was 2.18%",
+      "bank_rel": "As of 2022-05-31, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -2.5%",
+      "repo_stress": "As of 2022-05-31, SOFR minus Fed target upper bound was -0.210%",
+      "m2_growth": "As of 2022-05-31, M2 money supply YoY growth was 6.07%",
+      "vix": "As of 2022-05-31, the VIX was 25.7",
+      "drawdown": "As of 2022-05-31, the S&P 500 was -13.3% from its all-time high to that point",
+      "gold_momentum": "As of 2022-05-31, gold's 20-day price change was -3.2%",
+      "dxy": "As of 2022-05-31, US Dollar Index's 20-day momentum was -1.3%",
+      "jobless": "As of 2022-05-31, initial jobless claims 4-week trend change was -8.7%",
+      "cpi": "As of 2022-05-31, CPI YoY deviation from its 6-month trend was 0.54 percentage points",
+      "oil": "As of 2022-05-31, oil price's 20-day absolute move was 9.9%"
+    }
+  },
+  "2022-07-28": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2022-07-28, the 10Y-2Y spread was -0.17%",
+      "hy_spread": "As of 2022-07-28, the Baa-10Y credit spread was 2.42%",
+      "bank_rel": "As of 2022-07-28, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -2.5%",
+      "repo_stress": "As of 2022-07-28, SOFR minus Fed target upper bound was -0.220%",
+      "m2_growth": "As of 2022-07-28, M2 money supply YoY growth was 4.82%",
+      "vix": "As of 2022-07-28, the VIX was 23.2",
+      "drawdown": "As of 2022-07-28, the S&P 500 was -16.1% from its all-time high to that point",
+      "gold_momentum": "As of 2022-07-28, gold's 20-day price change was -5.6%",
+      "dxy": "As of 2022-07-28, US Dollar Index's 20-day momentum was +1.9%",
+      "jobless": "As of 2022-07-28, initial jobless claims 4-week trend change was +4.2%",
+      "cpi": "As of 2022-07-28, CPI YoY deviation from its 6-month trend was 0.01 percentage points",
+      "oil": "As of 2022-07-28, oil price's 20-day absolute move was 13.0%"
+    }
+  },
+  "2022-08-10": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2022-08-10, the 10Y-2Y spread was -0.45%",
+      "hy_spread": "As of 2022-08-10, the Baa-10Y credit spread was 2.29%",
+      "bank_rel": "As of 2022-08-10, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -2.9%",
+      "repo_stress": "As of 2022-08-10, SOFR minus Fed target upper bound was -0.220%",
+      "m2_growth": "As of 2022-08-10, M2 money supply YoY growth was 3.49%",
+      "vix": "As of 2022-08-10, the VIX was 21.8",
+      "drawdown": "As of 2022-08-10, the S&P 500 was -14.1% from its all-time high to that point",
+      "gold_momentum": "As of 2022-08-10, gold's 20-day price change was +5.1%",
+      "dxy": "As of 2022-08-10, US Dollar Index's 20-day momentum was -1.6%",
+      "jobless": "As of 2022-08-10, initial jobless claims 4-week trend change was +4.2%",
+      "cpi": "As of 2022-08-10, CPI YoY deviation from its 6-month trend was 0.28 percentage points",
+      "oil": "As of 2022-08-10, oil price's 20-day absolute move was 5.6%"
+    }
+  },
+  "2022-08-17": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2022-08-17, the 10Y-2Y spread was -0.39%",
+      "hy_spread": "As of 2022-08-17, the Baa-10Y credit spread was 2.24%",
+      "bank_rel": "As of 2022-08-17, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +0.8%",
+      "repo_stress": "As of 2022-08-17, SOFR minus Fed target upper bound was -0.210%",
+      "m2_growth": "As of 2022-08-17, M2 money supply YoY growth was 3.49%",
+      "vix": "As of 2022-08-17, the VIX was 19.7",
+      "drawdown": "As of 2022-08-17, the S&P 500 was -10.2% from its all-time high to that point",
+      "gold_momentum": "As of 2022-08-17, gold's 20-day price change was +4.6%",
+      "dxy": "As of 2022-08-17, US Dollar Index's 20-day momentum was -0.2%",
+      "jobless": "As of 2022-08-17, initial jobless claims 4-week trend change was +1.9%",
+      "cpi": "As of 2022-08-17, CPI YoY deviation from its 6-month trend was 0.28 percentage points",
+      "oil": "As of 2022-08-17, oil price's 20-day absolute move was 17.0%"
+    }
+  },
+  "2022-08-25": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2022-08-25, the 10Y-2Y spread was -0.32%",
+      "hy_spread": "As of 2022-08-25, the Baa-10Y credit spread was 2.21%",
+      "bank_rel": "As of 2022-08-25, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -3.4%",
+      "repo_stress": "As of 2022-08-25, SOFR minus Fed target upper bound was -0.220%",
+      "m2_growth": "As of 2022-08-25, M2 money supply YoY growth was 3.49%",
+      "vix": "As of 2022-08-25, the VIX was 22.8",
+      "drawdown": "As of 2022-08-25, the S&P 500 was -13.7% from its all-time high to that point",
+      "gold_momentum": "As of 2022-08-25, gold's 20-day price change was +2.5%",
+      "dxy": "As of 2022-08-25, US Dollar Index's 20-day momentum was +2.1%",
+      "jobless": "As of 2022-08-25, initial jobless claims 4-week trend change was -2.7%",
+      "cpi": "As of 2022-08-25, CPI YoY deviation from its 6-month trend was 0.28 percentage points",
+      "oil": "As of 2022-08-25, oil price's 20-day absolute move was 2.4%"
+    }
+  },
+  "2022-09-01": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2022-09-01, the 10Y-2Y spread was -0.25%",
+      "hy_spread": "As of 2022-09-01, the Baa-10Y credit spread was 2.22%",
+      "bank_rel": "As of 2022-09-01, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -1.3%",
+      "repo_stress": "As of 2022-09-01, SOFR minus Fed target upper bound was -0.210%",
+      "m2_growth": "As of 2022-09-01, M2 money supply YoY growth was 2.18%",
+      "vix": "As of 2022-09-01, the VIX was 25.9",
+      "drawdown": "As of 2022-09-01, the S&P 500 was -17.5% from its all-time high to that point",
+      "gold_momentum": "As of 2022-09-01, gold's 20-day price change was -2.8%",
+      "dxy": "As of 2022-09-01, US Dollar Index's 20-day momentum was +2.1%",
+      "jobless": "As of 2022-09-01, initial jobless claims 4-week trend change was -7.9%",
+      "cpi": "As of 2022-09-01, CPI YoY deviation from its 6-month trend was 0.25 percentage points",
+      "oil": "As of 2022-09-01, oil price's 20-day absolute move was 1.2%"
+    }
+  },
+  "2022-09-08": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2022-09-08, the 10Y-2Y spread was -0.19%",
+      "hy_spread": "As of 2022-09-08, the Baa-10Y credit spread was 2.25%",
+      "bank_rel": "As of 2022-09-08, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -0.2%",
+      "repo_stress": "As of 2022-09-08, SOFR minus Fed target upper bound was -0.220%",
+      "m2_growth": "As of 2022-09-08, M2 money supply YoY growth was 2.18%",
+      "vix": "As of 2022-09-08, the VIX was 24.6",
+      "drawdown": "As of 2022-09-08, the S&P 500 was -17.0% from its all-time high to that point",
+      "gold_momentum": "As of 2022-09-08, gold's 20-day price change was -4.7%",
+      "dxy": "As of 2022-09-08, US Dollar Index's 20-day momentum was +3.3%",
+      "jobless": "As of 2022-09-08, initial jobless claims 4-week trend change was -8.1%",
+      "cpi": "As of 2022-09-08, CPI YoY deviation from its 6-month trend was 0.25 percentage points",
+      "oil": "As of 2022-09-08, oil price's 20-day absolute move was 9.5%"
+    }
+  },
+  "2022-09-13": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2022-09-13, the 10Y-2Y spread was -0.33%",
+      "hy_spread": "As of 2022-09-13, the Baa-10Y credit spread was 2.18%",
+      "bank_rel": "As of 2022-09-13, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +1.6%",
+      "repo_stress": "As of 2022-09-13, SOFR minus Fed target upper bound was -0.220%",
+      "m2_growth": "As of 2022-09-13, M2 money supply YoY growth was 2.18%",
+      "vix": "As of 2022-09-13, the VIX was 23.9",
+      "drawdown": "As of 2022-09-13, the S&P 500 was -14.3% from its all-time high to that point",
+      "gold_momentum": "As of 2022-09-13, gold's 20-day price change was -4.1%",
+      "dxy": "As of 2022-09-13, US Dollar Index's 20-day momentum was +2.6%",
+      "jobless": "As of 2022-09-13, initial jobless claims 4-week trend change was -11.4%",
+      "cpi": "As of 2022-09-13, CPI YoY deviation from its 6-month trend was 0.25 percentage points",
+      "oil": "As of 2022-09-13, oil price's 20-day absolute move was 4.7%"
+    }
+  },
+  "2022-09-19": {
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2022-09-19, the 10Y-2Y spread was -0.46%",
+      "hy_spread": "As of 2022-09-19, the Baa-10Y credit spread was 2.15%",
+      "bank_rel": "As of 2022-09-19, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +2.0%",
+      "repo_stress": "As of 2022-09-19, SOFR minus Fed target upper bound was -0.230%",
+      "m2_growth": "As of 2022-09-19, M2 money supply YoY growth was 2.18%",
+      "vix": "As of 2022-09-19, the VIX was 26.3",
+      "drawdown": "As of 2022-09-19, the S&P 500 was -19.2% from its all-time high to that point",
+      "gold_momentum": "As of 2022-09-19, gold's 20-day price change was -5.0%",
+      "dxy": "As of 2022-09-19, US Dollar Index's 20-day momentum was +2.1%",
+      "jobless": "As of 2022-09-19, initial jobless claims 4-week trend change was -6.0%",
+      "cpi": "As of 2022-09-19, CPI YoY deviation from its 6-month trend was 0.25 percentage points",
+      "oil": "As of 2022-09-19, oil price's 20-day absolute move was 6.0%"
+    }
+  },
+  "2003-09-24": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2003-09-24, the 10Y-2Y spread was 2.50%",
+      "hy_spread": "As of 2003-09-24, the Baa-10Y credit spread was 2.50%",
+      "bank_rel": "As of 2003-09-24, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +0.8%",
+      "repo_stress": "As of 2003-09-24, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2003-09-24, M2 money supply YoY growth was 7.37%",
+      "vix": "As of 2003-09-24, the VIX was 19.5",
+      "drawdown": "As of 2003-09-24, the S&P 500 was -32.6% from its all-time high to that point",
+      "gold_momentum": "As of 2003-09-24, gold's 20-day price change was +6.8%",
+      "dxy": "As of 2003-09-24, US Dollar Index's 20-day momentum was -4.8%",
+      "jobless": "As of 2003-09-24, initial jobless claims 4-week trend change was -3.1%",
+      "cpi": "As of 2003-09-24, CPI YoY deviation from its 6-month trend was 0.27 percentage points",
+      "oil": "As of 2003-09-24, oil price's 20-day absolute move was 14.0%"
+    }
+  },
+  "2003-11-10": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2003-11-10, the 10Y-2Y spread was 2.43%",
+      "hy_spread": "As of 2003-11-10, the Baa-10Y credit spread was 2.33%",
+      "bank_rel": "As of 2003-11-10, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +0.4%",
+      "repo_stress": "As of 2003-11-10, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2003-11-10, M2 money supply YoY growth was 5.51%",
+      "vix": "As of 2003-11-10, the VIX was 16.9",
+      "drawdown": "As of 2003-11-10, the S&P 500 was -31.0% from its all-time high to that point",
+      "gold_momentum": "As of 2003-11-10, gold's 20-day price change was +2.6%",
+      "dxy": "As of 2003-11-10, US Dollar Index's 20-day momentum was +1.6%",
+      "jobless": "As of 2003-11-10, initial jobless claims 4-week trend change was -1.3%",
+      "cpi": "As of 2003-11-10, CPI YoY deviation from its 6-month trend was 0.17 percentage points",
+      "oil": "As of 2003-11-10, oil price's 20-day absolute move was 3.5%"
+    }
+  },
+  "2004-05-03": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2004-05-03, the 10Y-2Y spread was 2.19%",
+      "hy_spread": "As of 2004-05-03, the Baa-10Y credit spread was 2.05%",
+      "bank_rel": "As of 2004-05-03, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -0.7%",
+      "repo_stress": "As of 2004-05-03, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2004-05-03, M2 money supply YoY growth was 5.20%",
+      "vix": "As of 2004-05-03, the VIX was 17.2",
+      "drawdown": "As of 2004-05-03, the S&P 500 was -27.5% from its all-time high to that point",
+      "gold_momentum": "As of 2004-05-03, gold's 20-day price change was -9.5%",
+      "dxy": "As of 2004-05-03, US Dollar Index's 20-day momentum was +3.7%",
+      "jobless": "As of 2004-05-03, initial jobless claims 4-week trend change was -3.3%",
+      "cpi": "As of 2004-05-03, CPI YoY deviation from its 6-month trend was 0.78 percentage points",
+      "oil": "As of 2004-05-03, oil price's 20-day absolute move was 9.1%"
+    }
+  },
+  "2004-06-08": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2004-06-08, the 10Y-2Y spread was 2.05%",
+      "hy_spread": "As of 2004-06-08, the Baa-10Y credit spread was 2.04%",
+      "bank_rel": "As of 2004-06-08, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -3.1%",
+      "repo_stress": "As of 2004-06-08, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2004-06-08, M2 money supply YoY growth was 4.59%",
+      "vix": "As of 2004-06-08, the VIX was 15.4",
+      "drawdown": "As of 2004-06-08, the S&P 500 was -25.3% from its all-time high to that point",
+      "gold_momentum": "As of 2004-06-08, gold's 20-day price change was +4.0%",
+      "dxy": "As of 2004-06-08, US Dollar Index's 20-day momentum was -3.2%",
+      "jobless": "As of 2004-06-08, initial jobless claims 4-week trend change was +7.9%",
+      "cpi": "As of 2004-06-08, CPI YoY deviation from its 6-month trend was 0.87 percentage points",
+      "oil": "As of 2004-06-08, oil price's 20-day absolute move was 3.2%"
+    }
+  },
+  "2005-02-28": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2005-02-28, the 10Y-2Y spread was 0.77%",
+      "hy_spread": "As of 2005-02-28, the Baa-10Y credit spread was 1.59%",
+      "bank_rel": "As of 2005-02-28, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -0.8%",
+      "repo_stress": "As of 2005-02-28, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2005-02-28, M2 money supply YoY growth was 5.18%",
+      "vix": "As of 2005-02-28, the VIX was 11.5",
+      "drawdown": "As of 2005-02-28, the S&P 500 was -20.7% from its all-time high to that point",
+      "gold_momentum": "As of 2005-02-28, gold's 20-day price change was +2.0%",
+      "dxy": "As of 2005-02-28, US Dollar Index's 20-day momentum was -1.0%",
+      "jobless": "As of 2005-02-28, initial jobless claims 4-week trend change was -5.1%",
+      "cpi": "As of 2005-02-28, CPI YoY deviation from its 6-month trend was 0.05 percentage points",
+      "oil": "As of 2005-02-28, oil price's 20-day absolute move was 5.4%"
+    }
+  },
+  "2005-04-12": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2005-04-12, the 10Y-2Y spread was 0.67%",
+      "hy_spread": "As of 2005-04-12, the Baa-10Y credit spread was 1.66%",
+      "bank_rel": "As of 2005-04-12, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -4.7%",
+      "repo_stress": "As of 2005-04-12, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2005-04-12, M2 money supply YoY growth was 4.24%",
+      "vix": "As of 2005-04-12, the VIX was 12.0",
+      "drawdown": "As of 2005-04-12, the S&P 500 was -22.7% from its all-time high to that point",
+      "gold_momentum": "As of 2005-04-12, gold's 20-day price change was -3.2%",
+      "dxy": "As of 2005-04-12, US Dollar Index's 20-day momentum was +3.4%",
+      "jobless": "As of 2005-04-12, initial jobless claims 4-week trend change was -0.3%",
+      "cpi": "As of 2005-04-12, CPI YoY deviation from its 6-month trend was 0.12 percentage points",
+      "oil": "As of 2005-04-12, oil price's 20-day absolute move was 1.3%"
+    }
+  },
+  "2005-04-22": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2005-04-22, the 10Y-2Y spread was 0.64%",
+      "hy_spread": "As of 2005-04-22, the Baa-10Y credit spread was 1.74%",
+      "bank_rel": "As of 2005-04-22, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -4.6%",
+      "repo_stress": "As of 2005-04-22, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2005-04-22, M2 money supply YoY growth was 4.24%",
+      "vix": "As of 2005-04-22, the VIX was 14.4",
+      "drawdown": "As of 2005-04-22, the S&P 500 was -24.1% from its all-time high to that point",
+      "gold_momentum": "As of 2005-04-22, gold's 20-day price change was +0.4%",
+      "dxy": "As of 2005-04-22, US Dollar Index's 20-day momentum was -0.4%",
+      "jobless": "As of 2005-04-22, initial jobless claims 4-week trend change was -6.7%",
+      "cpi": "As of 2005-04-22, CPI YoY deviation from its 6-month trend was 0.12 percentage points",
+      "oil": "As of 2005-04-22, oil price's 20-day absolute move was 0.7%"
+    }
+  },
+  "2005-06-30": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2005-06-30, the 10Y-2Y spread was 0.28%",
+      "hy_spread": "As of 2005-06-30, the Baa-10Y credit spread was 1.87%",
+      "bank_rel": "As of 2005-06-30, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +3.4%",
+      "repo_stress": "As of 2005-06-30, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2005-06-30, M2 money supply YoY growth was 3.72%",
+      "vix": "As of 2005-06-30, the VIX was 11.8",
+      "drawdown": "As of 2005-06-30, the S&P 500 was -21.4% from its all-time high to that point",
+      "gold_momentum": "As of 2005-06-30, gold's 20-day price change was +4.8%",
+      "dxy": "As of 2005-06-30, US Dollar Index's 20-day momentum was +1.1%",
+      "jobless": "As of 2005-06-30, initial jobless claims 4-week trend change was -8.5%",
+      "cpi": "As of 2005-06-30, CPI YoY deviation from its 6-month trend was 0.44 percentage points",
+      "oil": "As of 2005-06-30, oil price's 20-day absolute move was 4.9%"
+    }
+  },
+  "2005-07-18": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2005-07-18, the 10Y-2Y spread was 0.33%",
+      "hy_spread": "As of 2005-07-18, the Baa-10Y credit spread was 1.80%",
+      "bank_rel": "As of 2005-07-18, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +2.5%",
+      "repo_stress": "As of 2005-07-18, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2005-07-18, M2 money supply YoY growth was 4.02%",
+      "vix": "As of 2005-07-18, the VIX was 10.3",
+      "drawdown": "As of 2005-07-18, the S&P 500 was -19.6% from its all-time high to that point",
+      "gold_momentum": "As of 2005-07-18, gold's 20-day price change was -2.0%",
+      "dxy": "As of 2005-07-18, US Dollar Index's 20-day momentum was +2.3%",
+      "jobless": "As of 2005-07-18, initial jobless claims 4-week trend change was +0.6%",
+      "cpi": "As of 2005-07-18, CPI YoY deviation from its 6-month trend was 0.05 percentage points",
+      "oil": "As of 2005-07-18, oil price's 20-day absolute move was 2.7%"
+    }
+  },
+  "2005-10-20": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2005-10-20, the 10Y-2Y spread was 0.19%",
+      "hy_spread": "As of 2005-10-20, the Baa-10Y credit spread was 1.86%",
+      "bank_rel": "As of 2005-10-20, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +1.4%",
+      "repo_stress": "As of 2005-10-20, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2005-10-20, M2 money supply YoY growth was 4.14%",
+      "vix": "As of 2005-10-20, the VIX was 13.5",
+      "drawdown": "As of 2005-10-20, the S&P 500 was -21.7% from its all-time high to that point",
+      "gold_momentum": "As of 2005-10-20, gold's 20-day price change was -1.2%",
+      "dxy": "As of 2005-10-20, US Dollar Index's 20-day momentum was +2.1%",
+      "jobless": "As of 2005-10-20, initial jobless claims 4-week trend change was -17.9%",
+      "cpi": "As of 2005-10-20, CPI YoY deviation from its 6-month trend was 0.81 percentage points",
+      "oil": "As of 2005-10-20, oil price's 20-day absolute move was 6.6%"
+    }
+  },
+  "2005-10-28": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2005-10-28, the 10Y-2Y spread was 0.18%",
+      "hy_spread": "As of 2005-10-28, the Baa-10Y credit spread was 1.83%",
+      "bank_rel": "As of 2005-10-28, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +4.8%",
+      "repo_stress": "As of 2005-10-28, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2005-10-28, M2 money supply YoY growth was 4.14%",
+      "vix": "As of 2005-10-28, the VIX was 16.0",
+      "drawdown": "As of 2005-10-28, the S&P 500 was -22.8% from its all-time high to that point",
+      "gold_momentum": "As of 2005-10-28, gold's 20-day price change was +0.3%",
+      "dxy": "As of 2005-10-28, US Dollar Index's 20-day momentum was -0.3%",
+      "jobless": "As of 2005-10-28, initial jobless claims 4-week trend change was -9.7%",
+      "cpi": "As of 2005-10-28, CPI YoY deviation from its 6-month trend was 0.81 percentage points",
+      "oil": "As of 2005-10-28, oil price's 20-day absolute move was 8.5%"
+    }
+  },
+  "2005-11-11": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2005-11-11, the 10Y-2Y spread was nan%",
+      "hy_spread": "As of 2005-11-11, the Baa-10Y credit spread was nan%",
+      "bank_rel": "As of 2005-11-11, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +6.6%",
+      "repo_stress": "As of 2005-11-11, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2005-11-11, M2 money supply YoY growth was 3.97%",
+      "vix": "As of 2005-11-11, the VIX was 11.9",
+      "drawdown": "As of 2005-11-11, the S&P 500 was -19.4% from its all-time high to that point",
+      "gold_momentum": "As of 2005-11-11, gold's 20-day price change was -1.0%",
+      "dxy": "As of 2005-11-11, US Dollar Index's 20-day momentum was +2.5%",
+      "jobless": "As of 2005-11-11, initial jobless claims 4-week trend change was -15.1%",
+      "cpi": "As of 2005-11-11, CPI YoY deviation from its 6-month trend was 0.28 percentage points",
+      "oil": "As of 2005-11-11, oil price's 20-day absolute move was 8.4%"
+    }
+  },
+  "2006-06-19": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2006-06-19, the 10Y-2Y spread was -0.05%",
+      "hy_spread": "As of 2006-06-19, the Baa-10Y credit spread was 1.67%",
+      "bank_rel": "As of 2006-06-19, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +1.0%",
+      "repo_stress": "As of 2006-06-19, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2006-06-19, M2 money supply YoY growth was 5.23%",
+      "vix": "As of 2006-06-19, the VIX was 17.2",
+      "drawdown": "As of 2006-06-19, the S&P 500 was -18.1% from its all-time high to that point",
+      "gold_momentum": "As of 2006-06-19, gold's 20-day price change was -14.9%",
+      "dxy": "As of 2006-06-19, US Dollar Index's 20-day momentum was +1.7%",
+      "jobless": "As of 2006-06-19, initial jobless claims 4-week trend change was -3.4%",
+      "cpi": "As of 2006-06-19, CPI YoY deviation from its 6-month trend was 0.37 percentage points",
+      "oil": "As of 2006-06-19, oil price's 20-day absolute move was 0.6%"
+    }
+  },
+  "2006-08-25": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2006-08-25, the 10Y-2Y spread was -0.07%",
+      "hy_spread": "As of 2006-08-25, the Baa-10Y credit spread was 1.74%",
+      "bank_rel": "As of 2006-08-25, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +1.0%",
+      "repo_stress": "As of 2006-08-25, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2006-08-25, M2 money supply YoY growth was 5.32%",
+      "vix": "As of 2006-08-25, the VIX was 12.4",
+      "drawdown": "As of 2006-08-25, the S&P 500 was -15.1% from its all-time high to that point",
+      "gold_momentum": "As of 2006-08-25, gold's 20-day price change was -2.0%",
+      "dxy": "As of 2006-08-25, US Dollar Index's 20-day momentum was -0.7%",
+      "jobless": "As of 2006-08-25, initial jobless claims 4-week trend change was +2.9%",
+      "cpi": "As of 2006-08-25, CPI YoY deviation from its 6-month trend was 0.06 percentage points",
+      "oil": "As of 2006-08-25, oil price's 20-day absolute move was 2.9%"
+    }
+  },
+  "2007-01-10": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2007-01-10, the 10Y-2Y spread was -0.12%",
+      "hy_spread": "As of 2007-01-10, the Baa-10Y credit spread was 1.59%",
+      "bank_rel": "As of 2007-01-10, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +0.3%",
+      "repo_stress": "As of 2007-01-10, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2007-01-10, M2 money supply YoY growth was 5.75%",
+      "vix": "As of 2007-01-10, the VIX was 11.9",
+      "drawdown": "As of 2007-01-10, the S&P 500 was -7.6% from its all-time high to that point",
+      "gold_momentum": "As of 2007-01-10, gold's 20-day price change was -2.1%",
+      "dxy": "As of 2007-01-10, US Dollar Index's 20-day momentum was +1.7%",
+      "jobless": "As of 2007-01-10, initial jobless claims 4-week trend change was +6.1%",
+      "cpi": "As of 2007-01-10, CPI YoY deviation from its 6-month trend was 0.24 percentage points",
+      "oil": "As of 2007-01-10, oil price's 20-day absolute move was 10.3%"
+    }
+  },
+  "2013-01-01": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2013-01-01, the 10Y-2Y spread was nan%",
+      "hy_spread": "As of 2013-01-01, the Baa-10Y credit spread was nan%",
+      "bank_rel": "As of 2013-01-01, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +7.0%",
+      "repo_stress": "As of 2013-01-01, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2013-01-01, M2 money supply YoY growth was 7.68%",
+      "vix": "As of 2013-01-01, the VIX was 18.0",
+      "drawdown": "As of 2013-01-01, the S&P 500 was -8.9% from its all-time high to that point",
+      "gold_momentum": "As of 2013-01-01, gold's 20-day price change was -2.1%",
+      "dxy": "As of 2013-01-01, US Dollar Index's 20-day momentum was -0.5%",
+      "jobless": "As of 2013-01-01, initial jobless claims 4-week trend change was -3.5%",
+      "cpi": "As of 2013-01-01, CPI YoY deviation from its 6-month trend was 0.15 percentage points",
+      "oil": "As of 2013-01-01, oil price's 20-day absolute move was 3.3%"
+    }
+  },
+  "2013-02-04": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2013-02-04, the 10Y-2Y spread was 1.75%",
+      "hy_spread": "As of 2013-02-04, the Baa-10Y credit spread was 2.85%",
+      "bank_rel": "As of 2013-02-04, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +4.0%",
+      "repo_stress": "As of 2013-02-04, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2013-02-04, M2 money supply YoY growth was 7.31%",
+      "vix": "As of 2013-02-04, the VIX was 12.9",
+      "drawdown": "As of 2013-02-04, the S&P 500 was -3.3% from its all-time high to that point",
+      "gold_momentum": "As of 2013-02-04, gold's 20-day price change was -0.3%",
+      "dxy": "As of 2013-02-04, US Dollar Index's 20-day momentum was -1.6%",
+      "jobless": "As of 2013-02-04, initial jobless claims 4-week trend change was -0.6%",
+      "cpi": "As of 2013-02-04, CPI YoY deviation from its 6-month trend was 0.12 percentage points",
+      "oil": "As of 2013-02-04, oil price's 20-day absolute move was 5.2%"
+    }
+  },
+  "2013-04-12": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2013-04-12, the 10Y-2Y spread was 1.53%",
+      "hy_spread": "As of 2013-04-12, the Baa-10Y credit spread was 2.82%",
+      "bank_rel": "As of 2013-04-12, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +0.7%",
+      "repo_stress": "As of 2013-04-12, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2013-04-12, M2 money supply YoY growth was 7.11%",
+      "vix": "As of 2013-04-12, the VIX was 12.2",
+      "drawdown": "As of 2013-04-12, the S&P 500 was 0.0% from its all-time high to that point",
+      "gold_momentum": "As of 2013-04-12, gold's 20-day price change was -1.5%",
+      "dxy": "As of 2013-04-12, US Dollar Index's 20-day momentum was -0.8%",
+      "jobless": "As of 2013-04-12, initial jobless claims 4-week trend change was +4.7%",
+      "cpi": "As of 2013-04-12, CPI YoY deviation from its 6-month trend was 0.51 percentage points",
+      "oil": "As of 2013-04-12, oil price's 20-day absolute move was 1.1%"
+    }
+  },
+  "2013-06-05": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2013-06-05, the 10Y-2Y spread was 1.80%",
+      "hy_spread": "As of 2013-06-05, the Baa-10Y credit spread was 2.89%",
+      "bank_rel": "As of 2013-06-05, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +3.9%",
+      "repo_stress": "As of 2013-06-05, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2013-06-05, M2 money supply YoY growth was 6.80%",
+      "vix": "As of 2013-06-05, the VIX was 16.3",
+      "drawdown": "As of 2013-06-05, the S&P 500 was -2.3% from its all-time high to that point",
+      "gold_momentum": "As of 2013-06-05, gold's 20-day price change was -4.8%",
+      "dxy": "As of 2013-06-05, US Dollar Index's 20-day momentum was +0.5%",
+      "jobless": "As of 2013-06-05, initial jobless claims 4-week trend change was +3.3%",
+      "cpi": "As of 2013-06-05, CPI YoY deviation from its 6-month trend was 0.14 percentage points",
+      "oil": "As of 2013-06-05, oil price's 20-day absolute move was 3.0%"
+    }
+  },
+  "2013-07-15": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2013-07-15, the 10Y-2Y spread was 2.23%",
+      "hy_spread": "As of 2013-07-15, the Baa-10Y credit spread was 2.76%",
+      "bank_rel": "As of 2013-07-15, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +4.6%",
+      "repo_stress": "As of 2013-07-15, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2013-07-15, M2 money supply YoY growth was 6.62%",
+      "vix": "As of 2013-07-15, the VIX was 13.8",
+      "drawdown": "As of 2013-07-15, the S&P 500 was 0.0% from its all-time high to that point",
+      "gold_momentum": "As of 2013-07-15, gold's 20-day price change was -7.2%",
+      "dxy": "As of 2013-07-15, US Dollar Index's 20-day momentum was +2.9%",
+      "jobless": "As of 2013-07-15, initial jobless claims 4-week trend change was -2.5%",
+      "cpi": "As of 2013-07-15, CPI YoY deviation from its 6-month trend was 0.27 percentage points",
+      "oil": "As of 2013-07-15, oil price's 20-day absolute move was 9.6%"
+    }
+  },
+  "2013-08-14": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2013-08-14, the 10Y-2Y spread was 2.37%",
+      "hy_spread": "As of 2013-08-14, the Baa-10Y credit spread was 2.72%",
+      "bank_rel": "As of 2013-08-14, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +1.8%",
+      "repo_stress": "As of 2013-08-14, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2013-08-14, M2 money supply YoY growth was 6.46%",
+      "vix": "As of 2013-08-14, the VIX was 12.3",
+      "drawdown": "As of 2013-08-14, the S&P 500 was -0.9% from its all-time high to that point",
+      "gold_momentum": "As of 2013-08-14, gold's 20-day price change was +2.4%",
+      "dxy": "As of 2013-08-14, US Dollar Index's 20-day momentum was -0.8%",
+      "jobless": "As of 2013-08-14, initial jobless claims 4-week trend change was -4.9%",
+      "cpi": "As of 2013-08-14, CPI YoY deviation from its 6-month trend was 0.01 percentage points",
+      "oil": "As of 2013-08-14, oil price's 20-day absolute move was 0.8%"
+    }
+  },
+  "2013-08-27": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2013-08-27, the 10Y-2Y spread was 2.34%",
+      "hy_spread": "As of 2013-08-27, the Baa-10Y credit spread was 2.66%",
+      "bank_rel": "As of 2013-08-27, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +0.6%",
+      "repo_stress": "As of 2013-08-27, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2013-08-27, M2 money supply YoY growth was 6.46%",
+      "vix": "As of 2013-08-27, the VIX was 15.0",
+      "drawdown": "As of 2013-08-27, the S&P 500 was -3.1% from its all-time high to that point",
+      "gold_momentum": "As of 2013-08-27, gold's 20-day price change was +4.9%",
+      "dxy": "As of 2013-08-27, US Dollar Index's 20-day momentum was -0.4%",
+      "jobless": "As of 2013-08-27, initial jobless claims 4-week trend change was +0.6%",
+      "cpi": "As of 2013-08-27, CPI YoY deviation from its 6-month trend was 0.01 percentage points",
+      "oil": "As of 2013-08-27, oil price's 20-day absolute move was 1.3%"
+    }
+  },
+  "2014-08-08": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2014-08-08, the 10Y-2Y spread was 1.99%",
+      "hy_spread": "As of 2014-08-08, the Baa-10Y credit spread was 2.27%",
+      "bank_rel": "As of 2014-08-08, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -0.4%",
+      "repo_stress": "As of 2014-08-08, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2014-08-08, M2 money supply YoY growth was 6.24%",
+      "vix": "As of 2014-08-08, the VIX was 16.7",
+      "drawdown": "As of 2014-08-08, the S&P 500 was -3.9% from its all-time high to that point",
+      "gold_momentum": "As of 2014-08-08, gold's 20-day price change was -2.1%",
+      "dxy": "As of 2014-08-08, US Dollar Index's 20-day momentum was +1.7%",
+      "jobless": "As of 2014-08-08, initial jobless claims 4-week trend change was -2.3%",
+      "cpi": "As of 2014-08-08, CPI YoY deviation from its 6-month trend was 0.21 percentage points",
+      "oil": "As of 2014-08-08, oil price's 20-day absolute move was 5.4%"
+    }
+  },
+  "2014-10-14": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2014-10-14, the 10Y-2Y spread was 1.82%",
+      "hy_spread": "As of 2014-10-14, the Baa-10Y credit spread was 2.39%",
+      "bank_rel": "As of 2014-10-14, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +2.9%",
+      "repo_stress": "As of 2014-10-14, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2014-10-14, M2 money supply YoY growth was 5.53%",
+      "vix": "As of 2014-10-14, the VIX was 24.6",
+      "drawdown": "As of 2014-10-14, the S&P 500 was -6.8% from its all-time high to that point",
+      "gold_momentum": "As of 2014-10-14, gold's 20-day price change was -0.3%",
+      "dxy": "As of 2014-10-14, US Dollar Index's 20-day momentum was +1.4%",
+      "jobless": "As of 2014-10-14, initial jobless claims 4-week trend change was -2.4%",
+      "cpi": "As of 2014-10-14, CPI YoY deviation from its 6-month trend was 0.26 percentage points",
+      "oil": "As of 2014-10-14, oil price's 20-day absolute move was 7.7%"
+    }
+  },
+  "2014-11-19": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2014-11-19, the 10Y-2Y spread was 1.82%",
+      "hy_spread": "As of 2014-11-19, the Baa-10Y credit spread was 2.51%",
+      "bank_rel": "As of 2014-11-19, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +2.3%",
+      "repo_stress": "As of 2014-11-19, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2014-11-19, M2 money supply YoY growth was 5.81%",
+      "vix": "As of 2014-11-19, the VIX was 13.9",
+      "drawdown": "As of 2014-11-19, the S&P 500 was 0.0% from its all-time high to that point",
+      "gold_momentum": "As of 2014-11-19, gold's 20-day price change was -4.3%",
+      "dxy": "As of 2014-11-19, US Dollar Index's 20-day momentum was +2.7%",
+      "jobless": "As of 2014-11-19, initial jobless claims 4-week trend change was +1.0%",
+      "cpi": "As of 2014-11-19, CPI YoY deviation from its 6-month trend was 0.48 percentage points",
+      "oil": "As of 2014-11-19, oil price's 20-day absolute move was 9.9%"
+    }
+  },
+  "2015-02-04": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2015-02-04, the 10Y-2Y spread was 1.29%",
+      "hy_spread": "As of 2015-02-04, the Baa-10Y credit spread was 2.60%",
+      "bank_rel": "As of 2015-02-04, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -1.3%",
+      "repo_stress": "As of 2015-02-04, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2015-02-04, M2 money supply YoY growth was 6.51%",
+      "vix": "As of 2015-02-04, the VIX was 17.3",
+      "drawdown": "As of 2015-02-04, the S&P 500 was -1.9% from its all-time high to that point",
+      "gold_momentum": "As of 2015-02-04, gold's 20-day price change was +4.6%",
+      "dxy": "As of 2015-02-04, US Dollar Index's 20-day momentum was +2.4%",
+      "jobless": "As of 2015-02-04, initial jobless claims 4-week trend change was -4.4%",
+      "cpi": "As of 2015-02-04, CPI YoY deviation from its 6-month trend was 0.90 percentage points",
+      "oil": "As of 2015-02-04, oil price's 20-day absolute move was 6.0%"
+    }
+  },
+  "2015-04-06": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2015-04-06, the 10Y-2Y spread was 1.41%",
+      "hy_spread": "As of 2015-04-06, the Baa-10Y credit spread was 2.58%",
+      "bank_rel": "As of 2015-04-06, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -2.1%",
+      "repo_stress": "As of 2015-04-06, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2015-04-06, M2 money supply YoY growth was 6.01%",
+      "vix": "As of 2015-04-06, the VIX was 14.7",
+      "drawdown": "As of 2015-04-06, the S&P 500 was -2.4% from its all-time high to that point",
+      "gold_momentum": "As of 2015-04-06, gold's 20-day price change was +0.4%",
+      "dxy": "As of 2015-04-06, US Dollar Index's 20-day momentum was +1.1%",
+      "jobless": "As of 2015-04-06, initial jobless claims 4-week trend change was -3.8%",
+      "cpi": "As of 2015-04-06, CPI YoY deviation from its 6-month trend was 0.34 percentage points",
+      "oil": "As of 2015-04-06, oil price's 20-day absolute move was 3.2%"
+    }
+  },
+  "2016-08-23": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2016-08-23, the 10Y-2Y spread was 0.81%",
+      "hy_spread": "As of 2016-08-23, the Baa-10Y credit spread was 2.64%",
+      "bank_rel": "As of 2016-08-23, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -2.3%",
+      "repo_stress": "As of 2016-08-23, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2016-08-23, M2 money supply YoY growth was 7.24%",
+      "vix": "As of 2016-08-23, the VIX was 12.3",
+      "drawdown": "As of 2016-08-23, the S&P 500 was -0.3% from its all-time high to that point",
+      "gold_momentum": "As of 2016-08-23, gold's 20-day price change was +1.4%",
+      "dxy": "As of 2016-08-23, US Dollar Index's 20-day momentum was -2.8%",
+      "jobless": "As of 2016-08-23, initial jobless claims 4-week trend change was +0.0%",
+      "cpi": "As of 2016-08-23, CPI YoY deviation from its 6-month trend was 0.03 percentage points",
+      "oil": "As of 2016-08-23, oil price's 20-day absolute move was 9.1%"
+    }
+  },
+  "2016-11-30": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2016-11-30, the 10Y-2Y spread was 1.26%",
+      "hy_spread": "As of 2016-11-30, the Baa-10Y credit spread was 2.45%",
+      "bank_rel": "As of 2016-11-30, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +10.5%",
+      "repo_stress": "As of 2016-11-30, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2016-11-30, M2 money supply YoY growth was 7.23%",
+      "vix": "As of 2016-11-30, the VIX was 12.9",
+      "drawdown": "As of 2016-11-30, the S&P 500 was -0.4% from its all-time high to that point",
+      "gold_momentum": "As of 2016-11-30, gold's 20-day price change was -6.9%",
+      "dxy": "As of 2016-11-30, US Dollar Index's 20-day momentum was +2.6%",
+      "jobless": "As of 2016-11-30, initial jobless claims 4-week trend change was -3.8%",
+      "cpi": "As of 2016-11-30, CPI YoY deviation from its 6-month trend was 0.36 percentage points",
+      "oil": "As of 2016-11-30, oil price's 20-day absolute move was 7.1%"
+    }
+  },
+  "2017-01-10": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2017-01-10, the 10Y-2Y spread was 1.19%",
+      "hy_spread": "As of 2017-01-10, the Baa-10Y credit spread was 2.24%",
+      "bank_rel": "As of 2017-01-10, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +13.6%",
+      "repo_stress": "As of 2017-01-10, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2017-01-10, M2 money supply YoY growth was 6.36%",
+      "vix": "As of 2017-01-10, the VIX was 11.6",
+      "drawdown": "As of 2017-01-10, the S&P 500 was -0.4% from its all-time high to that point",
+      "gold_momentum": "As of 2017-01-10, gold's 20-day price change was +1.2%",
+      "dxy": "As of 2017-01-10, US Dollar Index's 20-day momentum was +0.9%",
+      "jobless": "As of 2017-01-10, initial jobless claims 4-week trend change was -2.8%",
+      "cpi": "As of 2017-01-10, CPI YoY deviation from its 6-month trend was 0.75 percentage points",
+      "oil": "As of 2017-01-10, oil price's 20-day absolute move was 2.2%"
+    }
+  },
+  "2017-01-17": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2017-01-17, the 10Y-2Y spread was 1.16%",
+      "hy_spread": "As of 2017-01-17, the Baa-10Y credit spread was 2.26%",
+      "bank_rel": "As of 2017-01-17, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +14.5%",
+      "repo_stress": "As of 2017-01-17, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2017-01-17, M2 money supply YoY growth was 6.36%",
+      "vix": "As of 2017-01-17, the VIX was 11.2",
+      "drawdown": "As of 2017-01-17, the S&P 500 was -0.1% from its all-time high to that point",
+      "gold_momentum": "As of 2017-01-17, gold's 20-day price change was +2.9%",
+      "dxy": "As of 2017-01-17, US Dollar Index's 20-day momentum was -0.8%",
+      "jobless": "As of 2017-01-17, initial jobless claims 4-week trend change was -7.7%",
+      "cpi": "As of 2017-01-17, CPI YoY deviation from its 6-month trend was 0.75 percentage points",
+      "oil": "As of 2017-01-17, oil price's 20-day absolute move was 2.6%"
+    }
+  },
+  "2017-06-29": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2017-06-29, the 10Y-2Y spread was 0.89%",
+      "hy_spread": "As of 2017-06-29, the Baa-10Y credit spread was 2.11%",
+      "bank_rel": "As of 2017-06-29, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +0.8%",
+      "repo_stress": "As of 2017-06-29, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2017-06-29, M2 money supply YoY growth was 5.66%",
+      "vix": "As of 2017-06-29, the VIX was 10.0",
+      "drawdown": "As of 2017-06-29, the S&P 500 was -0.5% from its all-time high to that point",
+      "gold_momentum": "As of 2017-06-29, gold's 20-day price change was -1.9%",
+      "dxy": "As of 2017-06-29, US Dollar Index's 20-day momentum was -0.9%",
+      "jobless": "As of 2017-06-29, initial jobless claims 4-week trend change was -2.4%",
+      "cpi": "As of 2017-06-29, CPI YoY deviation from its 6-month trend was 0.60 percentage points",
+      "oil": "As of 2017-06-29, oil price's 20-day absolute move was 7.4%"
+    }
+  },
+  "2017-08-23": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2017-08-23, the 10Y-2Y spread was 0.85%",
+      "hy_spread": "As of 2017-08-23, the Baa-10Y credit spread was 2.12%",
+      "bank_rel": "As of 2017-08-23, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +3.3%",
+      "repo_stress": "As of 2017-08-23, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2017-08-23, M2 money supply YoY growth was 5.45%",
+      "vix": "As of 2017-08-23, the VIX was 11.4",
+      "drawdown": "As of 2017-08-23, the S&P 500 was -1.1% from its all-time high to that point",
+      "gold_momentum": "As of 2017-08-23, gold's 20-day price change was +2.7%",
+      "dxy": "As of 2017-08-23, US Dollar Index's 20-day momentum was -0.5%",
+      "jobless": "As of 2017-08-23, initial jobless claims 4-week trend change was -1.6%",
+      "cpi": "As of 2017-08-23, CPI YoY deviation from its 6-month trend was 0.03 percentage points",
+      "oil": "As of 2017-08-23, oil price's 20-day absolute move was 0.5%"
+    }
+  },
+  "2017-08-30": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2017-08-30, the 10Y-2Y spread was 0.82%",
+      "hy_spread": "As of 2017-08-30, the Baa-10Y credit spread was 2.14%",
+      "bank_rel": "As of 2017-08-30, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +4.6%",
+      "repo_stress": "As of 2017-08-30, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2017-08-30, M2 money supply YoY growth was 5.45%",
+      "vix": "As of 2017-08-30, the VIX was 11.7",
+      "drawdown": "As of 2017-08-30, the S&P 500 was -1.4% from its all-time high to that point",
+      "gold_momentum": "As of 2017-08-30, gold's 20-day price change was +3.2%",
+      "dxy": "As of 2017-08-30, US Dollar Index's 20-day momentum was -0.7%",
+      "jobless": "As of 2017-08-30, initial jobless claims 4-week trend change was +0.8%",
+      "cpi": "As of 2017-08-30, CPI YoY deviation from its 6-month trend was 0.03 percentage points",
+      "oil": "As of 2017-08-30, oil price's 20-day absolute move was 5.5%"
+    }
+  },
+  "2017-10-11": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2017-10-11, the 10Y-2Y spread was 0.84%",
+      "hy_spread": "As of 2017-10-11, the Baa-10Y credit spread was 1.97%",
+      "bank_rel": "As of 2017-10-11, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +1.9%",
+      "repo_stress": "As of 2017-10-11, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2017-10-11, M2 money supply YoY growth was 5.16%",
+      "vix": "As of 2017-10-11, the VIX was 10.1",
+      "drawdown": "As of 2017-10-11, the S&P 500 was -0.1% from its all-time high to that point",
+      "gold_momentum": "As of 2017-10-11, gold's 20-day price change was -2.8%",
+      "dxy": "As of 2017-10-11, US Dollar Index's 20-day momentum was +1.5%",
+      "jobless": "As of 2017-10-11, initial jobless claims 4-week trend change was -10.0%",
+      "cpi": "As of 2017-10-11, CPI YoY deviation from its 6-month trend was 0.13 percentage points",
+      "oil": "As of 2017-10-11, oil price's 20-day absolute move was 5.6%"
+    }
+  },
+  "2017-10-23": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2017-10-23, the 10Y-2Y spread was 0.80%",
+      "hy_spread": "As of 2017-10-23, the Baa-10Y credit spread was 1.94%",
+      "bank_rel": "As of 2017-10-23, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +3.0%",
+      "repo_stress": "As of 2017-10-23, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2017-10-23, M2 money supply YoY growth was 5.16%",
+      "vix": "As of 2017-10-23, the VIX was 10.0",
+      "drawdown": "As of 2017-10-23, the S&P 500 was 0.0% from its all-time high to that point",
+      "gold_momentum": "As of 2017-10-23, gold's 20-day price change was -1.2%",
+      "dxy": "As of 2017-10-23, US Dollar Index's 20-day momentum was +1.7%",
+      "jobless": "As of 2017-10-23, initial jobless claims 4-week trend change was -8.7%",
+      "cpi": "As of 2017-10-23, CPI YoY deviation from its 6-month trend was 0.13 percentage points",
+      "oil": "As of 2017-10-23, oil price's 20-day absolute move was 1.6%"
+    }
+  },
+  "2017-12-04": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2017-12-04, the 10Y-2Y spread was 0.57%",
+      "hy_spread": "As of 2017-12-04, the Baa-10Y credit spread was 1.87%",
+      "bank_rel": "As of 2017-12-04, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +4.8%",
+      "repo_stress": "As of 2017-12-04, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2017-12-04, M2 money supply YoY growth was 4.88%",
+      "vix": "As of 2017-12-04, the VIX was 11.4",
+      "drawdown": "As of 2017-12-04, the S&P 500 was -0.2% from its all-time high to that point",
+      "gold_momentum": "As of 2017-12-04, gold's 20-day price change was +0.3%",
+      "dxy": "As of 2017-12-04, US Dollar Index's 20-day momentum was -1.9%",
+      "jobless": "As of 2017-12-04, initial jobless claims 4-week trend change was -2.8%",
+      "cpi": "As of 2017-12-04, CPI YoY deviation from its 6-month trend was 0.10 percentage points",
+      "oil": "As of 2017-12-04, oil price's 20-day absolute move was 7.0%"
+    }
+  },
+  "2017-12-26": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2017-12-26, the 10Y-2Y spread was 0.55%",
+      "hy_spread": "As of 2017-12-26, the Baa-10Y credit spread was 1.78%",
+      "bank_rel": "As of 2017-12-26, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +3.2%",
+      "repo_stress": "As of 2017-12-26, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2017-12-26, M2 money supply YoY growth was 4.88%",
+      "vix": "As of 2017-12-26, the VIX was 9.9",
+      "drawdown": "As of 2017-12-26, the S&P 500 was -0.3% from its all-time high to that point",
+      "gold_momentum": "As of 2017-12-26, gold's 20-day price change was -0.9%",
+      "dxy": "As of 2017-12-26, US Dollar Index's 20-day momentum was +0.6%",
+      "jobless": "As of 2017-12-26, initial jobless claims 4-week trend change was +3.3%",
+      "cpi": "As of 2017-12-26, CPI YoY deviation from its 6-month trend was 0.10 percentage points",
+      "oil": "As of 2017-12-26, oil price's 20-day absolute move was 0.8%"
+    }
+  },
+  "2018-01-12": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2018-01-12, the 10Y-2Y spread was 0.56%",
+      "hy_spread": "As of 2018-01-12, the Baa-10Y credit spread was 1.68%",
+      "bank_rel": "As of 2018-01-12, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +2.1%",
+      "repo_stress": "As of 2018-01-12, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2018-01-12, M2 money supply YoY growth was 4.38%",
+      "vix": "As of 2018-01-12, the VIX was 9.9",
+      "drawdown": "As of 2018-01-12, the S&P 500 was 0.0% from its all-time high to that point",
+      "gold_momentum": "As of 2018-01-12, gold's 20-day price change was +6.6%",
+      "dxy": "As of 2018-01-12, US Dollar Index's 20-day momentum was -2.4%",
+      "jobless": "As of 2018-01-12, initial jobless claims 4-week trend change was +10.0%",
+      "cpi": "As of 2018-01-12, CPI YoY deviation from its 6-month trend was 0.05 percentage points",
+      "oil": "As of 2018-01-12, oil price's 20-day absolute move was 11.7%"
+    }
+  },
+  "2019-01-31": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2019-01-31, the 10Y-2Y spread was 0.18%",
+      "hy_spread": "As of 2019-01-31, the Baa-10Y credit spread was 2.38%",
+      "bank_rel": "As of 2019-01-31, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +2.6%",
+      "repo_stress": "As of 2019-01-31, SOFR minus Fed target upper bound was +0.080%",
+      "m2_growth": "As of 2019-01-31, M2 money supply YoY growth was 4.01%",
+      "vix": "As of 2019-01-31, the VIX was 17.7",
+      "drawdown": "As of 2019-01-31, the S&P 500 was -8.5% from its all-time high to that point",
+      "gold_momentum": "As of 2019-01-31, gold's 20-day price change was +2.5%",
+      "dxy": "As of 2019-01-31, US Dollar Index's 20-day momentum was -0.9%",
+      "jobless": "As of 2019-01-31, initial jobless claims 4-week trend change was -1.7%",
+      "cpi": "As of 2019-01-31, CPI YoY deviation from its 6-month trend was 0.70 percentage points",
+      "oil": "As of 2019-01-31, oil price's 20-day absolute move was 19.4%"
+    }
+  },
+  "2019-04-18": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2019-04-18, the 10Y-2Y spread was 0.19%",
+      "hy_spread": "As of 2019-04-18, the Baa-10Y credit spread was 2.12%",
+      "bank_rel": "As of 2019-04-18, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -2.2%",
+      "repo_stress": "As of 2019-04-18, SOFR minus Fed target upper bound was +0.000%",
+      "m2_growth": "As of 2019-04-18, M2 money supply YoY growth was 3.98%",
+      "vix": "As of 2019-04-18, the VIX was 12.6",
+      "drawdown": "As of 2019-04-18, the S&P 500 was -1.0% from its all-time high to that point",
+      "gold_momentum": "As of 2019-04-18, gold's 20-day price change was -2.2%",
+      "dxy": "As of 2019-04-18, US Dollar Index's 20-day momentum was +1.3%",
+      "jobless": "As of 2019-04-18, initial jobless claims 4-week trend change was -7.1%",
+      "cpi": "As of 2019-04-18, CPI YoY deviation from its 6-month trend was 0.16 percentage points",
+      "oil": "As of 2019-04-18, oil price's 20-day absolute move was 6.6%"
+    }
+  },
+  "2019-05-23": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2019-05-23, the 10Y-2Y spread was 0.19%",
+      "hy_spread": "As of 2019-05-23, the Baa-10Y credit spread was 2.28%",
+      "bank_rel": "As of 2019-05-23, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -0.4%",
+      "repo_stress": "As of 2019-05-23, SOFR minus Fed target upper bound was -0.130%",
+      "m2_growth": "As of 2019-05-23, M2 money supply YoY growth was 4.34%",
+      "vix": "As of 2019-05-23, the VIX was 14.8",
+      "drawdown": "As of 2019-05-23, the S&P 500 was -3.0% from its all-time high to that point",
+      "gold_momentum": "As of 2019-05-23, gold's 20-day price change was -0.1%",
+      "dxy": "As of 2019-05-23, US Dollar Index's 20-day momentum was +0.0%",
+      "jobless": "As of 2019-05-23, initial jobless claims 4-week trend change was -3.2%",
+      "cpi": "As of 2019-05-23, CPI YoY deviation from its 6-month trend was 0.01 percentage points",
+      "oil": "As of 2019-05-23, oil price's 20-day absolute move was 6.8%"
+    }
+  },
+  "2019-09-12": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2019-09-12, the 10Y-2Y spread was 0.07%",
+      "hy_spread": "As of 2019-09-12, the Baa-10Y credit spread was 2.22%",
+      "bank_rel": "As of 2019-09-12, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +0.1%",
+      "repo_stress": "As of 2019-09-12, SOFR minus Fed target upper bound was -0.050%",
+      "m2_growth": "As of 2019-09-12, M2 money supply YoY growth was 5.64%",
+      "vix": "As of 2019-09-12, the VIX was 14.6",
+      "drawdown": "As of 2019-09-12, the S&P 500 was -0.8% from its all-time high to that point",
+      "gold_momentum": "As of 2019-09-12, gold's 20-day price change was -0.5%",
+      "dxy": "As of 2019-09-12, US Dollar Index's 20-day momentum was +0.9%",
+      "jobless": "As of 2019-09-12, initial jobless claims 4-week trend change was -2.4%",
+      "cpi": "As of 2019-09-12, CPI YoY deviation from its 6-month trend was 0.10 percentage points",
+      "oil": "As of 2019-09-12, oil price's 20-day absolute move was 2.4%"
+    }
+  },
+  "2019-10-24": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2019-10-24, the 10Y-2Y spread was 0.19%",
+      "hy_spread": "As of 2019-10-24, the Baa-10Y credit spread was 2.17%",
+      "bank_rel": "As of 2019-10-24, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +1.0%",
+      "repo_stress": "As of 2019-10-24, SOFR minus Fed target upper bound was -0.140%",
+      "m2_growth": "As of 2019-10-24, M2 money supply YoY growth was 6.51%",
+      "vix": "As of 2019-10-24, the VIX was 14.0",
+      "drawdown": "As of 2019-10-24, the S&P 500 was -0.7% from its all-time high to that point",
+      "gold_momentum": "As of 2019-10-24, gold's 20-day price change was -1.0%",
+      "dxy": "As of 2019-10-24, US Dollar Index's 20-day momentum was -1.6%",
+      "jobless": "As of 2019-10-24, initial jobless claims 4-week trend change was -0.5%",
+      "cpi": "As of 2019-10-24, CPI YoY deviation from its 6-month trend was 0.01 percentage points",
+      "oil": "As of 2019-10-24, oil price's 20-day absolute move was 0.9%"
+    }
+  },
+  "2020-01-31": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2020-01-31, the 10Y-2Y spread was 0.18%",
+      "hy_spread": "As of 2020-01-31, the Baa-10Y credit spread was 2.13%",
+      "bank_rel": "As of 2020-01-31, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -1.4%",
+      "repo_stress": "As of 2020-01-31, SOFR minus Fed target upper bound was -0.150%",
+      "m2_growth": "As of 2020-01-31, M2 money supply YoY growth was 6.67%",
+      "vix": "As of 2020-01-31, the VIX was 15.5",
+      "drawdown": "As of 2020-01-31, the S&P 500 was -1.4% from its all-time high to that point",
+      "gold_momentum": "As of 2020-01-31, gold's 20-day price change was +4.2%",
+      "dxy": "As of 2020-01-31, US Dollar Index's 20-day momentum was +1.5%",
+      "jobless": "As of 2020-01-31, initial jobless claims 4-week trend change was -9.1%",
+      "cpi": "As of 2020-01-31, CPI YoY deviation from its 6-month trend was 0.57 percentage points",
+      "oil": "As of 2020-01-31, oil price's 20-day absolute move was 14.6%"
+    }
+  },
+  "2021-10-04": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2021-10-04, the 10Y-2Y spread was 1.22%",
+      "hy_spread": "As of 2021-10-04, the Baa-10Y credit spread was 1.85%",
+      "bank_rel": "As of 2021-10-04, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +3.6%",
+      "repo_stress": "As of 2021-10-04, SOFR minus Fed target upper bound was -0.200%",
+      "m2_growth": "As of 2021-10-04, M2 money supply YoY growth was 12.74%",
+      "vix": "As of 2021-10-04, the VIX was 21.1",
+      "drawdown": "As of 2021-10-04, the S&P 500 was -4.0% from its all-time high to that point",
+      "gold_momentum": "As of 2021-10-04, gold's 20-day price change was -2.9%",
+      "dxy": "As of 2021-10-04, US Dollar Index's 20-day momentum was +2.0%",
+      "jobless": "As of 2021-10-04, initial jobless claims 4-week trend change was -6.9%",
+      "cpi": "As of 2021-10-04, CPI YoY deviation from its 6-month trend was 0.87 percentage points",
+      "oil": "As of 2021-10-04, oil price's 20-day absolute move was 8.4%"
+    }
+  },
+  "2021-11-17": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2021-11-17, the 10Y-2Y spread was 1.08%",
+      "hy_spread": "As of 2021-11-17, the Baa-10Y credit spread was 1.74%",
+      "bank_rel": "As of 2021-11-17, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -0.1%",
+      "repo_stress": "As of 2021-11-17, SOFR minus Fed target upper bound was -0.200%",
+      "m2_growth": "As of 2021-11-17, M2 money supply YoY growth was 12.24%",
+      "vix": "As of 2021-11-17, the VIX was 16.4",
+      "drawdown": "As of 2021-11-17, the S&P 500 was -0.0% from its all-time high to that point",
+      "gold_momentum": "As of 2021-11-17, gold's 20-day price change was +4.7%",
+      "dxy": "As of 2021-11-17, US Dollar Index's 20-day momentum was +2.3%",
+      "jobless": "As of 2021-11-17, initial jobless claims 4-week trend change was -13.5%",
+      "cpi": "As of 2021-11-17, CPI YoY deviation from its 6-month trend was 1.21 percentage points",
+      "oil": "As of 2021-11-17, oil price's 20-day absolute move was 2.7%"
+    }
+  },
+  "2023-12-26": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2023-12-26, the 10Y-2Y spread was -0.37%",
+      "hy_spread": "As of 2023-12-26, the Baa-10Y credit spread was 1.64%",
+      "bank_rel": "As of 2023-12-26, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +1.5%",
+      "repo_stress": "As of 2023-12-26, SOFR minus Fed target upper bound was -0.150%",
+      "m2_growth": "As of 2023-12-26, M2 money supply YoY growth was -2.44%",
+      "vix": "As of 2023-12-26, the VIX was 13.0",
+      "drawdown": "As of 2023-12-26, the S&P 500 was -0.9% from its all-time high to that point",
+      "gold_momentum": "As of 2023-12-26, gold's 20-day price change was +3.3%",
+      "dxy": "As of 2023-12-26, US Dollar Index's 20-day momentum was -1.6%",
+      "jobless": "As of 2023-12-26, initial jobless claims 4-week trend change was -0.5%",
+      "cpi": "As of 2023-12-26, CPI YoY deviation from its 6-month trend was 0.08 percentage points",
+      "oil": "As of 2023-12-26, oil price's 20-day absolute move was 2.6%"
+    }
+  },
+  "2024-02-27": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2024-02-27, the 10Y-2Y spread was -0.39%",
+      "hy_spread": "As of 2024-02-27, the Baa-10Y credit spread was 1.53%",
+      "bank_rel": "As of 2024-02-27, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +2.7%",
+      "repo_stress": "As of 2024-02-27, SOFR minus Fed target upper bound was -0.190%",
+      "m2_growth": "As of 2024-02-27, M2 money supply YoY growth was -1.63%",
+      "vix": "As of 2024-02-27, the VIX was 13.7",
+      "drawdown": "As of 2024-02-27, the S&P 500 was -0.4% from its all-time high to that point",
+      "gold_momentum": "As of 2024-02-27, gold's 20-day price change was +1.1%",
+      "dxy": "As of 2024-02-27, US Dollar Index's 20-day momentum was +0.3%",
+      "jobless": "As of 2024-02-27, initial jobless claims 4-week trend change was -6.2%",
+      "cpi": "As of 2024-02-27, CPI YoY deviation from its 6-month trend was 0.12 percentage points",
+      "oil": "As of 2024-02-27, oil price's 20-day absolute move was 0.6%"
+    }
+  },
+  "2024-11-26": {
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2024-11-26, the 10Y-2Y spread was 0.09%",
+      "hy_spread": "As of 2024-11-26, the Baa-10Y credit spread was 1.43%",
+      "bank_rel": "As of 2024-11-26, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +7.5%",
+      "repo_stress": "As of 2024-11-26, SOFR minus Fed target upper bound was -0.170%",
+      "m2_growth": "As of 2024-11-26, M2 money supply YoY growth was 3.40%",
+      "vix": "As of 2024-11-26, the VIX was 14.6",
+      "drawdown": "As of 2024-11-26, the S&P 500 was -0.2% from its all-time high to that point",
+      "gold_momentum": "As of 2024-11-26, gold's 20-day price change was -5.0%",
+      "dxy": "As of 2024-11-26, US Dollar Index's 20-day momentum was +2.4%",
+      "jobless": "As of 2024-11-26, initial jobless claims 4-week trend change was +0.0%",
+      "cpi": "As of 2024-11-26, CPI YoY deviation from its 6-month trend was 0.01 percentage points",
+      "oil": "As of 2024-11-26, oil price's 20-day absolute move was 2.3%"
+    }
+  }
+}

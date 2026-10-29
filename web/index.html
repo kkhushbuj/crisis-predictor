@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CrisisPredictor: is a financial crisis building?</title>
+  <meta name="description" content="CrisisPredictor scores 14 live signals from credit, markets, the economy and the news into one 0 to 100 Crisis Score, tested on 300 historical dates.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 24'%3E%3Crect y='8' width='8' height='12' fill='%232e9e6a'/%3E%3Crect x='9' y='8' width='8' height='12' fill='%23e3a908'/%3E%3Crect x='18' y='8' width='8' height='12' fill='%23ee7410'/%3E%3Crect x='27' y='8' width='7' height='12' fill='%23d3213f'/%3E%3Crect x='19' width='3' height='24' fill='%230b1220'/%3E%3C/svg%3E">
+  <script src="/assets/js/boot.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Instrument+Sans:wght@400..700&display=swap">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <link rel="stylesheet" href="/assets/css/polish.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+<header class="site-head" id="site-head">
+<div class="wrap nav">
+  <a class="brand" href="/" aria-label="CrisisPredictor home">
+    <svg viewBox="0 0 34 24" aria-hidden="true"><rect y="8" width="8" height="12" fill="#2e9e6a"/><rect x="9" y="8" width="8" height="12" fill="#e3a908"/><rect x="18" y="8" width="8" height="12" fill="#ee7410"/><rect x="27" y="8" width="7" height="12" fill="#d3213f"/><rect x="19" width="3" height="24" fill="#0b1220"/></svg>
+    CrisisPredictor
+  </a>
+  <nav class="nav-links" aria-label="Main">
+    <a class="hide-sm" href="#evidence">Evidence</a>
+    <a class="hide-sm" href="#how">How it works</a>
+    <a class="hide-sm" href="#limits">Limits</a>
+    <a class="btn btn-primary" href="/analysis">Run analysis</a>
+  </nav>
+</div>
+</header>
+
+<main>
+  <section class="wrap hero">
+    <div class="hero-grid">
+    <div class="hero-copy">
+    <h1 class="display" id="hero-title">Is a financial crisis building?</h1>
+    <p class="lead" id="hero-lead">CrisisPredictor reads fourteen live signals from credit markets, stock markets, the economy and the news. It scores each one against historical thresholds and combines them into a single 0 to 100 Crisis Score.</p>
+    <div class="hero-actions" id="hero-actions">
+      <a class="btn btn-primary" href="/analysis">Run live analysis
+        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5"/></svg>
+      </a>
+      <a class="btn btn-ghost" href="#evidence">See the evidence</a>
+    </div>
+    </div>
+    <aside class="hero-proof" aria-label="Results from the 300-date test">
+      <p class="hero-proof-title">Tested on 300 past dates</p>
+      <div class="figures" id="figures"></div>
+      <p class="hero-proof-note">At the alarm line of the current model. 152 were stress dates and 148 were calm dates. All of them are plotted below.</p>
+    </aside>
+    </div>
+
+    <div class="proof" id="proof">
+      <div class="proof-head">
+        <h2>Three hundred past dates, scored by the same engine</h2>
+        <p>The first 41 dates were used while the model was being built. The other 259 were scored afterwards with the weights and alarm line already fixed. Dark dots were real market stress and light dots were calm periods. Hover or tab to a dot for the date and score.</p>
+      </div>
+      <div id="hero-scale" aria-label="Scores of 300 historical dates on the 0 to 100 risk scale"></div>
+      <div class="legend" id="hero-legend">
+        <span><i></i>Stress or crisis date</span>
+        <span><i class="normal"></i>Calm period</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="block on-surface" id="how">
+    <div class="wrap split">
+      <div class="sticky-col">
+        <h2 data-reveal>From raw data to one number</h2>
+        <p class="lead" style="margin-top:22px">Fourteen signals go in and one score comes out. Every step is written down and can be checked.</p>
+        <div class="how-stage" id="stage" aria-live="polite"></div>
+      </div>
+      <div class="steps-wrap" id="steps-wrap">
+      <span class="beam" aria-hidden="true"><i id="beam-fill"></i></span>
+      <ol class="steps" id="steps">
+        <li data-step="0">
+          <h3>It reads live data</h3>
+          <p>Yield curve, credit spreads, the VIX, drawdown, jobless claims, CPI, oil, gold and the dollar come from FRED and Yahoo Finance. Fresh news on tariffs and conflict comes from a live search.</p>
+        </li>
+        <li data-step="1">
+          <h3>An AI scores each signal against history</h3>
+          <p>For every signal the model retrieves the matching section of a reference document with thresholds. It scores the signal from -10 to +10 against those thresholds only, never against its own opinion.</p>
+        </li>
+        <li data-step="2">
+          <h3>Plain code sets the weights</h3>
+          <p>The scores are combined with fixed weights written in Python. The AI never decides the final number.</p>
+        </li>
+        <li data-step="3">
+          <h3>You get a score, a level and an alarm</h3>
+          <p>The result is a Crisis Score from 0 to 100, a level from Calm to Crisis, and an alarm that switches on when the score reaches the Stress line.</p>
+        </li>
+      </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="block on-band" id="evidence">
+    <div class="wrap">
+      <div class="head-row">
+        <h2 data-reveal>What it did in 2008 and 2020</h2>
+        <p class="lead">Monthly scores from the same engine, set against the official US recession dates from the National Bureau of Economic Research.</p>
+      </div>
+      <div class="charts" id="charts"></div>
+      <div class="chart-legend">
+        <span><i style="background:#8fa0ff"></i>Crisis Score</span>
+        <span><i style="background:rgba(255,255,255,.14)"></i>Official recession</span>
+        <span><i style="background:var(--stress)"></i>Alarm line</span>
+      </div>
+      <p class="reading" id="reading"></p>
+    </div>
+  </section>
+
+  <section class="block" id="compare">
+    <div class="wrap">
+      <div class="head-row">
+        <h2 data-reveal>Same engine, two very different days</h2>
+        <p class="lead">Drag the handle, or use the arrow keys, to move between the calmest day and the most stressed day in the test. Both are real results.</p>
+      </div>
+      <div class="compare" id="compare-box"></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="head-row">
+        <h2 data-reveal>The fourteen signals</h2>
+        <p class="lead">Grouped into four categories. The percentage shows how much each group counts toward the final score.</p>
+      </div>
+      <div class="signals" id="signals"></div>
+    </div>
+  </section>
+
+  <section class="block on-surface" id="limits">
+    <div class="wrap">
+      <div class="head-row">
+        <h2 data-reveal>What it cannot do</h2>
+        <p class="lead">Plain statements about where the evidence is thin, so nobody has to find them out the hard way.</p>
+      </div>
+      <div class="limits" id="limits-list"></div>
+    </div>
+  </section>
+
+  <section class="block on-band cta">
+    <div class="wrap">
+      <div class="head-row">
+        <h2 data-reveal>See today's score</h2>
+        <div>
+          <p class="lead">The analysis takes about 45 seconds and uses live data from FRED, Yahoo Finance and today's news.</p>
+          <a class="btn btn-primary" href="/analysis">Run live analysis</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>CrisisPredictor is an academic research project.</span>
+    <span>Not financial advice. Always consult a qualified financial advisor.</span>
+  </div>
+</footer>
+
+<script src="/assets/vendor/gsap.min.js"></script>
+<script src="/assets/vendor/ScrollTrigger.min.js"></script>
+<script type="module" src="/assets/js/landing.js"></script>
+</body>
+</html>

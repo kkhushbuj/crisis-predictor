@@ -1,0 +1,2002 @@
+{
+  "2000-09-04": {
+    "date": "2000-09-04",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": 0,
+      "hy_spread": 0,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": 0,
+      "drawdown": 5,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": 0
+    }
+  },
+  "2000-11-24": {
+    "date": "2000-11-24",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": -2,
+      "hy_spread": -2,
+      "bank_rel": 5,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": -3,
+      "drawdown": -3,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": -5,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": -4
+    }
+  },
+  "2000-11-30": {
+    "date": "2000-11-30",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": -2,
+      "hy_spread": -2,
+      "bank_rel": 5,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": -3,
+      "drawdown": -3,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": -8,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": -4
+    }
+  },
+  "2000-12-05": {
+    "date": "2000-12-05",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": -2,
+      "hy_spread": -2,
+      "bank_rel": 5,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": -3,
+      "drawdown": -3,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": -4
+    }
+  },
+  "2000-12-20": {
+    "date": "2000-12-20",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": -2,
+      "hy_spread": -2,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": -3,
+      "drawdown": -3,
+      "gold_momentum": 0,
+      "dxy": 3,
+      "jobless": -1,
+      "cpi": 0,
+      "oil": -5,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": -4
+    }
+  },
+  "2001-06-13": {
+    "date": "2001-06-13",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": 0,
+      "hy_spread": -2,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -5,
+      "vix": -3,
+      "drawdown": -3,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": -1,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": -1
+    }
+  },
+  "2001-07-06": {
+    "date": "2001-07-06",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": 0,
+      "hy_spread": -2,
+      "bank_rel": 5,
+      "repo_stress": 0,
+      "m2_growth": -5,
+      "vix": -3,
+      "drawdown": -7,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": -1
+    }
+  },
+  "2001-07-11": {
+    "date": "2001-07-11",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": 0,
+      "hy_spread": -2,
+      "bank_rel": 5,
+      "repo_stress": 0,
+      "m2_growth": -5,
+      "vix": -3,
+      "drawdown": -7,
+      "gold_momentum": 2,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": -1
+    }
+  },
+  "2001-07-19": {
+    "date": "2001-07-19",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": 0,
+      "hy_spread": -2,
+      "bank_rel": 5,
+      "repo_stress": 0,
+      "m2_growth": -5,
+      "vix": -3,
+      "drawdown": -7,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": -2,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": -1
+    }
+  },
+  "2001-09-03": {
+    "date": "2001-09-03",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": 0,
+      "hy_spread": 0,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -5,
+      "vix": -3,
+      "drawdown": -7,
+      "gold_momentum": 0,
+      "dxy": 3,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": -1
+    }
+  },
+  "2001-09-10": {
+    "date": "2001-09-10",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": 0,
+      "hy_spread": -2,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -5,
+      "vix": -7,
+      "drawdown": -7,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": -1
+    }
+  },
+  "2001-10-08": {
+    "date": "2001-10-08",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": 0,
+      "hy_spread": 0,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -5,
+      "vix": -7,
+      "drawdown": -7,
+      "gold_momentum": -3,
+      "dxy": 0,
+      "jobless": -8,
+      "cpi": 0,
+      "oil": -5,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": -8
+    }
+  },
+  "2001-12-07": {
+    "date": "2001-12-07",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": 5,
+      "hy_spread": -2,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -5,
+      "vix": -3,
+      "drawdown": -7,
+      "gold_momentum": 2,
+      "dxy": 0,
+      "jobless": -1,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": -4
+    }
+  },
+  "2001-12-17": {
+    "date": "2001-12-17",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": 5,
+      "hy_spread": -2,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -5,
+      "vix": -3,
+      "drawdown": -7,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": -4
+    }
+  },
+  "2002-03-06": {
+    "date": "2002-03-06",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": 5,
+      "hy_spread": -2,
+      "bank_rel": 5,
+      "repo_stress": 0,
+      "m2_growth": -5,
+      "vix": -3,
+      "drawdown": -7,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": -5,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": -1
+    }
+  },
+  "2002-04-05": {
+    "date": "2002-04-05",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": 5,
+      "hy_spread": -2,
+      "bank_rel": 5,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": 0,
+      "drawdown": -7,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": -8,
+      "cpi": 0,
+      "oil": -2,
+      "tariff_sanctions": -1,
+      "geopolitical_risk": -8
+    }
+  },
+  "2002-05-08": {
+    "date": "2002-05-08",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": 5,
+      "hy_spread": -2,
+      "bank_rel": 5,
+      "repo_stress": 0,
+      "m2_growth": -5,
+      "vix": -3,
+      "drawdown": -10,
+      "gold_momentum": 0,
+      "dxy": 3,
+      "jobless": -1,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -1,
+      "geopolitical_risk": -8
+    }
+  },
+  "2002-06-24": {
+    "date": "2002-06-24",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": 5,
+      "hy_spread": -2,
+      "bank_rel": 5,
+      "repo_stress": 0,
+      "m2_growth": -5,
+      "vix": -3,
+      "drawdown": -10,
+      "gold_momentum": 0,
+      "dxy": 3,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -1,
+      "geopolitical_risk": -4
+    }
+  },
+  "2002-07-02": {
+    "date": "2002-07-02",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": 5,
+      "hy_spread": -2,
+      "bank_rel": 5,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": -3,
+      "drawdown": -10,
+      "gold_momentum": 2,
+      "dxy": 3,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -1,
+      "geopolitical_risk": -4
+    }
+  },
+  "2002-08-07": {
+    "date": "2002-08-07",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": 5,
+      "hy_spread": -6,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -5,
+      "vix": -10,
+      "drawdown": -10,
+      "gold_momentum": 2,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -1,
+      "geopolitical_risk": -4
+    }
+  },
+  "2002-08-21": {
+    "date": "2002-08-21",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": 5,
+      "hy_spread": -2,
+      "bank_rel": 5,
+      "repo_stress": 0,
+      "m2_growth": -5,
+      "vix": -3,
+      "drawdown": -10,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": -1,
+      "cpi": 0,
+      "oil": -2,
+      "tariff_sanctions": -1,
+      "geopolitical_risk": -4
+    }
+  },
+  "2002-09-05": {
+    "date": "2002-09-05",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": 5,
+      "hy_spread": -6,
+      "bank_rel": 5,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": -7,
+      "drawdown": -10,
+      "gold_momentum": 0,
+      "dxy": 3,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -1,
+      "geopolitical_risk": -4
+    }
+  },
+  "2007-12-05": {
+    "date": "2007-12-05",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": 0,
+      "hy_spread": -2,
+      "bank_rel": -2,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": -3,
+      "drawdown": 0,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": -4
+    }
+  },
+  "2007-12-10": {
+    "date": "2007-12-10",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": 0,
+      "hy_spread": -2,
+      "bank_rel": -2,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": -3,
+      "drawdown": 5,
+      "gold_momentum": 2,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": -6
+    }
+  },
+  "2008-05-07": {
+    "date": "2008-05-07",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": 5,
+      "hy_spread": -2,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": 0,
+      "drawdown": 0,
+      "gold_momentum": 2,
+      "dxy": 0,
+      "jobless": -1,
+      "cpi": 0,
+      "oil": -2,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": 0
+    }
+  },
+  "2008-07-29": {
+    "date": "2008-07-29",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": 0,
+      "hy_spread": -2,
+      "bank_rel": -10,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": -3,
+      "drawdown": -7,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": -1,
+      "cpi": 0,
+      "oil": -2,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": 0
+    }
+  },
+  "2008-08-08": {
+    "date": "2008-08-08",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": 0,
+      "hy_spread": -2,
+      "bank_rel": -2,
+      "repo_stress": 0,
+      "m2_growth": -5,
+      "vix": -3,
+      "drawdown": -3,
+      "gold_momentum": 4,
+      "dxy": 0,
+      "jobless": -8,
+      "cpi": 0,
+      "oil": -5,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": 0
+    }
+  },
+  "2008-12-05": {
+    "date": "2008-12-05",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": 5,
+      "hy_spread": -10,
+      "bank_rel": -10,
+      "repo_stress": 0,
+      "m2_growth": -5,
+      "vix": -10,
+      "drawdown": -10,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": -1,
+      "cpi": -6,
+      "oil": -8,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": -1
+    }
+  },
+  "2009-01-12": {
+    "date": "2009-01-12",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": 5,
+      "hy_spread": -10,
+      "bank_rel": -6,
+      "repo_stress": 0,
+      "m2_growth": -5,
+      "vix": -10,
+      "drawdown": -10,
+      "gold_momentum": 0,
+      "dxy": 3,
+      "jobless": 3,
+      "cpi": -6,
+      "oil": 0,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": -4
+    }
+  },
+  "2009-01-26": {
+    "date": "2009-01-26",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": 5,
+      "hy_spread": -10,
+      "bank_rel": -10,
+      "repo_stress": 0,
+      "m2_growth": -5,
+      "vix": -10,
+      "drawdown": -10,
+      "gold_momentum": -3,
+      "dxy": -8,
+      "jobless": -1,
+      "cpi": -6,
+      "oil": -5,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": -1
+    }
+  },
+  "2010-06-09": {
+    "date": "2010-06-09",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": 5,
+      "hy_spread": -2,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": 0,
+      "vix": -7,
+      "drawdown": -10,
+      "gold_momentum": 0,
+      "dxy": -4,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": -4
+    }
+  },
+  "2010-07-09": {
+    "date": "2010-07-09",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": 5,
+      "hy_spread": -2,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": 0,
+      "vix": -3,
+      "drawdown": -10,
+      "gold_momentum": 2,
+      "dxy": 3,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": -4
+    }
+  },
+  "2011-09-19": {
+    "date": "2011-09-19",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": 5,
+      "hy_spread": -6,
+      "bank_rel": -2,
+      "repo_stress": 0,
+      "m2_growth": -5,
+      "vix": -7,
+      "drawdown": -7,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": -4
+    }
+  },
+  "2015-09-10": {
+    "date": "2015-09-10",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": 0,
+      "hy_spread": -2,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": -3,
+      "drawdown": 0,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -4,
+      "geopolitical_risk": -4
+    }
+  },
+  "2015-09-15": {
+    "date": "2015-09-15",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": 0,
+      "hy_spread": -6,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": -3,
+      "drawdown": 0,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": -1,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -4,
+      "geopolitical_risk": -4
+    }
+  },
+  "2015-10-14": {
+    "date": "2015-10-14",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": 0,
+      "hy_spread": -6,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": 0,
+      "drawdown": 0,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -1,
+      "geopolitical_risk": -4
+    }
+  },
+  "2015-11-02": {
+    "date": "2015-11-02",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": 0,
+      "hy_spread": -2,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": 0,
+      "drawdown": 5,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -1,
+      "geopolitical_risk": -4
+    }
+  },
+  "2015-11-12": {
+    "date": "2015-11-12",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": 0,
+      "hy_spread": -6,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": 0,
+      "drawdown": 5,
+      "gold_momentum": 4,
+      "dxy": -8,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -4,
+      "geopolitical_risk": -4
+    }
+  },
+  "2015-12-07": {
+    "date": "2015-12-07",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": 0,
+      "hy_spread": -2,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": 5,
+      "drawdown": 5,
+      "gold_momentum": 2,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": -2,
+      "tariff_sanctions": -4,
+      "geopolitical_risk": -4
+    }
+  },
+  "2016-01-06": {
+    "date": "2016-01-06",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": 0,
+      "hy_spread": -6,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": 0,
+      "drawdown": 0,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": -2,
+      "tariff_sanctions": -1,
+      "geopolitical_risk": -4
+    }
+  },
+  "2022-04-29": {
+    "date": "2022-04-29",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": -2,
+      "hy_spread": 0,
+      "bank_rel": 0,
+      "repo_stress": 3,
+      "m2_growth": -2,
+      "vix": -7,
+      "drawdown": -3,
+      "gold_momentum": 2,
+      "dxy": -8,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -6,
+      "geopolitical_risk": -8
+    }
+  },
+  "2022-05-31": {
+    "date": "2022-05-31",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": -2,
+      "hy_spread": 0,
+      "bank_rel": 0,
+      "repo_stress": 3,
+      "m2_growth": 0,
+      "vix": -3,
+      "drawdown": -3,
+      "gold_momentum": 2,
+      "dxy": 0,
+      "jobless": -1,
+      "cpi": 0,
+      "oil": -2,
+      "tariff_sanctions": -6,
+      "geopolitical_risk": -8
+    }
+  },
+  "2022-07-28": {
+    "date": "2022-07-28",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": -2,
+      "hy_spread": -2,
+      "bank_rel": 0,
+      "repo_stress": 3,
+      "m2_growth": -2,
+      "vix": -3,
+      "drawdown": -3,
+      "gold_momentum": 4,
+      "dxy": 0,
+      "jobless": -1,
+      "cpi": 0,
+      "oil": -2,
+      "tariff_sanctions": -6,
+      "geopolitical_risk": -8
+    }
+  },
+  "2022-08-10": {
+    "date": "2022-08-10",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": -6,
+      "hy_spread": 0,
+      "bank_rel": 0,
+      "repo_stress": 3,
+      "m2_growth": 0,
+      "vix": -3,
+      "drawdown": -3,
+      "gold_momentum": 0,
+      "dxy": 3,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -6,
+      "geopolitical_risk": -8
+    }
+  },
+  "2022-08-17": {
+    "date": "2022-08-17",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": -6,
+      "hy_spread": 0,
+      "bank_rel": 0,
+      "repo_stress": 3,
+      "m2_growth": 0,
+      "vix": 0,
+      "drawdown": -3,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": -2,
+      "tariff_sanctions": -6,
+      "geopolitical_risk": -8
+    }
+  },
+  "2022-08-25": {
+    "date": "2022-08-25",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": -6,
+      "hy_spread": 0,
+      "bank_rel": 0,
+      "repo_stress": 3,
+      "m2_growth": 0,
+      "vix": -3,
+      "drawdown": -3,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -6,
+      "geopolitical_risk": -8
+    }
+  },
+  "2022-09-01": {
+    "date": "2022-09-01",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": -2,
+      "hy_spread": 0,
+      "bank_rel": 0,
+      "repo_stress": 3,
+      "m2_growth": 0,
+      "vix": -3,
+      "drawdown": -3,
+      "gold_momentum": 2,
+      "dxy": 0,
+      "jobless": -1,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -6,
+      "geopolitical_risk": -8
+    }
+  },
+  "2022-09-08": {
+    "date": "2022-09-08",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": -2,
+      "hy_spread": 0,
+      "bank_rel": 0,
+      "repo_stress": 3,
+      "m2_growth": 0,
+      "vix": -3,
+      "drawdown": -3,
+      "gold_momentum": 2,
+      "dxy": 0,
+      "jobless": -1,
+      "cpi": 0,
+      "oil": -2,
+      "tariff_sanctions": -6,
+      "geopolitical_risk": -8
+    }
+  },
+  "2022-09-13": {
+    "date": "2022-09-13",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": -6,
+      "hy_spread": 0,
+      "bank_rel": 0,
+      "repo_stress": 3,
+      "m2_growth": 0,
+      "vix": -3,
+      "drawdown": -3,
+      "gold_momentum": 2,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -6,
+      "geopolitical_risk": -8
+    }
+  },
+  "2022-09-19": {
+    "date": "2022-09-19",
+    "label": "stress",
+    "factor_scores": {
+      "yield_curve": -6,
+      "hy_spread": 0,
+      "bank_rel": 0,
+      "repo_stress": 3,
+      "m2_growth": 0,
+      "vix": -3,
+      "drawdown": -3,
+      "gold_momentum": 4,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -6,
+      "geopolitical_risk": -8
+    }
+  },
+  "2003-09-24": {
+    "date": "2003-09-24",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": 5,
+      "hy_spread": -2,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": 0,
+      "drawdown": -10,
+      "gold_momentum": -3,
+      "dxy": 3,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": -2,
+      "tariff_sanctions": -1,
+      "geopolitical_risk": -4
+    }
+  },
+  "2003-11-10": {
+    "date": "2003-11-10",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": 5,
+      "hy_spread": -2,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": 0,
+      "drawdown": -10,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -1,
+      "geopolitical_risk": -4
+    }
+  },
+  "2004-05-03": {
+    "date": "2004-05-03",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": 5,
+      "hy_spread": 0,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": 0,
+      "drawdown": -7,
+      "gold_momentum": 4,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": -2,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": 0
+    }
+  },
+  "2004-06-08": {
+    "date": "2004-06-08",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": 5,
+      "hy_spread": 0,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": 0,
+      "drawdown": -7,
+      "gold_momentum": 0,
+      "dxy": 3,
+      "jobless": -1,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": 0
+    }
+  },
+  "2005-02-28": {
+    "date": "2005-02-28",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": 0,
+      "hy_spread": 0,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": 5,
+      "drawdown": -7,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": -4
+    }
+  },
+  "2005-04-12": {
+    "date": "2005-04-12",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": 0,
+      "hy_spread": 0,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": 5,
+      "drawdown": -7,
+      "gold_momentum": 2,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": -4
+    }
+  },
+  "2005-04-22": {
+    "date": "2005-04-22",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": 0,
+      "hy_spread": 0,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": 5,
+      "drawdown": -7,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": -4
+    }
+  },
+  "2005-06-30": {
+    "date": "2005-06-30",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": -2,
+      "hy_spread": 0,
+      "bank_rel": 5,
+      "repo_stress": 0,
+      "m2_growth": 0,
+      "vix": 5,
+      "drawdown": -7,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": -1,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": 0
+    }
+  },
+  "2005-07-18": {
+    "date": "2005-07-18",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": -2,
+      "hy_spread": 0,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": 5,
+      "drawdown": -3,
+      "gold_momentum": 2,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": 0
+    }
+  },
+  "2005-10-20": {
+    "date": "2005-10-20",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": -2,
+      "hy_spread": 0,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": 5,
+      "drawdown": -7,
+      "gold_momentum": 2,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": -4
+    }
+  },
+  "2005-10-28": {
+    "date": "2005-10-28",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": -2,
+      "hy_spread": 0,
+      "bank_rel": 5,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": 0,
+      "drawdown": -7,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": -2,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": -4
+    }
+  },
+  "2005-11-11": {
+    "date": "2005-11-11",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": 0,
+      "hy_spread": 0,
+      "bank_rel": 5,
+      "repo_stress": 0,
+      "m2_growth": 0,
+      "vix": 5,
+      "drawdown": -3,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": -4
+    }
+  },
+  "2006-06-19": {
+    "date": "2006-06-19",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": -2,
+      "hy_spread": 0,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": 0,
+      "drawdown": -3,
+      "gold_momentum": 4,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": -8
+    }
+  },
+  "2006-08-25": {
+    "date": "2006-08-25",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": -2,
+      "hy_spread": 0,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": 5,
+      "drawdown": -3,
+      "gold_momentum": 2,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": -1
+    }
+  },
+  "2007-01-10": {
+    "date": "2007-01-10",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": -2,
+      "hy_spread": 0,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": 5,
+      "drawdown": 0,
+      "gold_momentum": 2,
+      "dxy": 0,
+      "jobless": -1,
+      "cpi": 0,
+      "oil": -2,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": -6
+    }
+  },
+  "2013-01-01": {
+    "date": "2013-01-01",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": 0,
+      "hy_spread": 0,
+      "bank_rel": 5,
+      "repo_stress": 0,
+      "m2_growth": -5,
+      "vix": 0,
+      "drawdown": 0,
+      "gold_momentum": 2,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -8,
+      "geopolitical_risk": 0
+    }
+  },
+  "2013-02-04": {
+    "date": "2013-02-04",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": 5,
+      "hy_spread": -2,
+      "bank_rel": 5,
+      "repo_stress": 0,
+      "m2_growth": -5,
+      "vix": 5,
+      "drawdown": 5,
+      "gold_momentum": 0,
+      "dxy": 3,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -8,
+      "geopolitical_risk": 0
+    }
+  },
+  "2013-04-12": {
+    "date": "2013-04-12",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": 5,
+      "hy_spread": -2,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": 5,
+      "drawdown": 5,
+      "gold_momentum": 2,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -8,
+      "geopolitical_risk": -1
+    }
+  },
+  "2013-06-05": {
+    "date": "2013-06-05",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": 5,
+      "hy_spread": -2,
+      "bank_rel": 5,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": 0,
+      "drawdown": 5,
+      "gold_momentum": 2,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -8,
+      "geopolitical_risk": -1
+    }
+  },
+  "2013-07-15": {
+    "date": "2013-07-15",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": 5,
+      "hy_spread": -2,
+      "bank_rel": 5,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": 5,
+      "drawdown": 5,
+      "gold_momentum": 4,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": -2,
+      "tariff_sanctions": -8,
+      "geopolitical_risk": -1
+    }
+  },
+  "2013-08-14": {
+    "date": "2013-08-14",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": 5,
+      "hy_spread": -2,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": 5,
+      "drawdown": 5,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -8,
+      "geopolitical_risk": -1
+    }
+  },
+  "2013-08-27": {
+    "date": "2013-08-27",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": 5,
+      "hy_spread": -2,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": 0,
+      "drawdown": 5,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -8,
+      "geopolitical_risk": -1
+    }
+  },
+  "2014-08-08": {
+    "date": "2014-08-08",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": 5,
+      "hy_spread": 0,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": 0,
+      "drawdown": 5,
+      "gold_momentum": 2,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -4,
+      "geopolitical_risk": 0
+    }
+  },
+  "2014-10-14": {
+    "date": "2014-10-14",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": 5,
+      "hy_spread": -2,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": -3,
+      "drawdown": 0,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -4,
+      "geopolitical_risk": -4
+    }
+  },
+  "2014-11-19": {
+    "date": "2014-11-19",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": 5,
+      "hy_spread": -2,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": 5,
+      "drawdown": 5,
+      "gold_momentum": 2,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": -2,
+      "tariff_sanctions": -4,
+      "geopolitical_risk": -4
+    }
+  },
+  "2015-02-04": {
+    "date": "2015-02-04",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": 0,
+      "hy_spread": -2,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": 0,
+      "drawdown": 5,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -4,
+      "geopolitical_risk": -4
+    }
+  },
+  "2015-04-06": {
+    "date": "2015-04-06",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": 0,
+      "hy_spread": -2,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": 5,
+      "drawdown": 5,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -4,
+      "geopolitical_risk": -4
+    }
+  },
+  "2016-08-23": {
+    "date": "2016-08-23",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": 0,
+      "hy_spread": -2,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -5,
+      "vix": 5,
+      "drawdown": 5,
+      "gold_momentum": 0,
+      "dxy": 3,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": -2,
+      "tariff_sanctions": -4,
+      "geopolitical_risk": -1
+    }
+  },
+  "2016-11-30": {
+    "date": "2016-11-30",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": 0,
+      "hy_spread": -2,
+      "bank_rel": 5,
+      "repo_stress": 0,
+      "m2_growth": -5,
+      "vix": 5,
+      "drawdown": 5,
+      "gold_momentum": 4,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -4,
+      "geopolitical_risk": -1
+    }
+  },
+  "2017-01-10": {
+    "date": "2017-01-10",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": 0,
+      "hy_spread": 0,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": 5,
+      "drawdown": 5,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -4,
+      "geopolitical_risk": 0
+    }
+  },
+  "2017-01-17": {
+    "date": "2017-01-17",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": 0,
+      "hy_spread": 0,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": 5,
+      "drawdown": 5,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -4,
+      "geopolitical_risk": 0
+    }
+  },
+  "2017-06-29": {
+    "date": "2017-06-29",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": 0,
+      "hy_spread": 0,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": 5,
+      "drawdown": 5,
+      "gold_momentum": 2,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -1,
+      "geopolitical_risk": -4
+    }
+  },
+  "2017-08-23": {
+    "date": "2017-08-23",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": 0,
+      "hy_spread": 0,
+      "bank_rel": 5,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": 5,
+      "drawdown": 5,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -1,
+      "geopolitical_risk": -4
+    }
+  },
+  "2017-08-30": {
+    "date": "2017-08-30",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": 0,
+      "hy_spread": 0,
+      "bank_rel": 5,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": 5,
+      "drawdown": 5,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -1,
+      "geopolitical_risk": -4
+    }
+  },
+  "2017-10-11": {
+    "date": "2017-10-11",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": 0,
+      "hy_spread": 0,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": 5,
+      "drawdown": 5,
+      "gold_momentum": 2,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -1,
+      "geopolitical_risk": -4
+    }
+  },
+  "2017-10-23": {
+    "date": "2017-10-23",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": 0,
+      "hy_spread": 0,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": 5,
+      "drawdown": 5,
+      "gold_momentum": 2,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -1,
+      "geopolitical_risk": -4
+    }
+  },
+  "2017-12-04": {
+    "date": "2017-12-04",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": 0,
+      "hy_spread": 0,
+      "bank_rel": 5,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": 5,
+      "drawdown": 5,
+      "gold_momentum": 0,
+      "dxy": 3,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -1,
+      "geopolitical_risk": -4
+    }
+  },
+  "2017-12-26": {
+    "date": "2017-12-26",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": 0,
+      "hy_spread": 0,
+      "bank_rel": 5,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": 5,
+      "drawdown": 5,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -1,
+      "geopolitical_risk": -4
+    }
+  },
+  "2018-01-12": {
+    "date": "2018-01-12",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": 0,
+      "hy_spread": 0,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": 5,
+      "drawdown": 5,
+      "gold_momentum": 0,
+      "dxy": 3,
+      "jobless": -1,
+      "cpi": 0,
+      "oil": -2,
+      "tariff_sanctions": -1,
+      "geopolitical_risk": -4
+    }
+  },
+  "2019-01-31": {
+    "date": "2019-01-31",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": -2,
+      "hy_spread": -2,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": 0,
+      "vix": 0,
+      "drawdown": 0,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": -5,
+      "tariff_sanctions": -4,
+      "geopolitical_risk": -1
+    }
+  },
+  "2019-04-18": {
+    "date": "2019-04-18",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": -2,
+      "hy_spread": 0,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": 0,
+      "vix": 5,
+      "drawdown": 5,
+      "gold_momentum": 2,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -4,
+      "geopolitical_risk": -4
+    }
+  },
+  "2019-05-23": {
+    "date": "2019-05-23",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": -2,
+      "hy_spread": 0,
+      "bank_rel": 0,
+      "repo_stress": 3,
+      "m2_growth": -2,
+      "vix": 5,
+      "drawdown": 0,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -7,
+      "geopolitical_risk": -4
+    }
+  },
+  "2019-09-12": {
+    "date": "2019-09-12",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": -2,
+      "hy_spread": 0,
+      "bank_rel": 0,
+      "repo_stress": 0,
+      "m2_growth": -2,
+      "vix": 5,
+      "drawdown": 5,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -7,
+      "geopolitical_risk": -4
+    }
+  },
+  "2019-10-24": {
+    "date": "2019-10-24",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": -2,
+      "hy_spread": 0,
+      "bank_rel": 0,
+      "repo_stress": 3,
+      "m2_growth": -2,
+      "vix": 5,
+      "drawdown": 5,
+      "gold_momentum": 2,
+      "dxy": 3,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": -4
+    }
+  },
+  "2020-01-31": {
+    "date": "2020-01-31",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": -2,
+      "hy_spread": 0,
+      "bank_rel": 0,
+      "repo_stress": 3,
+      "m2_growth": -2,
+      "vix": 0,
+      "drawdown": 5,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": -2,
+      "tariff_sanctions": -1,
+      "geopolitical_risk": -4
+    }
+  },
+  "2021-10-04": {
+    "date": "2021-10-04",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": 0,
+      "hy_spread": 0,
+      "bank_rel": 5,
+      "repo_stress": 3,
+      "m2_growth": -5,
+      "vix": -3,
+      "drawdown": 5,
+      "gold_momentum": 2,
+      "dxy": 0,
+      "jobless": -1,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": -5
+    }
+  },
+  "2021-11-17": {
+    "date": "2021-11-17",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": 0,
+      "hy_spread": 0,
+      "bank_rel": 0,
+      "repo_stress": 3,
+      "m2_growth": -5,
+      "vix": 0,
+      "drawdown": 5,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": 0,
+      "geopolitical_risk": -6
+    }
+  },
+  "2023-12-26": {
+    "date": "2023-12-26",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": -6,
+      "hy_spread": 0,
+      "bank_rel": 0,
+      "repo_stress": 3,
+      "m2_growth": 0,
+      "vix": 5,
+      "drawdown": 5,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -4,
+      "geopolitical_risk": -8
+    }
+  },
+  "2024-02-27": {
+    "date": "2024-02-27",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": -6,
+      "hy_spread": 0,
+      "bank_rel": 0,
+      "repo_stress": 3,
+      "m2_growth": -4,
+      "vix": 5,
+      "drawdown": 5,
+      "gold_momentum": 0,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -4,
+      "geopolitical_risk": -8
+    }
+  },
+  "2024-11-26": {
+    "date": "2024-11-26",
+    "label": "normal",
+    "factor_scores": {
+      "yield_curve": -2,
+      "hy_spread": 5,
+      "bank_rel": 5,
+      "repo_stress": 3,
+      "m2_growth": 0,
+      "vix": 5,
+      "drawdown": 5,
+      "gold_momentum": 2,
+      "dxy": 0,
+      "jobless": 3,
+      "cpi": 0,
+      "oil": 0,
+      "tariff_sanctions": -8,
+      "geopolitical_risk": -8
+    }
+  }
+}

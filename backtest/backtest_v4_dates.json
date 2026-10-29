@@ -1,0 +1,482 @@
+[
+  {
+    "date": "2000-09-19",
+    "label": "stress"
+  },
+  {
+    "date": "2000-09-26",
+    "label": "stress"
+  },
+  {
+    "date": "2000-10-10",
+    "label": "stress"
+  },
+  {
+    "date": "2000-10-18",
+    "label": "stress"
+  },
+  {
+    "date": "2000-10-24",
+    "label": "stress"
+  },
+  {
+    "date": "2000-11-09",
+    "label": "stress"
+  },
+  {
+    "date": "2001-01-04",
+    "label": "stress"
+  },
+  {
+    "date": "2001-01-09",
+    "label": "stress"
+  },
+  {
+    "date": "2001-01-30",
+    "label": "stress"
+  },
+  {
+    "date": "2001-02-19",
+    "label": "stress"
+  },
+  {
+    "date": "2001-04-19",
+    "label": "stress"
+  },
+  {
+    "date": "2001-04-25",
+    "label": "stress"
+  },
+  {
+    "date": "2001-05-01",
+    "label": "stress"
+  },
+  {
+    "date": "2001-05-10",
+    "label": "stress"
+  },
+  {
+    "date": "2001-05-21",
+    "label": "stress"
+  },
+  {
+    "date": "2001-08-06",
+    "label": "stress"
+  },
+  {
+    "date": "2001-10-22",
+    "label": "stress"
+  },
+  {
+    "date": "2001-11-09",
+    "label": "stress"
+  },
+  {
+    "date": "2002-01-08",
+    "label": "stress"
+  },
+  {
+    "date": "2002-01-18",
+    "label": "stress"
+  },
+  {
+    "date": "2002-01-29",
+    "label": "stress"
+  },
+  {
+    "date": "2002-02-19",
+    "label": "stress"
+  },
+  {
+    "date": "2002-03-22",
+    "label": "stress"
+  },
+  {
+    "date": "2002-04-16",
+    "label": "stress"
+  },
+  {
+    "date": "2002-04-26",
+    "label": "stress"
+  },
+  {
+    "date": "2002-05-21",
+    "label": "stress"
+  },
+  {
+    "date": "2002-06-13",
+    "label": "stress"
+  },
+  {
+    "date": "2002-09-20",
+    "label": "stress"
+  },
+  {
+    "date": "2002-09-27",
+    "label": "stress"
+  },
+  {
+    "date": "2007-08-27",
+    "label": "stress"
+  },
+  {
+    "date": "2007-10-09",
+    "label": "stress"
+  },
+  {
+    "date": "2007-10-30",
+    "label": "stress"
+  },
+  {
+    "date": "2008-01-01",
+    "label": "stress"
+  },
+  {
+    "date": "2008-01-08",
+    "label": "stress"
+  },
+  {
+    "date": "2008-02-08",
+    "label": "stress"
+  },
+  {
+    "date": "2008-02-27",
+    "label": "stress"
+  },
+  {
+    "date": "2008-03-06",
+    "label": "stress"
+  },
+  {
+    "date": "2008-04-04",
+    "label": "stress"
+  },
+  {
+    "date": "2008-04-24",
+    "label": "stress"
+  },
+  {
+    "date": "2008-05-19",
+    "label": "stress"
+  },
+  {
+    "date": "2008-08-22",
+    "label": "stress"
+  },
+  {
+    "date": "2008-12-31",
+    "label": "stress"
+  },
+  {
+    "date": "2009-02-06",
+    "label": "stress"
+  },
+  {
+    "date": "2009-03-26",
+    "label": "stress"
+  },
+  {
+    "date": "2010-04-26",
+    "label": "stress"
+  },
+  {
+    "date": "2010-06-28",
+    "label": "stress"
+  },
+  {
+    "date": "2015-11-23",
+    "label": "stress"
+  },
+  {
+    "date": "2015-12-18",
+    "label": "stress"
+  },
+  {
+    "date": "2018-10-16",
+    "label": "stress"
+  },
+  {
+    "date": "2018-11-12",
+    "label": "stress"
+  },
+  {
+    "date": "2018-11-19",
+    "label": "stress"
+  },
+  {
+    "date": "2018-12-04",
+    "label": "stress"
+  },
+  {
+    "date": "2020-04-14",
+    "label": "stress"
+  },
+  {
+    "date": "2022-01-13",
+    "label": "stress"
+  },
+  {
+    "date": "2022-02-11",
+    "label": "stress"
+  },
+  {
+    "date": "2022-02-24",
+    "label": "stress"
+  },
+  {
+    "date": "2022-03-24",
+    "label": "stress"
+  },
+  {
+    "date": "2022-04-05",
+    "label": "stress"
+  },
+  {
+    "date": "2022-07-06",
+    "label": "stress"
+  },
+  {
+    "date": "2025-03-24",
+    "label": "stress"
+  },
+  {
+    "date": "2003-09-01",
+    "label": "normal"
+  },
+  {
+    "date": "2003-09-10",
+    "label": "normal"
+  },
+  {
+    "date": "2003-12-03",
+    "label": "normal"
+  },
+  {
+    "date": "2004-01-02",
+    "label": "normal"
+  },
+  {
+    "date": "2004-01-23",
+    "label": "normal"
+  },
+  {
+    "date": "2004-03-09",
+    "label": "normal"
+  },
+  {
+    "date": "2004-03-16",
+    "label": "normal"
+  },
+  {
+    "date": "2004-03-22",
+    "label": "normal"
+  },
+  {
+    "date": "2004-04-12",
+    "label": "normal"
+  },
+  {
+    "date": "2004-10-11",
+    "label": "normal"
+  },
+  {
+    "date": "2004-12-03",
+    "label": "normal"
+  },
+  {
+    "date": "2004-12-23",
+    "label": "normal"
+  },
+  {
+    "date": "2005-01-17",
+    "label": "normal"
+  },
+  {
+    "date": "2005-02-16",
+    "label": "normal"
+  },
+  {
+    "date": "2005-03-22",
+    "label": "normal"
+  },
+  {
+    "date": "2005-04-01",
+    "label": "normal"
+  },
+  {
+    "date": "2005-09-13",
+    "label": "normal"
+  },
+  {
+    "date": "2006-01-24",
+    "label": "normal"
+  },
+  {
+    "date": "2006-02-13",
+    "label": "normal"
+  },
+  {
+    "date": "2006-04-12",
+    "label": "normal"
+  },
+  {
+    "date": "2006-05-15",
+    "label": "normal"
+  },
+  {
+    "date": "2006-09-06",
+    "label": "normal"
+  },
+  {
+    "date": "2006-09-25",
+    "label": "normal"
+  },
+  {
+    "date": "2012-02-06",
+    "label": "normal"
+  },
+  {
+    "date": "2012-03-29",
+    "label": "normal"
+  },
+  {
+    "date": "2012-04-04",
+    "label": "normal"
+  },
+  {
+    "date": "2012-06-28",
+    "label": "normal"
+  },
+  {
+    "date": "2012-07-13",
+    "label": "normal"
+  },
+  {
+    "date": "2012-10-29",
+    "label": "normal"
+  },
+  {
+    "date": "2012-11-30",
+    "label": "normal"
+  },
+  {
+    "date": "2013-05-20",
+    "label": "normal"
+  },
+  {
+    "date": "2013-08-02",
+    "label": "normal"
+  },
+  {
+    "date": "2013-10-10",
+    "label": "normal"
+  },
+  {
+    "date": "2013-12-06",
+    "label": "normal"
+  },
+  {
+    "date": "2013-12-25",
+    "label": "normal"
+  },
+  {
+    "date": "2014-01-03",
+    "label": "normal"
+  },
+  {
+    "date": "2014-04-01",
+    "label": "normal"
+  },
+  {
+    "date": "2014-12-18",
+    "label": "normal"
+  },
+  {
+    "date": "2015-03-12",
+    "label": "normal"
+  },
+  {
+    "date": "2015-03-20",
+    "label": "normal"
+  },
+  {
+    "date": "2016-07-26",
+    "label": "normal"
+  },
+  {
+    "date": "2016-09-08",
+    "label": "normal"
+  },
+  {
+    "date": "2017-01-31",
+    "label": "normal"
+  },
+  {
+    "date": "2017-03-02",
+    "label": "normal"
+  },
+  {
+    "date": "2017-03-30",
+    "label": "normal"
+  },
+  {
+    "date": "2017-04-18",
+    "label": "normal"
+  },
+  {
+    "date": "2019-02-15",
+    "label": "normal"
+  },
+  {
+    "date": "2019-03-26",
+    "label": "normal"
+  },
+  {
+    "date": "2019-06-18",
+    "label": "normal"
+  },
+  {
+    "date": "2019-06-24",
+    "label": "normal"
+  },
+  {
+    "date": "2019-11-27",
+    "label": "normal"
+  },
+  {
+    "date": "2020-12-01",
+    "label": "normal"
+  },
+  {
+    "date": "2021-03-01",
+    "label": "normal"
+  },
+  {
+    "date": "2021-05-28",
+    "label": "normal"
+  },
+  {
+    "date": "2021-07-30",
+    "label": "normal"
+  },
+  {
+    "date": "2021-11-30",
+    "label": "normal"
+  },
+  {
+    "date": "2021-12-15",
+    "label": "normal"
+  },
+  {
+    "date": "2024-03-28",
+    "label": "normal"
+  },
+  {
+    "date": "2024-06-26",
+    "label": "normal"
+  },
+  {
+    "date": "2025-01-24",
+    "label": "normal"
+  }
+]

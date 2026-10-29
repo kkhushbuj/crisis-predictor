@@ -1,0 +1,24 @@
+# Render blueprint: one web service serves both the website and the API.
+services:
+  - type: web
+    name: crisis-predictor
+    runtime: python
+    plan: starter            # free plans have 512 MB RAM, which is tight for FAISS + LangChain
+    buildCommand: pip install -r requirements-web.txt
+    startCommand: uvicorn api.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /healthz
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.7
+      - key: OPENAI_API_KEY
+        sync: false          # set these in the Render dashboard, never in the repo
+      - key: FRED_API_KEY
+        sync: false
+      - key: TAVILY_API_KEY
+        sync: false
+      - key: ANALYSES_PER_IP_PER_HOUR
+        value: "4"
+      - key: ANALYSES_PER_DAY_GLOBAL
+        value: "150"
+      - key: CHATS_PER_IP_PER_HOUR
+        value: "30"

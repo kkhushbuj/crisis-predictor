@@ -254,7 +254,7 @@ Scoring guidance for the LLM:
 
 All 14 factors are scored -10 to +10 by the LLM using the thresholds above as
 grounding context (retrieved via RAG per-factor). Python then applies fixed,
-backtested category weights (Credit/Systemic 30, Liquidity/Shock 30, Macro 20,
-Geopolitical 20 — summing to 100) to compute the final deterministic Crisis
+category weights (Credit/Systemic 32.5, Liquidity/Shock 32.5, Macro 20,
+Geopolitical 15 — summing to 100) to compute the final deterministic Crisis
 Score. The LLM never decides the final weighting — only the per-factor
 qualitative score, exactly as in GoldBot's architecture.

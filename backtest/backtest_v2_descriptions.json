@@ -1,0 +1,602 @@
+{
+  "S09_Volmageddon_2018": {
+    "date": "2018-02-08",
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2018-02-08, the 10Y-2Y spread was 0.72%",
+      "hy_spread": "As of 2018-02-08, the Baa-10Y credit spread was 1.63%",
+      "bank_rel": "As of 2018-02-08, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +3.1%",
+      "repo_stress": "As of 2018-02-08, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2018-02-08, M2 money supply YoY growth was 4.14%",
+      "vix": "As of 2018-02-08, the VIX was 27.7",
+      "drawdown": "As of 2018-02-08, the S&P 500 was -6.7% from its all-time high to that point",
+      "gold_momentum": "As of 2018-02-08, gold's 20-day price change was -0.5%",
+      "dxy": "As of 2018-02-08, US Dollar Index's 20-day momentum was -2.5%",
+      "jobless": "As of 2018-02-08, initial jobless claims 4-week trend change was -11.1%",
+      "cpi": "As of 2018-02-08, CPI YoY deviation from its 6-month trend was 0.11 percentage points",
+      "oil": "As of 2018-02-08, oil price's 20-day absolute move was 1.9%",
+      "tariff_sanctions": "The US imposed safeguard tariffs on washing machines and solar panels in January 2018; broader trade tensions are rising, with steel and aluminum tariffs under review.",
+      "geopolitical_risk": "The Syrian civil war continues and tensions with North Korea remain a concern."
+    }
+  },
+  "S01_Aug2007_credit_crunch": {
+    "date": "2007-08-16",
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2007-08-16, the 10Y-2Y spread was 0.52%",
+      "hy_spread": "As of 2007-08-16, the Baa-10Y credit spread was 2.06%",
+      "bank_rel": "As of 2007-08-16, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -8.1%",
+      "repo_stress": "As of 2007-08-16, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2007-08-16, M2 money supply YoY growth was 6.79%",
+      "vix": "As of 2007-08-16, the VIX was 30.7",
+      "drawdown": "As of 2007-08-16, the S&P 500 was -9.4% from its all-time high to that point",
+      "gold_momentum": "As of 2007-08-16, gold's 20-day price change was -0.6%",
+      "dxy": "As of 2007-08-16, US Dollar Index's 20-day momentum was +1.7%",
+      "jobless": "As of 2007-08-16, initial jobless claims 4-week trend change was -0.3%",
+      "cpi": "As of 2007-08-16, CPI YoY deviation from its 6-month trend was 0.60 percentage points",
+      "oil": "As of 2007-08-16, oil price's 20-day absolute move was 2.3%",
+      "tariff_sanctions": "No major new tariff or sanctions escalation reported.",
+      "geopolitical_risk": "US-led wars in Iraq and Afghanistan are ongoing; no new major conflict escalation reported."
+    }
+  },
+  "S02_Bear_Stearns_2008": {
+    "date": "2008-03-17",
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2008-03-17, the 10Y-2Y spread was 1.99%",
+      "hy_spread": "As of 2008-03-17, the Baa-10Y credit spread was 3.50%",
+      "bank_rel": "As of 2008-03-17, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -6.9%",
+      "repo_stress": "As of 2008-03-17, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2008-03-17, M2 money supply YoY growth was 6.98%",
+      "vix": "As of 2008-03-17, the VIX was 31.2",
+      "drawdown": "As of 2008-03-17, the S&P 500 was -17.7% from its all-time high to that point",
+      "gold_momentum": "As of 2008-03-17, gold's 20-day price change was +10.0%",
+      "dxy": "As of 2008-03-17, US Dollar Index's 20-day momentum was -5.9%",
+      "jobless": "As of 2008-03-17, initial jobless claims 4-week trend change was +8.8%",
+      "cpi": "As of 2008-03-17, CPI YoY deviation from its 6-month trend was 0.11 percentage points",
+      "oil": "As of 2008-03-17, oil price's 20-day absolute move was 15.5%",
+      "tariff_sanctions": "No major new tariff or sanctions escalation reported.",
+      "geopolitical_risk": "US-led wars in Iraq and Afghanistan are ongoing; no new major conflict escalation reported."
+    }
+  },
+  "S03_Post_Lehman_2008": {
+    "date": "2008-09-29",
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2008-09-29, the 10Y-2Y spread was 1.91%",
+      "hy_spread": "As of 2008-09-29, the Baa-10Y credit spread was 4.01%",
+      "bank_rel": "As of 2008-09-29, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +10.6%",
+      "repo_stress": "As of 2008-09-29, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2008-09-29, M2 money supply YoY growth was 6.20%",
+      "vix": "As of 2008-09-29, the VIX was 34.7",
+      "drawdown": "As of 2008-09-29, the S&P 500 was -22.5% from its all-time high to that point",
+      "gold_momentum": "As of 2008-09-29, gold's 20-day price change was +6.3%",
+      "dxy": "As of 2008-09-29, US Dollar Index's 20-day momentum was -0.3%",
+      "jobless": "As of 2008-09-29, initial jobless claims 4-week trend change was +9.3%",
+      "cpi": "As of 2008-09-29, CPI YoY deviation from its 6-month trend was 0.17 percentage points",
+      "oil": "As of 2008-09-29, oil price's 20-day absolute move was 7.5%",
+      "tariff_sanctions": "No major new tariff or sanctions escalation reported.",
+      "geopolitical_risk": "Iraq and Afghanistan wars continue. The Russia-Georgia conflict of August 2008 ended in a ceasefire but tensions remain."
+    }
+  },
+  "S04_GFC_low_2009": {
+    "date": "2009-03-09",
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2009-03-09, the 10Y-2Y spread was 1.93%",
+      "hy_spread": "As of 2009-03-09, the Baa-10Y credit spread was 5.40%",
+      "bank_rel": "As of 2009-03-09, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -33.4%",
+      "repo_stress": "As of 2009-03-09, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2009-03-09, M2 money supply YoY growth was 9.34%",
+      "vix": "As of 2009-03-09, the VIX was 49.3",
+      "drawdown": "As of 2009-03-09, the S&P 500 was -56.3% from its all-time high to that point",
+      "gold_momentum": "As of 2009-03-09, gold's 20-day price change was +3.1%",
+      "dxy": "As of 2009-03-09, US Dollar Index's 20-day momentum was +2.8%",
+      "jobless": "As of 2009-03-09, initial jobless claims 4-week trend change was +3.6%",
+      "cpi": "As of 2009-03-09, CPI YoY deviation from its 6-month trend was 1.16 percentage points",
+      "oil": "As of 2009-03-09, oil price's 20-day absolute move was 10.6%",
+      "tariff_sanctions": "No major new tariff or sanctions escalation reported.",
+      "geopolitical_risk": "Iraq and Afghanistan wars continue; no major new conflict escalation reported."
+    }
+  },
+  "S05_Euro_scare_2010": {
+    "date": "2010-05-20",
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2010-05-20, the 10Y-2Y spread was 2.49%",
+      "hy_spread": "As of 2010-05-20, the Baa-10Y credit spread was 2.74%",
+      "bank_rel": "As of 2010-05-20, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +3.4%",
+      "repo_stress": "As of 2010-05-20, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2010-05-20, M2 money supply YoY growth was 1.88%",
+      "vix": "As of 2010-05-20, the VIX was 35.3",
+      "drawdown": "As of 2010-05-20, the S&P 500 was -28.8% from its all-time high to that point",
+      "gold_momentum": "As of 2010-05-20, gold's 20-day price change was +3.9%",
+      "dxy": "As of 2010-05-20, US Dollar Index's 20-day momentum was +6.4%",
+      "jobless": "As of 2010-05-20, initial jobless claims 4-week trend change was +1.1%",
+      "cpi": "As of 2010-05-20, CPI YoY deviation from its 6-month trend was 0.34 percentage points",
+      "oil": "As of 2010-05-20, oil price's 20-day absolute move was 16.5%",
+      "tariff_sanctions": "No major new tariff or sanctions escalation reported.",
+      "geopolitical_risk": "Tensions on the Korean peninsula are elevated after an international investigation, announced on 20 May 2010, found North Korea responsible for sinking a South Korean navy ship in March."
+    }
+  },
+  "S06_US_downgrade_2011": {
+    "date": "2011-08-08",
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2011-08-08, the 10Y-2Y spread was 2.13%",
+      "hy_spread": "As of 2011-08-08, the Baa-10Y credit spread was 2.88%",
+      "bank_rel": "As of 2011-08-08, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -6.5%",
+      "repo_stress": "As of 2011-08-08, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2011-08-08, M2 money supply YoY growth was 9.69%",
+      "vix": "As of 2011-08-08, the VIX was 32.0",
+      "drawdown": "As of 2011-08-08, the S&P 500 was -23.4% from its all-time high to that point",
+      "gold_momentum": "As of 2011-08-08, gold's 20-day price change was +7.0%",
+      "dxy": "As of 2011-08-08, US Dollar Index's 20-day momentum was -0.8%",
+      "jobless": "As of 2011-08-08, initial jobless claims 4-week trend change was -0.7%",
+      "cpi": "As of 2011-08-08, CPI YoY deviation from its 6-month trend was 0.42 percentage points",
+      "oil": "As of 2011-08-08, oil price's 20-day absolute move was 9.7%",
+      "tariff_sanctions": "No major new tariff or sanctions escalation reported.",
+      "geopolitical_risk": "The NATO-led intervention in Libya is ongoing and Arab Spring unrest continues across the Middle East; no new major escalation reported on this date."
+    }
+  },
+  "S07_China_shock_2015": {
+    "date": "2015-08-24",
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2015-08-24, the 10Y-2Y spread was 1.42%",
+      "hy_spread": "As of 2015-08-24, the Baa-10Y credit spread was 3.14%",
+      "bank_rel": "As of 2015-08-24, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +3.0%",
+      "repo_stress": "As of 2015-08-24, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2015-08-24, M2 money supply YoY growth was 5.51%",
+      "vix": "As of 2015-08-24, the VIX was 28.0",
+      "drawdown": "As of 2015-08-24, the S&P 500 was -7.5% from its all-time high to that point",
+      "gold_momentum": "As of 2015-08-24, gold's 20-day price change was +6.8%",
+      "dxy": "As of 2015-08-24, US Dollar Index's 20-day momentum was -2.5%",
+      "jobless": "As of 2015-08-24, initial jobless claims 4-week trend change was +1.9%",
+      "cpi": "As of 2015-08-24, CPI YoY deviation from its 6-month trend was 0.15 percentage points",
+      "oil": "As of 2015-08-24, oil price's 20-day absolute move was 16.0%",
+      "tariff_sanctions": "Western sanctions on Russia over Ukraine remain in place; the July 2015 Iran nuclear deal is due to ease sanctions on Iran.",
+      "geopolitical_risk": "The Syrian civil war and the conflict in eastern Ukraine continue; no major new escalation reported."
+    }
+  },
+  "S08_Oil_China_selloff_2016": {
+    "date": "2016-02-11",
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2016-02-11, the 10Y-2Y spread was 0.99%",
+      "hy_spread": "As of 2016-02-11, the Baa-10Y credit spread was 3.63%",
+      "bank_rel": "As of 2016-02-11, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -6.4%",
+      "repo_stress": "As of 2016-02-11, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2016-02-11, M2 money supply YoY growth was 5.74%",
+      "vix": "As of 2016-02-11, the VIX was 26.3",
+      "drawdown": "As of 2016-02-11, the S&P 500 was -13.1% from its all-time high to that point",
+      "gold_momentum": "As of 2016-02-11, gold's 20-day price change was +10.0%",
+      "dxy": "As of 2016-02-11, US Dollar Index's 20-day momentum was -3.1%",
+      "jobless": "As of 2016-02-11, initial jobless claims 4-week trend change was -6.3%",
+      "cpi": "As of 2016-02-11, CPI YoY deviation from its 6-month trend was 0.30 percentage points",
+      "oil": "As of 2016-02-11, oil price's 20-day absolute move was 9.8%",
+      "tariff_sanctions": "Western sanctions on Russia remain in place; sanctions on Iran were lifted in January 2016 under the nuclear deal.",
+      "geopolitical_risk": "The Syrian civil war and the Ukraine conflict continue; North Korea conducted a nuclear test in January 2016 and a rocket launch in February 2016."
+    }
+  },
+  "S10_Q4_2018_low": {
+    "date": "2018-12-24",
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2018-12-24, the 10Y-2Y spread was 0.19%",
+      "hy_spread": "As of 2018-12-24, the Baa-10Y credit spread was 2.35%",
+      "bank_rel": "As of 2018-12-24, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -3.3%",
+      "repo_stress": "As of 2018-12-24, SOFR minus Fed target upper bound was -0.090%",
+      "m2_growth": "As of 2018-12-24, M2 money supply YoY growth was 3.63%",
+      "vix": "As of 2018-12-24, the VIX was 30.1",
+      "drawdown": "As of 2018-12-24, the S&P 500 was -17.5% from its all-time high to that point",
+      "gold_momentum": "As of 2018-12-24, gold's 20-day price change was +2.3%",
+      "dxy": "As of 2018-12-24, US Dollar Index's 20-day momentum was +0.3%",
+      "jobless": "As of 2018-12-24, initial jobless claims 4-week trend change was -3.8%",
+      "cpi": "As of 2018-12-24, CPI YoY deviation from its 6-month trend was 0.41 percentage points",
+      "oil": "As of 2018-12-24, oil price's 20-day absolute move was 16.5%",
+      "tariff_sanctions": "The US-China trade war is ongoing, with tariffs imposed on hundreds of billions of dollars of goods in 2018; a 90-day truce was agreed on 1 December 2018 and talks continue.",
+      "geopolitical_risk": "The Syrian civil war continues and the US has announced plans to withdraw troops from Syria; the arrest of Huawei's CFO in Canada on 1 December 2018 has heightened US-China tensions."
+    }
+  },
+  "S12_Rate_shock_bear_2022": {
+    "date": "2022-06-16",
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2022-06-16, the 10Y-2Y spread was 0.14%",
+      "hy_spread": "As of 2022-06-16, the Baa-10Y credit spread was 2.13%",
+      "bank_rel": "As of 2022-06-16, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -5.0%",
+      "repo_stress": "As of 2022-06-16, SOFR minus Fed target upper bound was -0.300%",
+      "m2_growth": "As of 2022-06-16, M2 money supply YoY growth was 5.74%",
+      "vix": "As of 2022-06-16, the VIX was 29.6",
+      "drawdown": "As of 2022-06-16, the S&P 500 was -21.0% from its all-time high to that point",
+      "gold_momentum": "As of 2022-06-16, gold's 20-day price change was +0.0%",
+      "dxy": "As of 2022-06-16, US Dollar Index's 20-day momentum was +1.7%",
+      "jobless": "As of 2022-06-16, initial jobless claims 4-week trend change was -6.2%",
+      "cpi": "As of 2022-06-16, CPI YoY deviation from its 6-month trend was 0.68 percentage points",
+      "oil": "As of 2022-06-16, oil price's 20-day absolute move was 2.6%",
+      "tariff_sanctions": "Western sanctions on Russia imposed after the February 2022 invasion of Ukraine remain in place; US tariffs on Chinese goods from 2018-2019 remain.",
+      "geopolitical_risk": "The Russia-Ukraine war, ongoing since 24 February 2022, continues with heavy fighting in eastern Ukraine; energy and grain supply disruptions continue."
+    }
+  },
+  "S13_Oct2022_low": {
+    "date": "2022-10-12",
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2022-10-12, the 10Y-2Y spread was -0.37%",
+      "hy_spread": "As of 2022-10-12, the Baa-10Y credit spread was 2.27%",
+      "bank_rel": "As of 2022-10-12, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +3.2%",
+      "repo_stress": "As of 2022-10-12, SOFR minus Fed target upper bound was -0.210%",
+      "m2_growth": "As of 2022-10-12, M2 money supply YoY growth was 1.42%",
+      "vix": "As of 2022-10-12, the VIX was 33.6",
+      "drawdown": "As of 2022-10-12, the S&P 500 was -25.2% from its all-time high to that point",
+      "gold_momentum": "As of 2022-10-12, gold's 20-day price change was -1.8%",
+      "dxy": "As of 2022-10-12, US Dollar Index's 20-day momentum was +3.1%",
+      "jobless": "As of 2022-10-12, initial jobless claims 4-week trend change was +6.2%",
+      "cpi": "As of 2022-10-12, CPI YoY deviation from its 6-month trend was 0.60 percentage points",
+      "oil": "As of 2022-10-12, oil price's 20-day absolute move was 2.3%",
+      "tariff_sanctions": "Western sanctions on Russia remain in place; on 7 October 2022 the US announced new export controls on advanced chips to China.",
+      "geopolitical_risk": "The Russia-Ukraine war is ongoing; Russia annexed four Ukrainian regions in late September 2022 and has made nuclear threats; the Nord Stream pipelines were damaged in late September 2022."
+    }
+  },
+  "S14_Tariff_selloff_2025": {
+    "date": "2025-04-08",
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2025-04-08, the 10Y-2Y spread was 0.55%",
+      "hy_spread": "As of 2025-04-08, the Baa-10Y credit spread was 2.00%",
+      "bank_rel": "As of 2025-04-08, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +6.9%",
+      "repo_stress": "As of 2025-04-08, SOFR minus Fed target upper bound was -0.100%",
+      "m2_growth": "As of 2025-04-08, M2 money supply YoY growth was 3.89%",
+      "vix": "As of 2025-04-08, the VIX was 47.0",
+      "drawdown": "As of 2025-04-08, the S&P 500 was -17.6% from its all-time high to that point",
+      "gold_momentum": "As of 2025-04-08, gold's 20-day price change was +2.6%",
+      "dxy": "As of 2025-04-08, US Dollar Index's 20-day momentum was -0.6%",
+      "jobless": "As of 2025-04-08, initial jobless claims 4-week trend change was +0.5%",
+      "cpi": "As of 2025-04-08, CPI YoY deviation from its 6-month trend was 0.36 percentage points",
+      "oil": "As of 2025-04-08, oil price's 20-day absolute move was 8.1%",
+      "tariff_sanctions": "The US announced broad 'reciprocal' tariffs on imports from most countries on 2 April 2025, with tariffs on China escalating in early April; trading partners have announced or are considering retaliation.",
+      "geopolitical_risk": "The Russia-Ukraine war and the Israel-Gaza conflict continue."
+    }
+  },
+  "S15_Yen_carry_spike_2024": {
+    "date": "2024-08-05",
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2024-08-05, the 10Y-2Y spread was -0.11%",
+      "hy_spread": "As of 2024-08-05, the Baa-10Y credit spread was 1.85%",
+      "bank_rel": "As of 2024-08-05, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -1.1%",
+      "repo_stress": "As of 2024-08-05, SOFR minus Fed target upper bound was -0.180%",
+      "m2_growth": "As of 2024-08-05, M2 money supply YoY growth was 1.97%",
+      "vix": "As of 2024-08-05, the VIX was 23.4",
+      "drawdown": "As of 2024-08-05, the S&P 500 was -5.7% from its all-time high to that point",
+      "gold_momentum": "As of 2024-08-05, gold's 20-day price change was +3.0%",
+      "dxy": "As of 2024-08-05, US Dollar Index's 20-day momentum was -1.6%",
+      "jobless": "As of 2024-08-05, initial jobless claims 4-week trend change was +4.9%",
+      "cpi": "As of 2024-08-05, CPI YoY deviation from its 6-month trend was 0.49 percentage points",
+      "oil": "As of 2024-08-05, oil price's 20-day absolute move was 11.6%",
+      "tariff_sanctions": "US and EU tariffs on Chinese electric vehicles were announced in 2024; no other major new tariff escalation reported at this date.",
+      "geopolitical_risk": "Tensions in the Middle East are escalating after the assassination of Hamas political leader Ismail Haniyeh in Tehran on 31 July 2024, with fears of an Iranian retaliation; the Russia-Ukraine war and Israel-Gaza war continue."
+    }
+  },
+  "N01_Dec2006": {
+    "date": "2006-12-15",
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2006-12-15, the 10Y-2Y spread was -0.13%",
+      "hy_spread": "As of 2006-12-15, the Baa-10Y credit spread was 1.66%",
+      "bank_rel": "As of 2006-12-15, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -0.3%",
+      "repo_stress": "As of 2006-12-15, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2006-12-15, M2 money supply YoY growth was 5.86%",
+      "vix": "As of 2006-12-15, the VIX was 10.0",
+      "drawdown": "As of 2006-12-15, the S&P 500 was -6.7% from its all-time high to that point",
+      "gold_momentum": "As of 2006-12-15, gold's 20-day price change was +0.4%",
+      "dxy": "As of 2006-12-15, US Dollar Index's 20-day momentum was -2.2%",
+      "jobless": "As of 2006-12-15, initial jobless claims 4-week trend change was +0.0%",
+      "cpi": "As of 2006-12-15, CPI YoY deviation from its 6-month trend was 0.13 percentage points",
+      "oil": "As of 2006-12-15, oil price's 20-day absolute move was 7.3%",
+      "tariff_sanctions": "No major new tariff or sanctions escalation reported.",
+      "geopolitical_risk": "The Iraq war continues; North Korea conducted a nuclear test in October 2006."
+    }
+  },
+  "N02_May2007": {
+    "date": "2007-05-15",
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2007-05-15, the 10Y-2Y spread was -0.04%",
+      "hy_spread": "As of 2007-05-15, the Baa-10Y credit spread was 1.65%",
+      "bank_rel": "As of 2007-05-15, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -3.0%",
+      "repo_stress": "As of 2007-05-15, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2007-05-15, M2 money supply YoY growth was 6.48%",
+      "vix": "As of 2007-05-15, the VIX was 14.0",
+      "drawdown": "As of 2007-05-15, the S&P 500 was -1.6% from its all-time high to that point",
+      "gold_momentum": "As of 2007-05-15, gold's 20-day price change was -3.1%",
+      "dxy": "As of 2007-05-15, US Dollar Index's 20-day momentum was +0.0%",
+      "jobless": "As of 2007-05-15, initial jobless claims 4-week trend change was -9.2%",
+      "cpi": "As of 2007-05-15, CPI YoY deviation from its 6-month trend was 0.19 percentage points",
+      "oil": "As of 2007-05-15, oil price's 20-day absolute move was 1.8%",
+      "tariff_sanctions": "No major new tariff or sanctions escalation reported.",
+      "geopolitical_risk": "The Iraq war continues with a US troop surge under way; no new major conflict escalation reported."
+    }
+  },
+  "N03_Dec2010": {
+    "date": "2010-12-15",
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2010-12-15, the 10Y-2Y spread was 2.85%",
+      "hy_spread": "As of 2010-12-15, the Baa-10Y credit spread was 2.74%",
+      "bank_rel": "As of 2010-12-15, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -4.0%",
+      "repo_stress": "As of 2010-12-15, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2010-12-15, M2 money supply YoY growth was 3.66%",
+      "vix": "As of 2010-12-15, the VIX was 17.6",
+      "drawdown": "As of 2010-12-15, the S&P 500 was -20.7% from its all-time high to that point",
+      "gold_momentum": "As of 2010-12-15, gold's 20-day price change was +2.6%",
+      "dxy": "As of 2010-12-15, US Dollar Index's 20-day momentum was +1.1%",
+      "jobless": "As of 2010-12-15, initial jobless claims 4-week trend change was -1.6%",
+      "cpi": "As of 2010-12-15, CPI YoY deviation from its 6-month trend was 0.22 percentage points",
+      "oil": "As of 2010-12-15, oil price's 20-day absolute move was 4.0%",
+      "tariff_sanctions": "No major new tariff or sanctions escalation reported.",
+      "geopolitical_risk": "North Korea shelled Yeonpyeong Island on 23 November 2010, raising tensions on the Korean peninsula; Iraq and Afghanistan wars continue."
+    }
+  },
+  "N04_Jul2025": {
+    "date": "2025-07-15",
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2025-07-15, the 10Y-2Y spread was 0.55%",
+      "hy_spread": "As of 2025-07-15, the Baa-10Y credit spread was 1.70%",
+      "bank_rel": "As of 2025-07-15, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -3.5%",
+      "repo_stress": "As of 2025-07-15, SOFR minus Fed target upper bound was -0.130%",
+      "m2_growth": "As of 2025-07-15, M2 money supply YoY growth was 4.39%",
+      "vix": "As of 2025-07-15, the VIX was 17.2",
+      "drawdown": "As of 2025-07-15, the S&P 500 was -0.2% from its all-time high to that point",
+      "gold_momentum": "As of 2025-07-15, gold's 20-day price change was -2.7%",
+      "dxy": "As of 2025-07-15, US Dollar Index's 20-day momentum was +0.2%",
+      "jobless": "As of 2025-07-15, initial jobless claims 4-week trend change was -9.1%",
+      "cpi": "As of 2025-07-15, CPI YoY deviation from its 6-month trend was 0.19 percentage points",
+      "oil": "As of 2025-07-15, oil price's 20-day absolute move was 8.2%",
+      "tariff_sanctions": "The US has imposed or announced broad tariffs on many trading partners during 2025, with ongoing negotiations and deadline extensions; trade deals with some partners have been announced.",
+      "geopolitical_risk": "The Russia-Ukraine war and the Israel-Gaza conflict continue; the Israel-Iran war of June 2025 ended with a ceasefire on 24 June 2025."
+    }
+  },
+  "N05_Sep2012": {
+    "date": "2012-09-14",
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2012-09-14, the 10Y-2Y spread was 1.61%",
+      "hy_spread": "As of 2012-09-14, the Baa-10Y credit spread was 3.15%",
+      "bank_rel": "As of 2012-09-14, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +4.0%",
+      "repo_stress": "As of 2012-09-14, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2012-09-14, M2 money supply YoY growth was 7.07%",
+      "vix": "As of 2012-09-14, the VIX was 14.1",
+      "drawdown": "As of 2012-09-14, the S&P 500 was -6.7% from its all-time high to that point",
+      "gold_momentum": "As of 2012-09-14, gold's 20-day price change was +10.3%",
+      "dxy": "As of 2012-09-14, US Dollar Index's 20-day momentum was -4.1%",
+      "jobless": "As of 2012-09-14, initial jobless claims 4-week trend change was +6.5%",
+      "cpi": "As of 2012-09-14, CPI YoY deviation from its 6-month trend was 0.16 percentage points",
+      "oil": "As of 2012-09-14, oil price's 20-day absolute move was 4.2%",
+      "tariff_sanctions": "Western sanctions on Iran over its nuclear program were tightened in 2012, including an EU oil embargo from July 2012.",
+      "geopolitical_risk": "The Syrian civil war is ongoing and Iran nuclear tensions persist; anti-US protests spread across parts of the Middle East in September 2012."
+    }
+  },
+  "N06_Nov2013": {
+    "date": "2013-11-15",
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2013-11-15, the 10Y-2Y spread was 2.40%",
+      "hy_spread": "As of 2013-11-15, the Baa-10Y credit spread was 2.70%",
+      "bank_rel": "As of 2013-11-15, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -2.5%",
+      "repo_stress": "As of 2013-11-15, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2013-11-15, M2 money supply YoY growth was 6.12%",
+      "vix": "As of 2013-11-15, the VIX was 12.4",
+      "drawdown": "As of 2013-11-15, the S&P 500 was 0.0% from its all-time high to that point",
+      "gold_momentum": "As of 2013-11-15, gold's 20-day price change was -2.8%",
+      "dxy": "As of 2013-11-15, US Dollar Index's 20-day momentum was +1.7%",
+      "jobless": "As of 2013-11-15, initial jobless claims 4-week trend change was -7.6%",
+      "cpi": "As of 2013-11-15, CPI YoY deviation from its 6-month trend was 0.16 percentage points",
+      "oil": "As of 2013-11-15, oil price's 20-day absolute move was 6.9%",
+      "tariff_sanctions": "Nuclear talks between Iran and world powers are under way in Geneva; no major new tariff escalation reported.",
+      "geopolitical_risk": "The Syrian civil war continues; a September 2013 agreement on Syria's chemical weapons averted planned US strikes."
+    }
+  },
+  "N07_Jul2014": {
+    "date": "2014-07-01",
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2014-07-01, the 10Y-2Y spread was 2.11%",
+      "hy_spread": "As of 2014-07-01, the Baa-10Y credit spread was 2.19%",
+      "bank_rel": "As of 2014-07-01, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -2.4%",
+      "repo_stress": "As of 2014-07-01, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2014-07-01, M2 money supply YoY growth was 6.60%",
+      "vix": "As of 2014-07-01, the VIX was 11.6",
+      "drawdown": "As of 2014-07-01, the S&P 500 was -0.1% from its all-time high to that point",
+      "gold_momentum": "As of 2014-07-01, gold's 20-day price change was +6.3%",
+      "dxy": "As of 2014-07-01, US Dollar Index's 20-day momentum was -1.1%",
+      "jobless": "As of 2014-07-01, initial jobless claims 4-week trend change was -1.3%",
+      "cpi": "As of 2014-07-01, CPI YoY deviation from its 6-month trend was 0.15 percentage points",
+      "oil": "As of 2014-07-01, oil price's 20-day absolute move was 2.8%",
+      "tariff_sanctions": "Western sanctions on Russia over its annexation of Crimea are in place and have been widened; no major new tariff escalation reported.",
+      "geopolitical_risk": "The conflict in eastern Ukraine is ongoing; ISIS has seized large areas of Iraq and Syria and declared a caliphate on 29 June 2014."
+    }
+  },
+  "N08_Dec2016": {
+    "date": "2016-12-15",
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2016-12-15, the 10Y-2Y spread was 1.31%",
+      "hy_spread": "As of 2016-12-15, the Baa-10Y credit spread was 2.24%",
+      "bank_rel": "As of 2016-12-15, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +15.5%",
+      "repo_stress": "As of 2016-12-15, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2016-12-15, M2 money supply YoY growth was 6.83%",
+      "vix": "As of 2016-12-15, the VIX was 13.2",
+      "drawdown": "As of 2016-12-15, the S&P 500 was -0.8% from its all-time high to that point",
+      "gold_momentum": "As of 2016-12-15, gold's 20-day price change was -5.1%",
+      "dxy": "As of 2016-12-15, US Dollar Index's 20-day momentum was +1.8%",
+      "jobless": "As of 2016-12-15, initial jobless claims 4-week trend change was +8.6%",
+      "cpi": "As of 2016-12-15, CPI YoY deviation from its 6-month trend was 0.57 percentage points",
+      "oil": "As of 2016-12-15, oil price's 20-day absolute move was 11.4%",
+      "tariff_sanctions": "US President-elect Trump has criticised trade agreements such as NAFTA and TPP and signalled possible tariffs, but none have been imposed yet.",
+      "geopolitical_risk": "The Syrian civil war is ongoing, with Aleppo recaptured by Syrian government forces in December 2016."
+    }
+  },
+  "N09_Nov2017": {
+    "date": "2017-11-15",
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2017-11-15, the 10Y-2Y spread was 0.65%",
+      "hy_spread": "As of 2017-11-15, the Baa-10Y credit spread was 1.95%",
+      "bank_rel": "As of 2017-11-15, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +0.2%",
+      "repo_stress": "As of 2017-11-15, SOFR data does not exist yet (SOFR only began publishing in April 2018) — treat as unavailable/neutral for this historical date.",
+      "m2_growth": "As of 2017-11-15, M2 money supply YoY growth was 4.80%",
+      "vix": "As of 2017-11-15, the VIX was 11.6",
+      "drawdown": "As of 2017-11-15, the S&P 500 was -0.6% from its all-time high to that point",
+      "gold_momentum": "As of 2017-11-15, gold's 20-day price change was -0.1%",
+      "dxy": "As of 2017-11-15, US Dollar Index's 20-day momentum was +0.4%",
+      "jobless": "As of 2017-11-15, initial jobless claims 4-week trend change was +8.1%",
+      "cpi": "As of 2017-11-15, CPI YoY deviation from its 6-month trend was 0.23 percentage points",
+      "oil": "As of 2017-11-15, oil price's 20-day absolute move was 7.4%",
+      "tariff_sanctions": "The US is renegotiating NAFTA and has launched several trade investigations; no major new tariffs on China yet.",
+      "geopolitical_risk": "North Korea conducted a nuclear test in September 2017 and US-North Korea rhetoric is very heated; the Syrian civil war continues."
+    }
+  },
+  "N10_Nov2019": {
+    "date": "2019-11-15",
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2019-11-15, the 10Y-2Y spread was 0.23%",
+      "hy_spread": "As of 2019-11-15, the Baa-10Y credit spread was 2.13%",
+      "bank_rel": "As of 2019-11-15, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +4.7%",
+      "repo_stress": "As of 2019-11-15, SOFR minus Fed target upper bound was -0.160%",
+      "m2_growth": "As of 2019-11-15, M2 money supply YoY growth was 7.09%",
+      "vix": "As of 2019-11-15, the VIX was 13.1",
+      "drawdown": "As of 2019-11-15, the S&P 500 was 0.0% from its all-time high to that point",
+      "gold_momentum": "As of 2019-11-15, gold's 20-day price change was -1.4%",
+      "dxy": "As of 2019-11-15, US Dollar Index's 20-day momentum was +0.6%",
+      "jobless": "As of 2019-11-15, initial jobless claims 4-week trend change was +5.6%",
+      "cpi": "As of 2019-11-15, CPI YoY deviation from its 6-month trend was 0.30 percentage points",
+      "oil": "As of 2019-11-15, oil price's 20-day absolute move was 5.3%",
+      "tariff_sanctions": "The US-China trade war is ongoing with tariffs in place on both sides, but a 'phase one' trade deal is being negotiated and some tariff increases have been delayed.",
+      "geopolitical_risk": "Protests in Hong Kong are ongoing; Turkey launched an offensive in northern Syria in October 2019."
+    }
+  },
+  "N11_Dec2020": {
+    "date": "2020-12-15",
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2020-12-15, the 10Y-2Y spread was 0.81%",
+      "hy_spread": "As of 2020-12-15, the Baa-10Y credit spread was 2.26%",
+      "bank_rel": "As of 2020-12-15, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +6.7%",
+      "repo_stress": "As of 2020-12-15, SOFR minus Fed target upper bound was -0.160%",
+      "m2_growth": "As of 2020-12-15, M2 money supply YoY growth was 24.54%",
+      "vix": "As of 2020-12-15, the VIX was 24.7",
+      "drawdown": "As of 2020-12-15, the S&P 500 was -1.5% from its all-time high to that point",
+      "gold_momentum": "As of 2020-12-15, gold's 20-day price change was -2.9%",
+      "dxy": "As of 2020-12-15, US Dollar Index's 20-day momentum was -2.2%",
+      "jobless": "As of 2020-12-15, initial jobless claims 4-week trend change was +20.1%",
+      "cpi": "As of 2020-12-15, CPI YoY deviation from its 6-month trend was 0.09 percentage points",
+      "oil": "As of 2020-12-15, oil price's 20-day absolute move was 17.1%",
+      "tariff_sanctions": "The US-China Phase One deal is in effect and existing tariffs remain; no major new escalation reported.",
+      "geopolitical_risk": "The COVID-19 pandemic continues, with the first vaccines approved and being rolled out in December 2020; no new major armed conflict reported."
+    }
+  },
+  "N12_Apr2021": {
+    "date": "2021-04-15",
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2021-04-15, the 10Y-2Y spread was 1.40%",
+      "hy_spread": "As of 2021-04-15, the Baa-10Y credit spread was 1.95%",
+      "bank_rel": "As of 2021-04-15, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +3.9%",
+      "repo_stress": "As of 2021-04-15, SOFR minus Fed target upper bound was -0.240%",
+      "m2_growth": "As of 2021-04-15, M2 money supply YoY growth was 18.23%",
+      "vix": "As of 2021-04-15, the VIX was 17.0",
+      "drawdown": "As of 2021-04-15, the S&P 500 was -0.4% from its all-time high to that point",
+      "gold_momentum": "As of 2021-04-15, gold's 20-day price change was +0.3%",
+      "dxy": "As of 2021-04-15, US Dollar Index's 20-day momentum was -0.2%",
+      "jobless": "As of 2021-04-15, initial jobless claims 4-week trend change was -18.3%",
+      "cpi": "As of 2021-04-15, CPI YoY deviation from its 6-month trend was 2.08 percentage points",
+      "oil": "As of 2021-04-15, oil price's 20-day absolute move was 2.5%",
+      "tariff_sanctions": "Existing US tariffs on China remain; on 15 April 2021 the US announced new sanctions on Russia over cyber activity and election interference.",
+      "geopolitical_risk": "Russia has massed troops near Ukraine's border in spring 2021; the COVID-19 pandemic continues."
+    }
+  },
+  "N13_Jul2021": {
+    "date": "2021-07-15",
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2021-07-15, the 10Y-2Y spread was 1.08%",
+      "hy_spread": "As of 2021-07-15, the Baa-10Y credit spread was 1.92%",
+      "bank_rel": "As of 2021-07-15, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -1.8%",
+      "repo_stress": "As of 2021-07-15, SOFR minus Fed target upper bound was -0.200%",
+      "m2_growth": "As of 2021-07-15, M2 money supply YoY growth was 12.54%",
+      "vix": "As of 2021-07-15, the VIX was 16.3",
+      "drawdown": "As of 2021-07-15, the S&P 500 was -0.2% from its all-time high to that point",
+      "gold_momentum": "As of 2021-07-15, gold's 20-day price change was -1.7%",
+      "dxy": "As of 2021-07-15, US Dollar Index's 20-day momentum was +2.1%",
+      "jobless": "As of 2021-07-15, initial jobless claims 4-week trend change was -22.2%",
+      "cpi": "As of 2021-07-15, CPI YoY deviation from its 6-month trend was 1.26 percentage points",
+      "oil": "As of 2021-07-15, oil price's 20-day absolute move was 1.4%",
+      "tariff_sanctions": "Existing US tariffs on China remain; no major new tariff escalation reported.",
+      "geopolitical_risk": "No new major armed conflict reported; the US withdrawal from Afghanistan is under way."
+    }
+  },
+  "N14_Jul2023": {
+    "date": "2023-07-14",
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2023-07-14, the 10Y-2Y spread was -0.91%",
+      "hy_spread": "As of 2023-07-14, the Baa-10Y credit spread was 1.87%",
+      "bank_rel": "As of 2023-07-14, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -2.6%",
+      "repo_stress": "As of 2023-07-14, SOFR minus Fed target upper bound was -0.200%",
+      "m2_growth": "As of 2023-07-14, M2 money supply YoY growth was -3.96%",
+      "vix": "As of 2023-07-14, the VIX was 13.6",
+      "drawdown": "As of 2023-07-14, the S&P 500 was -6.0% from its all-time high to that point",
+      "gold_momentum": "As of 2023-07-14, gold's 20-day price change was +0.3%",
+      "dxy": "As of 2023-07-14, US Dollar Index's 20-day momentum was -3.5%",
+      "jobless": "As of 2023-07-14, initial jobless claims 4-week trend change was -10.2%",
+      "cpi": "As of 2023-07-14, CPI YoY deviation from its 6-month trend was 1.10 percentage points",
+      "oil": "As of 2023-07-14, oil price's 20-day absolute move was 10.8%",
+      "tariff_sanctions": "Existing US tariffs on China remain; the US and allies have restricted advanced chip exports to China; Western sanctions on Russia remain.",
+      "geopolitical_risk": "The Russia-Ukraine war is ongoing, with Ukraine's counteroffensive under way."
+    }
+  },
+  "N15_Mar2024": {
+    "date": "2024-03-15",
+    "label": "normal",
+    "descriptions": {
+      "yield_curve": "As of 2024-03-15, the 10Y-2Y spread was -0.41%",
+      "hy_spread": "As of 2024-03-15, the Baa-10Y credit spread was 1.49%",
+      "bank_rel": "As of 2024-03-15, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was +1.1%",
+      "repo_stress": "As of 2024-03-15, SOFR minus Fed target upper bound was -0.190%",
+      "m2_growth": "As of 2024-03-15, M2 money supply YoY growth was 0.11%",
+      "vix": "As of 2024-03-15, the VIX was 14.4",
+      "drawdown": "As of 2024-03-15, the S&P 500 was -0.5% from its all-time high to that point",
+      "gold_momentum": "As of 2024-03-15, gold's 20-day price change was +8.1%",
+      "dxy": "As of 2024-03-15, US Dollar Index's 20-day momentum was -1.3%",
+      "jobless": "As of 2024-03-15, initial jobless claims 4-week trend change was +0.0%",
+      "cpi": "As of 2024-03-15, CPI YoY deviation from its 6-month trend was 0.25 percentage points",
+      "oil": "As of 2024-03-15, oil price's 20-day absolute move was 6.0%",
+      "tariff_sanctions": "Existing US tariffs on China remain; Western sanctions on Russia remain.",
+      "geopolitical_risk": "The Russia-Ukraine war and the Israel-Gaza war continue; Houthi militants continue attacks on Red Sea shipping."
+    }
+  },
+  "S11_COVID_VIX_peak_2020": {
+    "date": "2020-03-16",
+    "label": "stress",
+    "descriptions": {
+      "yield_curve": "As of 2020-03-16, the 10Y-2Y spread was 0.37%",
+      "hy_spread": "As of 2020-03-16, the Baa-10Y credit spread was 3.38%",
+      "bank_rel": "As of 2020-03-16, bank sector (XLF) relative performance vs S&P 500 over the trailing 3 months was -11.2%",
+      "repo_stress": "As of 2020-03-16, SOFR minus Fed target upper bound was +0.010%",
+      "m2_growth": "As of 2020-03-16, M2 money supply YoY growth was 10.13%",
+      "vix": "As of 2020-03-16, the VIX was 57.8",
+      "drawdown": "As of 2020-03-16, the S&P 500 was -19.9% from its all-time high to that point",
+      "gold_momentum": "As of 2020-03-16, gold's 20-day price change was -3.8%",
+      "dxy": "As of 2020-03-16, US Dollar Index's 20-day momentum was -0.3%",
+      "jobless": "As of 2020-03-16, initial jobless claims 4-week trend change was +30.6%",
+      "cpi": "As of 2020-03-16, CPI YoY deviation from its 6-month trend was 0.60 percentage points",
+      "oil": "As of 2020-03-16, oil price's 20-day absolute move was 38.3%",
+      "tariff_sanctions": "The US-China Phase One trade deal was signed in January 2020; no major new tariff escalation reported.",
+      "geopolitical_risk": "COVID-19 was declared a pandemic by the WHO on 11 March 2020; widespread travel bans and lockdowns are being imposed. An oil price war between Saudi Arabia and Russia began in early March 2020."
+    }
+  }
+}
