@@ -129,10 +129,12 @@ function renderHero(config, evidence) {
 
   const s = evidence.summary;
   const figures = document.getElementById("figures");
+  // the final number is kept in the layout (invisible) while the live one counts up on top of it, so the line breaks and widths are the
+  // final ones from the first frame and nothing re-wraps or shifts while the digits grow
   const num = (n, decimals = 0) => {
-    const span = el("span", { text: n.toFixed(decimals) });
-    countUp(span, n, { decimals, duration: 1.6, delay: 0.9 });
-    return span;
+    const live = el("span", { class: "cu-live", text: (0).toFixed(decimals) });
+    countUp(live, n, { decimals, duration: 1.5, delay: 0.75 });
+    return el("span", { class: "cu" }, el("span", { class: "cu-sizer", "aria-hidden": "true", text: n.toFixed(decimals) }), live);
   };
   const fig = (bigParts, text) => el("div", { class: "figure" }, el("b", { class: "num" }, ...bigParts), el("span", { text }));
   const small = (t) => el("small", { text: t });
@@ -317,7 +319,7 @@ async function main() {
   await fontsReady();
   const hero = document.getElementById("hero-title");
   const heroWords = splitWords(hero);
-  const heroIntro = ["#hero-lead", "#hero-actions"];
+  const heroIntro = ["#hero-lead", "#hero-actions", ".hero-proof"]; // they rise in one after another, once the page is showing
   if (!reduceMotion && gsap) { gsap.set(heroWords, { yPercent: 115 }); gsap.set(heroIntro, { opacity: 0, y: 18 }); } // hidden before the page fades in
   document.querySelectorAll("[data-reveal]").forEach((h) => revealHeading(h));
 
@@ -344,7 +346,7 @@ async function main() {
   markReady();
   revealHeading(hero, { onScroll: false });
   if (!reduceMotion && gsap) {
-    gsap.to(heroIntro, { opacity: 1, y: 0, duration: 0.9, ease: "power3.out", delay: 0.25, stagger: 0.12 });
+    gsap.to(heroIntro, { opacity: 1, y: 0, duration: 0.8, ease: "power3.out", delay: 0.3, stagger: 0.14 });
     setTimeout(() => gsap.set(heroIntro, { opacity: 1, y: 0 }), 4500); // safety: always visible
   }
 }

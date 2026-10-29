@@ -143,7 +143,7 @@ section.block { padding-block: clamp(60px, 8vw, 120px); }
 /* ---------- opening and scrolling without jumps ---------- */
 /* the page fades in once, after the fonts are in, so nothing swaps or pops while it opens */
 html { background: var(--ground); }
-.js body { transition: opacity 0.45s ease; }
+.js body { transition: opacity 0.3s ease; }
 .js.leaving body { opacity: 0; transition: opacity 0.26s ease; pointer-events: none; }
 .js:not(.ready) body { opacity: 0; animation: unhide 0.45s ease 2.2s forwards; }
 @keyframes unhide { to { opacity: 1; } }
@@ -255,3 +255,8 @@ html { background: var(--ground); }
 .hp-clear { margin-top: 14px; }
 @media (max-width: 760px) { .hist-wrap.hide-sm { display: none; } }
 @media (prefers-reduced-motion: reduce) { .hist-pop, .nav-links a.hp-item, .nav-links .hist-btn { transition: none; } }
+
+/* count-up numbers: the final value holds the space, the counting value sits on top of it */
+.cu { position: relative; display: inline-block; }
+.cu-sizer { visibility: hidden; }
+.cu-live { position: absolute; right: 0; top: 0; white-space: nowrap; } /* right-aligned: the digits grow leftwards, next to the label that follows */
