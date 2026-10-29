@@ -24,6 +24,7 @@ let running = false;
 let current = null; // the result being shown
 let currentId = null;
 let chatBusy = false;
+let openingHistory = false;
 let chatLog = []; // questions and answers of the analysis being shown, saved with it for this visit
 
 /* ---------------------------------------------------------------- history (this visit only) */
@@ -60,10 +61,15 @@ function renderHistory() {
       el("b", { text: result.composite.toFixed(1) }),
       el("span", { text: `${zone.label}, alarm ${result.status === "ON" ? "on" : "off"}` }),
       el("small", { text: formatTime(result.created_at) + (asked ? ` · ${asked} question${asked > 1 ? "s" : ""}` : "") }));
-    b.addEventListener("click", () => {
-      if (running) return;
+    b.addEventListener("click", async () => {
+      if (running || openingHistory) return;
+      openingHistory = true;
       currentId = id;
-      fadeOutCurrent().then(() => showResult(result, { animate: false, fromHistory: true, chat: chat || [] }));
+      // the same gentle opening as a fresh result: glide up (scrolling paused), fade the old view, then the score and signals ease in
+      await glideToTop(true);
+      await fadeOutCurrent();
+      showResult(result, { animate: true, fromHistory: true, chat: chat || [] });
+      openingHistory = false;
     });
     host.append(b);
   });
@@ -330,10 +336,10 @@ function showResult(result, { animate, fromHistory = false, chat = [] }) {
   $("drivers").hidden = false;
 
   // signals (rows already exist after a live run; rebuild when loading from history)
-  openReveal($("signals-panel"), false);
+  openReveal($("signals-panel"), animate);
   if (fromHistory || !$("groups").children.length) {
     $("groups").textContent = "";
-    result.categories.forEach((c) => addFactors(c.key, c.factors, false));
+    result.categories.forEach((c) => addFactors(c.key, c.factors, animate));
   }
   const fillList = (id, items) => {
     const ul = $(id);
@@ -633,6 +639,17 @@ async function main() {
     ask(q);
   });
   renderHistory();
+  // the History panel on the home page links here with #open=<id>: show that saved result straight away
+  const openId = new URLSearchParams(location.hash.slice(1)).get("open");
+  if (openId) {
+    history.replaceState(null, "", location.pathname);
+    const entry = readHistory().find((e) => e.id === openId);
+    if (entry) {
+      currentId = entry.id;
+      showResult(entry.result, { animate: true, fromHistory: true, chat: entry.chat || [] });
+      return;
+    }
+  }
   const saved = readJob();
   if (saved) startAnalysis(saved); // an analysis was running when this tab last left the page
 }

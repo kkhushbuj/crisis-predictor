@@ -230,3 +230,27 @@ html { background: var(--ground); }
 /* while the page is scrolling nothing reacts to the pointer, so content sliding under a still cursor cannot trigger hover work */
 .is-scrolling body, .is-scrolling .dots-layer .dot { pointer-events: none; }
 .is-scrolling .tip.show, .is-scrolling .scrub.on { opacity: 0; }
+
+/* ---------- History panel in the home page's top bar ---------- */
+.hist-wrap { position: relative; }
+.nav-links .hist-btn { display: inline-flex; align-items: center; gap: 8px; border: 0; background: none; padding: 0; font: inherit; font-weight: 500; color: var(--ink-2); cursor: pointer; transition: color 0.2s ease; }
+.nav-links .hist-btn:hover, .hist-wrap.open .hist-btn { color: var(--accent); }
+.hist-count { min-width: 22px; height: 22px; padding: 0 6px; display: inline-grid; place-items: center; background: var(--ink); color: #fff; font-size: 0.78rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.hist-count[hidden] { display: none; }
+.hist-pop { position: absolute; right: -8px; top: calc(100% + 18px); width: min(380px, 92vw); max-height: min(70vh, 560px); overflow: auto; background: var(--surface); padding: 22px; box-shadow: 0 24px 60px rgba(11, 18, 32, 0.16); z-index: 70;
+  opacity: 0; visibility: hidden; transform: translateY(-8px); transition: opacity 0.25s ease, transform 0.3s cubic-bezier(0.2, 0.7, 0.2, 1), visibility 0s linear 0.3s; }
+.hist-wrap.open .hist-pop { opacity: 1; visibility: visible; transform: none; transition-delay: 0s; }
+.hp-title { font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; letter-spacing: -0.02em; }
+.hp-note { color: var(--ink-3); font-size: var(--t-small); margin: 4px 0 16px; }
+.hp-empty { color: var(--ink-2); margin-bottom: 16px; }
+.hist-pop .hp-run { display: inline-flex; }
+.hp-list { display: flex; flex-direction: column; gap: 8px; }
+.nav-links a.hp-item { position: relative; display: grid; grid-template-columns: auto 1fr; align-items: baseline; gap: 2px 12px; padding: 12px 16px 12px 34px; background: var(--ground); color: var(--ink); text-decoration: none; transition: background-color 0.25s ease; }
+.nav-links a.hp-item:hover { background: #e6e9f9; color: var(--ink); }
+.hp-item i { position: absolute; left: 14px; top: 20px; width: 10px; height: 10px; }
+.hp-item b { font-family: var(--font-display); font-size: 1.4rem; font-variant-numeric: tabular-nums; }
+.hp-item span { font-size: var(--t-small); }
+.hp-item small { grid-column: 1 / -1; color: var(--ink-3); }
+.hp-clear { margin-top: 14px; }
+@media (max-width: 760px) { .hist-wrap.hide-sm { display: none; } }
+@media (prefers-reduced-motion: reduce) { .hist-pop, .nav-links a.hp-item, .nav-links .hist-btn { transition: none; } }
