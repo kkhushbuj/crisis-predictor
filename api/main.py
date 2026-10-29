@@ -39,7 +39,7 @@ from tools.scoring_tools import (  # noqa: E402
 )
 
 # ---------------------------------------------------------------- limits (cost control)
-ANALYSES_PER_IP_PER_HOUR = int(os.getenv("ANALYSES_PER_IP_PER_HOUR", "4"))
+ANALYSES_PER_IP_PER_HOUR = int(os.getenv("ANALYSES_PER_IP_PER_HOUR", "6"))
 ANALYSES_PER_DAY_GLOBAL = int(os.getenv("ANALYSES_PER_DAY_GLOBAL", "150"))
 CHATS_PER_IP_PER_HOUR = int(os.getenv("CHATS_PER_IP_PER_HOUR", "30"))
 MAX_WAITING = int(os.getenv("MAX_WAITING_ANALYSES", "3"))
@@ -121,8 +121,10 @@ def client_ip(request: Request) -> str:
 
 
 # ---------------------------------------------------------------- pipeline access
-_graph_lock = threading.Lock()
+MAX_PARALLEL = int(os.getenv("MAX_PARALLEL_ANALYSES", "2"))
+_graph_lock = threading.Semaphore(MAX_PARALLEL)  # how many analyses may run at the same time
 _waiting = 0
+_running = 0
 
 
 def get_graph_module():
@@ -197,8 +199,12 @@ def build_result(state: dict) -> dict:
 
 def run_pipeline(emit):
     """Runs the existing LangGraph app in this thread and emits events as each node finishes."""
+    global _running
     cg = get_graph_module()
-    cg._cache.clear()  # the graph keeps raw data in a module-level dict; refresh it every run
+    with _jobs_lock:
+        _running += 1
+        if _running == 1:
+            cg._cache.clear()  # the graph keeps raw data in a module-level dict; refresh it when no other run is using it
     thread_id = f"web_{uuid.uuid4().hex}"
     node_category = {
         "fetch_credit_systemic": "credit_systemic", "fetch_liquidity_shock": "liquidity_shock",
@@ -218,6 +224,8 @@ def run_pipeline(emit):
         final = cg.app.get_state(config={"configurable": {"thread_id": thread_id}}).values
         emit({"type": "result", "result": build_result(final)})
     finally:
+        with _jobs_lock:
+            _running -= 1
         try:
             cg.app.checkpointer.delete_thread(thread_id)  # don't keep every run in memory
         except Exception:

@@ -5,6 +5,8 @@ LangGraph orchestration: 4 category-scoring nodes (parallel-style, streamed)
 and writes a GoldBot-style formatted prediction block.
 """
 
+import threading
+
 from langgraph.graph import StateGraph, END
 from langgraph.checkpoint.memory import MemorySaver
 from langchain_openai import ChatOpenAI
@@ -23,16 +25,18 @@ from tools.scoring_tools import (
 llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.3)
 
 _cache = {}  # simple in-process cache so each node doesn't re-fetch raw data
+_cache_lock = threading.Lock()  # one fetch at a time: the Yahoo download helper is not thread-safe
 
 
 def _get_live_data():
-    if "fred" not in _cache:
-        _cache["fred"] = fetch_all_fred_series()
-    if "market" not in _cache:
-        _cache["market"] = fetch_all_market_series()
-    if "repo_m2" not in _cache:
-        _cache["repo_m2"] = fetch_repo_m2_data()
-    return _cache["fred"], _cache["market"], _cache["repo_m2"]
+    with _cache_lock:
+        if "fred" not in _cache:
+            _cache["fred"] = fetch_all_fred_series()
+        if "market" not in _cache:
+            _cache["market"] = fetch_all_market_series()
+        if "repo_m2" not in _cache:
+            _cache["repo_m2"] = fetch_repo_m2_data()
+        return _cache["fred"], _cache["market"], _cache["repo_m2"]
 
 
 def _build_descriptions():

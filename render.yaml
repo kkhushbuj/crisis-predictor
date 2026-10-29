@@ -17,7 +17,7 @@ services:
       - key: TAVILY_API_KEY
         sync: false
       - key: ANALYSES_PER_IP_PER_HOUR
-        value: "4"
+        value: "6"
       - key: ANALYSES_PER_DAY_GLOBAL
         value: "150"
       - key: CHATS_PER_IP_PER_HOUR

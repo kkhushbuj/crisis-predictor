@@ -36,9 +36,9 @@ Things to know:
   FAISS and LangChain, and it goes to sleep when idle. This setup has not been tried on Render yet, so
   check the first deploy logs.
 - Every analysis costs a few cents of OpenAI usage. Limits are set in `render.yaml`:
-  4 analyses per visitor per hour and 150 per day for the whole site. Lower them if you like.
+  6 analyses per visitor per hour and 150 per day for the whole site. Lower them if you like.
 - Visitor history is kept only for the current visit (browser tab) and cleared when the tab is closed. Nothing is stored on the server.
-- Analyses run one at a time. Others wait, and a busy message appears if more than 3 are waiting.
+- Two analyses run at the same time (`MAX_PARALLEL_ANALYSES`, default 2; use 1 on a small server). Others wait, and a busy message appears if more than 3 are waiting.
 
 ## Where things live
 
