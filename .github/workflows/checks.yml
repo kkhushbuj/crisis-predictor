@@ -1,0 +1,29 @@
+name: checks
+
+# Basic checks on every push: nothing is deployed from here and no secrets are used.
+on:
+  push:
+  pull_request:
+
+jobs:
+  syntax:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Python files compile
+        run: python -m compileall -q api graph rag tools backtest cache_utils.py
+      - name: JavaScript files parse
+        run: for f in web/js/*.js; do node --check "$f"; done
+      - name: JSON files are valid
+        run: for f in web/data/*.json backtest/*.json; do python -m json.tool "$f" > /dev/null || exit 1; done
+      - name: No keys or secrets in the repo
+        run: |
+          if git grep -n -I -E "sk-[A-Za-z0-9_-]{20,}|tvly-[A-Za-z0-9]{10,}|BEGIN (RSA|OPENSSH|PRIVATE) KEY"; then
+            echo "A key or secret was found"; exit 1
+          fi

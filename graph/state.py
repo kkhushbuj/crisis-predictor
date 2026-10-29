@@ -3,7 +3,7 @@ graph/state.py — CrisisPredictor
 Shared state schema for the LangGraph pipeline.
 """
 
-from typing import TypedDict, Optional, Dict
+from typing import TypedDict, Dict
 
 
 class CrisisState(TypedDict, total=False):

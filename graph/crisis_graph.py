@@ -16,7 +16,7 @@ from tools.market_tools import fetch_all_market_series
 from tools.repo_m2_tools import fetch_repo_m2_data, compute_repo_spread, compute_m2_yoy_growth
 from tools.external_tools import get_tariff_sanctions_news, get_geopolitical_risk_news
 from tools.scoring_tools import (
-    CATEGORY_WEIGHTS, CATEGORY_FACTORS, FACTOR_LABELS,
+    CATEGORY_FACTORS, FACTOR_LABELS,
     compute_category_scores, compute_composite_score, classify_regime,
 )
 

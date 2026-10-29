@@ -16,8 +16,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from tools.llm_scoring import score_factor
 from tools.fred_tools import fetch_fred_series
 from tools.market_tools import fetch_yf_series
-from tools.repo_m2_tools import fetch_series as fetch_repo_m2_series, compute_repo_spread, compute_m2_yoy_growth
-import pandas as pd
+from tools.repo_m2_tools import fetch_series as fetch_repo_m2_series
 
 # ---------------------------------------------------------------------------
 # TEST DATES (locked scope: 9 events, 11 dates)

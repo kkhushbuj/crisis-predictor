@@ -1,4 +1,4 @@
-import { el, buildScale, zoneFor, zoneColor, reduceMotion, gsap } from "./common.js";
+import { el, buildScale, zoneFor, zoneColor } from "./common.js";
 import { countUp } from "./effects.js";
 
 /* "How it works": the left stage changes as each step scrolls to the middle of the screen, and a guide line fills

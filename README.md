@@ -69,6 +69,14 @@ See [DEPLOY.md](DEPLOY.md) for deploying on Render.
 | `rag/` | The reference document of historical thresholds and its retriever |
 | `backtest/` | Historical backtest scripts and saved results |
 
+## The website
+
+- **Landing page:** the backtest evidence, with all 300 test dates plotted on the risk scale, and an explanation of how the score is built.
+- **Analysis page:** runs a live analysis with progress, shows the score, the four category bars and all 14 signals with the reason for each, and a chat assistant that streams its answers.
+- **History:** analyses from the current browser tab are listed in a History panel on the home page and on the analysis page. They are kept only for that visit and cleared when the tab closes. Nothing is stored on the server.
+
+Details on how the test numbers were produced are in [backtest/README.md](backtest/README.md).
+
 ## Technology
 
 Python, LangGraph, FAISS retrieval, GPT-4o-mini, FastAPI, and a plain JavaScript front end with GSAP animations.

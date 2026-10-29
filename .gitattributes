@@ -1,0 +1,7 @@
+# One line ending (LF) for every text file, whatever the contributor's operating system uses
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.ico binary
+# vendored libraries are not reviewed line by line
+web/vendor/* linguist-vendored -diff

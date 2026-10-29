@@ -6,8 +6,6 @@ the LLM reads retrieved causal-chain context + the live value and scores
 decides the final weighting.
 """
 
-import os
-from typing import Literal
 from pydantic import BaseModel, Field
 from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv

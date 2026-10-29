@@ -5,3 +5,16 @@ __pycache__/
 *.db
 data/faiss_index/
 *.log
+
+# keys and certificates must never be committed
+*.key
+*.pem
+*.pfx
+# editor, OS and local backup clutter
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+node_modules/
+*.bak*
+web_backup_*/
