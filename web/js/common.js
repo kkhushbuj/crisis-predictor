@@ -8,6 +8,12 @@ if (gsap && window.ScrollTrigger) {
   window.ScrollTrigger.config({ autoRefreshEvents: "DOMContentLoaded,load,resize" });
 }
 
+/* A refresh starts at the top. The browser puts the page back at the old scroll position before the page has been built, so it landed
+   somewhere other than where the reader was (and the page seemed to slide down by itself). The scroll is reset just before the page
+   is shown, and the scroll position that GSAP remembers for a refresh is cleared. Going back and forward between pages is untouched. */
+const wasReload = (() => { try { const n = performance.getEntriesByType("navigation")[0]; return !!n && n.type === "reload" && !location.hash; } catch { return false; } })();
+if (wasReload && window.ScrollTrigger && window.ScrollTrigger.clearScrollMemory) window.ScrollTrigger.clearScrollMemory("manual");
+
 /* Waits (at most 1.5 s) for the two page fonts, so text does not jump when they arrive. */
 export function fontsReady() {
   if (!document.fonts || !document.fonts.load) return Promise.resolve();
@@ -19,7 +25,10 @@ export function fontsReady() {
 }
 
 /* The page stays hidden until this is called (see bold.css), then fades in once, with fonts and first layout in place. */
-export function markReady() { document.documentElement.classList.add("ready"); }
+export function markReady() {
+  if (wasReload && window.scrollY > 0) window.scrollTo({ top: 0, behavior: "instant" });
+  document.documentElement.classList.add("ready");
+}
 
 export function el(tag, attrs = {}, ...children) {
   const node = document.createElement(tag);
