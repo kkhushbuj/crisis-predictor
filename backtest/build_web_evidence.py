@@ -6,8 +6,9 @@ No API calls. Re-run it whenever the weights or cutoffs change:
     python backtest/build_web_evidence.py
 
 Sources (all saved results already in this folder):
-  - rerun41_results.json, backtest_v3_results.json, backtest_v5_results.json, backtest_v6_results.json
-                                        the 300 test dates (152 stress, 148 calm), all 14 factors
+  - backtest_v5_results.json, backtest_v6_results.json, backtest_v7_results.json
+                                        the 300 test dates (150 stress, 150 calm), every one drawn by a fixed random rule
+                                        (seeds 42, 7 and 2026) from known stress and calm periods, all 14 factors
   - monthly_backtest_results.csv        monthly scores for 2008 GFC and COVID, with NBER recession flags
 Scores are recomputed from the saved per-factor scores with the CURRENT weights in
 tools/scoring_tools.py, so the page always matches the live model.
@@ -50,8 +51,8 @@ NAMES = {
 
 
 MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-RESULT_FILES = ["rerun41_results.json", "backtest_v3_results.json", "backtest_v5_results.json", "backtest_v6_results.json"]
-DESC_FILES = ["backtest_v2_descriptions.json", "backtest_v3_descriptions.json", "backtest_v4_descriptions.json", "backtest_v6_descriptions.json"]
+RESULT_FILES = ["backtest_v5_results.json", "backtest_v6_results.json", "backtest_v7_results.json"]
+DESC_FILES = ["backtest_v4_descriptions.json", "backtest_v6_descriptions.json", "backtest_v7_descriptions.json"]
 
 
 def date_name(d, label):

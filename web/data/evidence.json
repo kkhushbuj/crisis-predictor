@@ -9,16 +9,6 @@
  "threshold": 55,
  "out_of_sample": [
   {
-   "event": "M08_Mar2013",
-   "date": "2013-03-15",
-   "label": "normal",
-   "name": "15 Mar 2013, calm period",
-   "score": 42.5,
-   "flagged": false,
-   "vix": 11.3,
-   "drawdown": -0.1
-  },
-  {
    "event": "2017-01-31",
    "date": "2017-01-31",
    "label": "normal",
@@ -27,26 +17,6 @@
    "flagged": false,
    "vix": 11.9,
    "drawdown": -0.8
-  },
-  {
-   "event": "M13_Dec2017",
-   "date": "2017-12-15",
-   "label": "normal",
-   "name": "15 Dec 2017, calm period",
-   "score": 43.5,
-   "flagged": false,
-   "vix": 10.5,
-   "drawdown": -0.5
-  },
-  {
-   "event": "M15_Dec2019",
-   "date": "2019-12-13",
-   "label": "normal",
-   "name": "13 Dec 2019, calm period",
-   "score": 43.5,
-   "flagged": false,
-   "vix": 13.9,
-   "drawdown": 0.0
   },
   {
    "event": "2017-12-04",
@@ -59,26 +29,6 @@
    "drawdown": -0.2
   },
   {
-   "event": "N08_Dec2016",
-   "date": "2016-12-15",
-   "label": "normal",
-   "name": "15 Dec 2016, calm period",
-   "score": 44.7,
-   "flagged": false,
-   "vix": 13.2,
-   "drawdown": -0.8
-  },
-  {
-   "event": "M11_Feb2017",
-   "date": "2017-02-15",
-   "label": "normal",
-   "name": "15 Feb 2017, calm period",
-   "score": 44.7,
-   "flagged": false,
-   "vix": 10.7,
-   "drawdown": 0.0
-  },
-  {
    "event": "2019-10-24",
    "date": "2019-10-24",
    "label": "normal",
@@ -87,26 +37,6 @@
    "flagged": false,
    "vix": 14.0,
    "drawdown": -0.7
-  },
-  {
-   "event": "N10_Nov2019",
-   "date": "2019-11-15",
-   "label": "normal",
-   "name": "15 Nov 2019, calm period",
-   "score": 44.9,
-   "flagged": false,
-   "vix": 13.1,
-   "drawdown": 0.0
-  },
-  {
-   "event": "M20_Nov2024",
-   "date": "2024-11-15",
-   "label": "normal",
-   "name": "15 Nov 2024, calm period",
-   "score": 45.0,
-   "flagged": false,
-   "vix": 14.3,
-   "drawdown": -0.9
   },
   {
    "event": "2014-04-01",
@@ -119,14 +49,14 @@
    "drawdown": -0.3
   },
   {
-   "event": "M10_May2015",
-   "date": "2015-05-15",
+   "event": "2014-06-04",
+   "date": "2014-06-04",
    "label": "normal",
-   "name": "15 May 2015, calm period",
-   "score": 45.3,
+   "name": "4 Jun 2014, calm period",
+   "score": 45.0,
    "flagged": false,
-   "vix": 12.7,
-   "drawdown": 0.0
+   "vix": 11.9,
+   "drawdown": -0.0
   },
   {
    "event": "2013-07-15",
@@ -136,16 +66,6 @@
    "score": 45.4,
    "flagged": false,
    "vix": 13.8,
-   "drawdown": 0.0
-  },
-  {
-   "event": "N06_Nov2013",
-   "date": "2013-11-15",
-   "label": "normal",
-   "name": "15 Nov 2013, calm period",
-   "score": 45.5,
-   "flagged": false,
-   "vix": 12.4,
    "drawdown": 0.0
   },
   {
@@ -199,6 +119,16 @@
    "drawdown": -0.3
   },
   {
+   "event": "2014-08-29",
+   "date": "2014-08-29",
+   "label": "normal",
+   "name": "29 Aug 2014, calm period",
+   "score": 45.8,
+   "flagged": false,
+   "vix": 12.1,
+   "drawdown": -0.2
+  },
+  {
    "event": "2017-03-02",
    "date": "2017-03-02",
    "label": "normal",
@@ -219,26 +149,6 @@
    "drawdown": 0.0
   },
   {
-   "event": "COVID_early",
-   "date": "2020-02-20",
-   "label": "stress",
-   "name": "20 Feb 2020, stress period",
-   "score": 46.3,
-   "flagged": false,
-   "vix": null,
-   "drawdown": null
-  },
-  {
-   "event": "Calm_2019_H1",
-   "date": "2019-03-15",
-   "label": "normal",
-   "name": "15 Mar 2019, calm period",
-   "score": 46.3,
-   "flagged": false,
-   "vix": null,
-   "drawdown": null
-  },
-  {
    "event": "2021-03-01",
    "date": "2021-03-01",
    "label": "normal",
@@ -249,14 +159,14 @@
    "drawdown": -3.1
   },
   {
-   "event": "Calm_2024",
-   "date": "2024-06-15",
+   "event": "2017-03-17",
+   "date": "2017-03-17",
    "label": "normal",
-   "name": "15 Jun 2024, calm period",
-   "score": 46.4,
+   "name": "17 Mar 2017, calm period",
+   "score": 46.3,
    "flagged": false,
-   "vix": null,
-   "drawdown": null
+   "vix": 11.2,
+   "drawdown": -0.6
   },
   {
    "event": "2013-08-02",
@@ -267,6 +177,36 @@
    "flagged": false,
    "vix": 12.9,
    "drawdown": 0.0
+  },
+  {
+   "event": "2013-05-08",
+   "date": "2013-05-08",
+   "label": "normal",
+   "name": "8 May 2013, calm period",
+   "score": 46.4,
+   "flagged": false,
+   "vix": 12.8,
+   "drawdown": 0.0
+  },
+  {
+   "event": "2013-11-20",
+   "date": "2013-11-20",
+   "label": "normal",
+   "name": "20 Nov 2013, calm period",
+   "score": 46.4,
+   "flagged": false,
+   "vix": 13.4,
+   "drawdown": -0.6
+  },
+  {
+   "event": "2015-05-20",
+   "date": "2015-05-20",
+   "label": "normal",
+   "name": "20 May 2015, calm period",
+   "score": 46.4,
+   "flagged": false,
+   "vix": 12.9,
+   "drawdown": -0.1
   },
   {
    "event": "2024-11-26",
@@ -309,14 +249,24 @@
    "drawdown": 0.0
   },
   {
-   "event": "M17_Oct2021",
-   "date": "2021-10-15",
+   "event": "2017-05-17",
+   "date": "2017-05-17",
    "label": "normal",
-   "name": "15 Oct 2021, calm period",
-   "score": 46.7,
+   "name": "17 May 2017, calm period",
+   "score": 46.6,
    "flagged": false,
-   "vix": 16.9,
-   "drawdown": -2.2
+   "vix": 10.6,
+   "drawdown": -0.1
+  },
+  {
+   "event": "2017-10-05",
+   "date": "2017-10-05",
+   "label": "normal",
+   "name": "5 Oct 2017, calm period",
+   "score": 46.6,
+   "flagged": false,
+   "vix": 9.6,
+   "drawdown": 0.0
   },
   {
    "event": "2014-08-08",
@@ -329,34 +279,14 @@
    "drawdown": -3.9
   },
   {
-   "event": "N13_Jul2021",
-   "date": "2021-07-15",
+   "event": "2021-03-19",
+   "date": "2021-03-19",
    "label": "normal",
-   "name": "15 Jul 2021, calm period",
+   "name": "19 Mar 2021, calm period",
    "score": 46.8,
    "flagged": false,
-   "vix": 16.3,
-   "drawdown": -0.2
-  },
-  {
-   "event": "Calm_2017",
-   "date": "2017-06-15",
-   "label": "normal",
-   "name": "15 Jun 2017, calm period",
-   "score": 46.9,
-   "flagged": false,
-   "vix": null,
-   "drawdown": null
-  },
-  {
-   "event": "N02_May2007",
-   "date": "2007-05-15",
-   "label": "normal",
-   "name": "15 May 2007, calm period",
-   "score": 46.9,
-   "flagged": false,
-   "vix": 14.0,
-   "drawdown": -1.6
+   "vix": 21.6,
+   "drawdown": -1.5
   },
   {
    "event": "2021-05-28",
@@ -369,6 +299,16 @@
    "drawdown": -0.7
   },
   {
+   "event": "2017-07-28",
+   "date": "2017-07-28",
+   "label": "normal",
+   "name": "28 Jul 2017, calm period",
+   "score": 46.9,
+   "flagged": false,
+   "vix": 10.1,
+   "drawdown": -0.1
+  },
+  {
    "event": "2020-12-01",
    "date": "2020-12-01",
    "label": "normal",
@@ -377,6 +317,16 @@
    "flagged": false,
    "vix": 20.6,
    "drawdown": -0.5
+  },
+  {
+   "event": "2021-07-02",
+   "date": "2021-07-02",
+   "label": "normal",
+   "name": "2 Jul 2021, calm period",
+   "score": 47.0,
+   "flagged": false,
+   "vix": 15.5,
+   "drawdown": 0.0
   },
   {
    "event": "2025-01-24",
@@ -409,6 +359,16 @@
    "drawdown": -0.1
   },
   {
+   "event": "2015-04-29",
+   "date": "2015-04-29",
+   "label": "normal",
+   "name": "29 Apr 2015, calm period",
+   "score": 47.1,
+   "flagged": false,
+   "vix": 12.4,
+   "drawdown": -0.1
+  },
+  {
    "event": "2013-04-12",
    "date": "2013-04-12",
    "label": "normal",
@@ -417,16 +377,6 @@
    "flagged": false,
    "vix": 12.2,
    "drawdown": 0.0
-  },
-  {
-   "event": "N07_Jul2014",
-   "date": "2014-07-01",
-   "label": "normal",
-   "name": "1 Jul 2014, calm period",
-   "score": 47.3,
-   "flagged": false,
-   "vix": 11.6,
-   "drawdown": -0.1
   },
   {
    "event": "2017-04-18",
@@ -447,6 +397,16 @@
    "flagged": false,
    "vix": 13.9,
    "drawdown": 0.0
+  },
+  {
+   "event": "2017-04-26",
+   "date": "2017-04-26",
+   "label": "normal",
+   "name": "26 Apr 2017, calm period",
+   "score": 47.5,
+   "flagged": false,
+   "vix": 10.8,
+   "drawdown": -0.3
   },
   {
    "event": "2021-07-30",
@@ -479,6 +439,16 @@
    "drawdown": -2.3
   },
   {
+   "event": "2019-02-25",
+   "date": "2019-02-25",
+   "label": "normal",
+   "name": "25 Feb 2019, calm period",
+   "score": 47.6,
+   "flagged": false,
+   "vix": 13.5,
+   "drawdown": -4.7
+  },
+  {
    "event": "2017-03-30",
    "date": "2017-03-30",
    "label": "normal",
@@ -509,14 +479,14 @@
    "drawdown": -1.0
   },
   {
-   "event": "M16_Jan2021",
-   "date": "2021-01-15",
+   "event": "2016-08-16",
+   "date": "2016-08-16",
    "label": "normal",
-   "name": "15 Jan 2021, calm period",
+   "name": "16 Aug 2016, calm period",
    "score": 47.9,
    "flagged": false,
-   "vix": 23.2,
-   "drawdown": -0.8
+   "vix": 11.8,
+   "drawdown": 0.0
   },
   {
    "event": "2013-08-14",
@@ -527,6 +497,16 @@
    "flagged": false,
    "vix": 12.3,
    "drawdown": -0.9
+  },
+  {
+   "event": "2014-01-21",
+   "date": "2014-01-21",
+   "label": "normal",
+   "name": "21 Jan 2014, calm period",
+   "score": 48.0,
+   "flagged": false,
+   "vix": 12.4,
+   "drawdown": -0.5
   },
   {
    "event": "2016-09-08",
@@ -549,14 +529,14 @@
    "drawdown": -19.4
   },
   {
-   "event": "M09_Apr2014",
-   "date": "2014-04-15",
+   "event": "2013-02-22",
+   "date": "2013-02-22",
    "label": "normal",
-   "name": "15 Apr 2014, calm period",
-   "score": 48.2,
+   "name": "22 Feb 2013, calm period",
+   "score": 48.1,
    "flagged": false,
-   "vix": 16.1,
-   "drawdown": -3.2
+   "vix": 15.2,
+   "drawdown": -4.0
   },
   {
    "event": "2018-01-12",
@@ -567,6 +547,16 @@
    "flagged": false,
    "vix": 9.9,
    "drawdown": 0.0
+  },
+  {
+   "event": "2005-08-03",
+   "date": "2005-08-03",
+   "label": "normal",
+   "name": "3 Aug 2005, calm period",
+   "score": 48.3,
+   "flagged": false,
+   "vix": 11.8,
+   "drawdown": -18.5
   },
   {
    "event": "2013-12-06",
@@ -589,6 +579,26 @@
    "drawdown": -0.3
   },
   {
+   "event": "2006-09-13",
+   "date": "2006-09-13",
+   "label": "normal",
+   "name": "13 Sep 2006, calm period",
+   "score": 48.5,
+   "flagged": false,
+   "vix": 11.9,
+   "drawdown": -14.0
+  },
+  {
+   "event": "2006-12-05",
+   "date": "2006-12-05",
+   "label": "normal",
+   "name": "5 Dec 2006, calm period",
+   "score": 48.5,
+   "flagged": false,
+   "vix": 11.2,
+   "drawdown": -7.7
+  },
+  {
    "event": "2005-07-18",
    "date": "2005-07-18",
    "label": "normal",
@@ -599,44 +609,14 @@
    "drawdown": -19.6
   },
   {
-   "event": "N09_Nov2017",
-   "date": "2017-11-15",
+   "event": "2006-01-02",
+   "date": "2006-01-02",
    "label": "normal",
-   "name": "15 Nov 2017, calm period",
-   "score": 48.8,
+   "name": "2 Jan 2006, calm period",
+   "score": 48.7,
    "flagged": false,
-   "vix": 11.6,
-   "drawdown": -0.6
-  },
-  {
-   "event": "M07_Dec2012",
-   "date": "2012-12-14",
-   "label": "normal",
-   "name": "14 Dec 2012, calm period",
-   "score": 48.8,
-   "flagged": false,
-   "vix": 16.6,
-   "drawdown": -9.3
-  },
-  {
-   "event": "M12_Sep2017",
-   "date": "2017-09-15",
-   "label": "normal",
-   "name": "15 Sep 2017, calm period",
-   "score": 48.8,
-   "flagged": false,
-   "vix": 10.4,
-   "drawdown": -0.1
-  },
-  {
-   "event": "M14_Jul2019",
-   "date": "2019-07-15",
-   "label": "normal",
-   "name": "15 Jul 2019, calm period",
-   "score": 48.8,
-   "flagged": false,
-   "vix": 12.4,
-   "drawdown": 0.0
+   "vix": 12.1,
+   "drawdown": -18.3
   },
   {
    "event": "2016-07-26",
@@ -647,6 +627,16 @@
    "flagged": false,
    "vix": 12.9,
    "drawdown": -0.3
+  },
+  {
+   "event": "2017-11-16",
+   "date": "2017-11-16",
+   "label": "normal",
+   "name": "16 Nov 2017, calm period",
+   "score": 48.8,
+   "flagged": false,
+   "vix": 13.1,
+   "drawdown": -1.1
   },
   {
    "event": "2006-09-25",
@@ -709,14 +699,14 @@
    "drawdown": -0.9
   },
   {
-   "event": "N11_Dec2020",
-   "date": "2020-12-15",
+   "event": "2024-12-25",
+   "date": "2024-12-25",
    "label": "normal",
-   "name": "15 Dec 2020, calm period",
-   "score": 49.5,
+   "name": "25 Dec 2024, calm period",
+   "score": 49.3,
    "flagged": false,
-   "vix": 24.7,
-   "drawdown": -1.5
+   "vix": 14.3,
+   "drawdown": -0.8
   },
   {
    "event": "2013-12-25",
@@ -727,6 +717,16 @@
    "flagged": false,
    "vix": 12.5,
    "drawdown": 0.0
+  },
+  {
+   "event": "2020-12-15",
+   "date": "2020-12-15",
+   "label": "normal",
+   "name": "15 Dec 2020, calm period",
+   "score": 49.5,
+   "flagged": false,
+   "vix": 24.7,
+   "drawdown": -1.5
   },
   {
    "event": "2021-10-04",
@@ -759,16 +759,6 @@
    "drawdown": -1.4
   },
   {
-   "event": "S09_Volmageddon_2018",
-   "date": "2018-02-08",
-   "label": "stress",
-   "name": "Feb 2018, volatility spike",
-   "score": 49.9,
-   "flagged": false,
-   "vix": 27.7,
-   "drawdown": -6.7
-  },
-  {
    "event": "2008-05-07",
    "date": "2008-05-07",
    "label": "stress",
@@ -799,6 +789,16 @@
    "drawdown": -0.0
   },
   {
+   "event": "2021-01-12",
+   "date": "2021-01-12",
+   "label": "normal",
+   "name": "12 Jan 2021, calm period",
+   "score": 49.9,
+   "flagged": false,
+   "vix": 24.1,
+   "drawdown": -0.7
+  },
+  {
    "event": "2013-08-27",
    "date": "2013-08-27",
    "label": "normal",
@@ -809,14 +809,14 @@
    "drawdown": -3.1
   },
   {
-   "event": "N01_Dec2006",
-   "date": "2006-12-15",
+   "event": "2014-03-14",
+   "date": "2014-03-14",
    "label": "normal",
-   "name": "15 Dec 2006, calm period",
-   "score": 50.1,
+   "name": "14 Mar 2014, calm period",
+   "score": 50.0,
    "flagged": false,
-   "vix": 10.0,
-   "drawdown": -6.7
+   "vix": 16.2,
+   "drawdown": -1.7
   },
   {
    "event": "2015-03-20",
@@ -859,26 +859,6 @@
    "drawdown": -21.4
   },
   {
-   "event": "N04_Jul2025",
-   "date": "2025-07-15",
-   "label": "normal",
-   "name": "15 Jul 2025, calm period",
-   "score": 50.3,
-   "flagged": false,
-   "vix": 17.2,
-   "drawdown": -0.2
-  },
-  {
-   "event": "M06_Mar2012",
-   "date": "2012-03-15",
-   "label": "normal",
-   "name": "15 Mar 2012, calm period",
-   "score": 50.3,
-   "flagged": false,
-   "vix": 15.3,
-   "drawdown": -10.9
-  },
-  {
    "event": "2015-11-23",
    "date": "2015-11-23",
    "label": "stress",
@@ -909,6 +889,26 @@
    "drawdown": -4.5
   },
   {
+   "event": "2004-08-19",
+   "date": "2004-08-19",
+   "label": "normal",
+   "name": "19 Aug 2004, calm period",
+   "score": 50.3,
+   "flagged": false,
+   "vix": 16.2,
+   "drawdown": -28.3
+  },
+  {
+   "event": "2005-05-24",
+   "date": "2005-05-24",
+   "label": "normal",
+   "name": "24 May 2005, calm period",
+   "score": 50.3,
+   "flagged": false,
+   "vix": 12.9,
+   "drawdown": -21.8
+  },
+  {
    "event": "2019-09-12",
    "date": "2019-09-12",
    "label": "normal",
@@ -929,16 +929,6 @@
    "drawdown": -0.9
   },
   {
-   "event": "M18_Dec2023",
-   "date": "2023-12-15",
-   "label": "normal",
-   "name": "15 Dec 2023, calm period",
-   "score": 50.5,
-   "flagged": false,
-   "vix": 12.5,
-   "drawdown": -1.6
-  },
-  {
    "event": "2006-09-06",
    "date": "2006-09-06",
    "label": "normal",
@@ -949,16 +939,6 @@
    "drawdown": -14.0
   },
   {
-   "event": "T16_Aug2019_yuan_tariff",
-   "date": "2019-08-05",
-   "label": "stress",
-   "name": "5 Aug 2019, stress period",
-   "score": 50.7,
-   "flagged": false,
-   "vix": 17.6,
-   "drawdown": -3.1
-  },
-  {
    "event": "2010-04-26",
    "date": "2010-04-26",
    "label": "stress",
@@ -967,36 +947,6 @@
    "flagged": false,
    "vix": 16.6,
    "drawdown": -22.2
-  },
-  {
-   "event": "M19_May2024",
-   "date": "2024-05-15",
-   "label": "normal",
-   "name": "15 May 2024, calm period",
-   "score": 50.8,
-   "flagged": false,
-   "vix": 13.4,
-   "drawdown": -0.1
-  },
-  {
-   "event": "N05_Sep2012",
-   "date": "2012-09-14",
-   "label": "normal",
-   "name": "14 Sep 2012, calm period",
-   "score": 50.9,
-   "flagged": false,
-   "vix": 14.1,
-   "drawdown": -6.7
-  },
-  {
-   "event": "M05_Mar2006",
-   "date": "2006-03-15",
-   "label": "normal",
-   "name": "15 Mar 2006, calm period",
-   "score": 51.0,
-   "flagged": false,
-   "vix": 10.7,
-   "drawdown": -15.1
   },
   {
    "event": "2006-02-13",
@@ -1019,16 +969,6 @@
    "drawdown": -25.3
   },
   {
-   "event": "M03_Jun2005",
-   "date": "2005-06-15",
-   "label": "normal",
-   "name": "15 Jun 2005, calm period",
-   "score": 51.1,
-   "flagged": false,
-   "vix": 11.8,
-   "drawdown": -21.2
-  },
-  {
    "event": "2008-02-08",
    "date": "2008-02-08",
    "label": "stress",
@@ -1037,26 +977,6 @@
    "flagged": false,
    "vix": 27.7,
    "drawdown": -14.6
-  },
-  {
-   "event": "N03_Dec2010",
-   "date": "2010-12-15",
-   "label": "normal",
-   "name": "15 Dec 2010, calm period",
-   "score": 51.2,
-   "flagged": false,
-   "vix": 17.6,
-   "drawdown": -20.7
-  },
-  {
-   "event": "N15_Mar2024",
-   "date": "2024-03-15",
-   "label": "normal",
-   "name": "15 Mar 2024, calm period",
-   "score": 51.2,
-   "flagged": false,
-   "vix": 14.4,
-   "drawdown": -0.5
   },
   {
    "event": "2000-09-26",
@@ -1109,6 +1029,16 @@
    "drawdown": -8.9
   },
   {
+   "event": "2012-10-19",
+   "date": "2012-10-19",
+   "label": "normal",
+   "name": "19 Oct 2012, calm period",
+   "score": 51.2,
+   "flagged": false,
+   "vix": 15.0,
+   "drawdown": -6.9
+  },
+  {
    "event": "2015-02-04",
    "date": "2015-02-04",
    "label": "normal",
@@ -1137,6 +1067,26 @@
    "flagged": false,
    "vix": 14.8,
    "drawdown": -3.0
+  },
+  {
+   "event": "2008-03-21",
+   "date": "2008-03-21",
+   "label": "stress",
+   "name": "21 Mar 2008, stress period",
+   "score": 51.4,
+   "flagged": false,
+   "vix": 26.6,
+   "drawdown": -15.1
+  },
+  {
+   "event": "2008-05-13",
+   "date": "2008-05-13",
+   "label": "stress",
+   "name": "13 May 2008, stress period",
+   "score": 51.4,
+   "flagged": false,
+   "vix": 17.8,
+   "drawdown": -10.3
   },
   {
    "event": "2001-04-19",
@@ -1199,14 +1149,14 @@
    "drawdown": -3.9
   },
   {
-   "event": "N12_Apr2021",
-   "date": "2021-04-15",
-   "label": "normal",
-   "name": "15 Apr 2021, calm period",
-   "score": 51.7,
+   "event": "2007-09-05",
+   "date": "2007-09-05",
+   "label": "stress",
+   "name": "5 Sep 2007, stress period",
+   "score": 51.6,
    "flagged": false,
-   "vix": 17.0,
-   "drawdown": -0.4
+   "vix": 22.8,
+   "drawdown": -4.1
   },
   {
    "event": "2001-08-06",
@@ -1299,14 +1249,24 @@
    "drawdown": -21.7
   },
   {
-   "event": "M04_Dec2005",
-   "date": "2005-12-15",
+   "event": "2003-12-12",
+   "date": "2003-12-12",
    "label": "normal",
-   "name": "15 Dec 2005, calm period",
-   "score": 51.9,
+   "name": "12 Dec 2003, calm period",
+   "score": 51.8,
    "flagged": false,
-   "vix": 10.5,
-   "drawdown": -16.7
+   "vix": 16.7,
+   "drawdown": -29.9
+  },
+  {
+   "event": "2021-09-09",
+   "date": "2021-09-09",
+   "label": "normal",
+   "name": "9 Sep 2021, calm period",
+   "score": 51.8,
+   "flagged": false,
+   "vix": 18.0,
+   "drawdown": -0.5
   },
   {
    "event": "2022-01-13",
@@ -1389,16 +1349,6 @@
    "drawdown": -24.9
   },
   {
-   "event": "M01_Feb2004",
-   "date": "2004-02-13",
-   "label": "normal",
-   "name": "13 Feb 2004, calm period",
-   "score": 52.2,
-   "flagged": false,
-   "vix": 15.3,
-   "drawdown": -24.6
-  },
-  {
    "event": "2000-09-19",
    "date": "2000-09-19",
    "label": "stress",
@@ -1429,26 +1379,6 @@
    "drawdown": -36.6
   },
   {
-   "event": "S01_Aug2007_credit_crunch",
-   "date": "2007-08-16",
-   "label": "stress",
-   "name": "Aug 2007, credit crunch",
-   "score": 52.3,
-   "flagged": false,
-   "vix": 30.7,
-   "drawdown": -9.4
-  },
-  {
-   "event": "T20_Mar2025_tariff_correction",
-   "date": "2025-03-13",
-   "label": "stress",
-   "name": "13 Mar 2025, stress period",
-   "score": 52.3,
-   "flagged": false,
-   "vix": 24.2,
-   "drawdown": -8.9
-  },
-  {
    "event": "2007-08-27",
    "date": "2007-08-27",
    "label": "stress",
@@ -1457,16 +1387,6 @@
    "flagged": false,
    "vix": 20.7,
    "drawdown": -4.7
-  },
-  {
-   "event": "N14_Jul2023",
-   "date": "2023-07-14",
-   "label": "normal",
-   "name": "14 Jul 2023, calm period",
-   "score": 52.4,
-   "flagged": false,
-   "vix": 13.6,
-   "drawdown": -6.0
   },
   {
    "event": "2022-02-11",
@@ -1489,16 +1409,6 @@
    "drawdown": -4.5
   },
   {
-   "event": "T15_Oct2018_selloff",
-   "date": "2018-10-29",
-   "label": "stress",
-   "name": "29 Oct 2018, stress period",
-   "score": 52.5,
-   "flagged": false,
-   "vix": 24.2,
-   "drawdown": -9.3
-  },
-  {
    "event": "2001-01-30",
    "date": "2001-01-30",
    "label": "stress",
@@ -1517,6 +1427,16 @@
    "flagged": false,
    "vix": 21.3,
    "drawdown": -6.1
+  },
+  {
+   "event": "2001-06-01",
+   "date": "2001-06-01",
+   "label": "stress",
+   "name": "1 Jun 2001, stress period",
+   "score": 52.5,
+   "flagged": false,
+   "vix": 22.6,
+   "drawdown": -17.8
   },
   {
    "event": "2004-12-03",
@@ -1599,26 +1519,6 @@
    "drawdown": -31.6
   },
   {
-   "event": "SVB_2023",
-   "date": "2023-03-13",
-   "label": "stress",
-   "name": "13 Mar 2023, stress period",
-   "score": 52.9,
-   "flagged": false,
-   "vix": null,
-   "drawdown": null
-  },
-  {
-   "event": "M02_Nov2004",
-   "date": "2004-11-15",
-   "label": "normal",
-   "name": "15 Nov 2004, calm period",
-   "score": 52.9,
-   "flagged": false,
-   "vix": 13.3,
-   "drawdown": -22.5
-  },
-  {
    "event": "2004-03-22",
    "date": "2004-03-22",
    "label": "normal",
@@ -1669,6 +1569,16 @@
    "drawdown": -6.8
   },
   {
+   "event": "2000-10-31",
+   "date": "2000-10-31",
+   "label": "stress",
+   "name": "31 Oct 2000, stress period",
+   "score": 52.9,
+   "flagged": false,
+   "vix": 25.5,
+   "drawdown": -8.4
+  },
+  {
    "event": "2019-06-18",
    "date": "2019-06-18",
    "label": "normal",
@@ -1707,6 +1617,16 @@
    "flagged": false,
    "vix": 12.8,
    "drawdown": -0.3
+  },
+  {
+   "event": "2018-10-31",
+   "date": "2018-10-31",
+   "label": "stress",
+   "name": "31 Oct 2018, stress period",
+   "score": 53.2,
+   "flagged": false,
+   "vix": 23.4,
+   "drawdown": -8.5
   },
   {
    "event": "2002-03-22",
@@ -1769,16 +1689,6 @@
    "drawdown": -22.6
   },
   {
-   "event": "2008_GFC_early",
-   "date": "2008-06-15",
-   "label": "stress",
-   "name": "15 Jun 2008, stress period",
-   "score": 53.4,
-   "flagged": false,
-   "vix": null,
-   "drawdown": null
-  },
-  {
    "event": "2006-05-15",
    "date": "2006-05-15",
    "label": "normal",
@@ -1829,14 +1739,34 @@
    "drawdown": -22.8
   },
   {
-   "event": "T14_Jun2016_brexit",
-   "date": "2016-06-27",
+   "event": "2018-12-12",
+   "date": "2018-12-12",
    "label": "stress",
-   "name": "27 Jun 2016, stress period",
-   "score": 53.8,
+   "name": "12 Dec 2018, stress period",
+   "score": 53.7,
    "flagged": false,
-   "vix": 25.8,
-   "drawdown": -4.4
+   "vix": 21.8,
+   "drawdown": -10.0
+  },
+  {
+   "event": "2005-03-10",
+   "date": "2005-03-10",
+   "label": "normal",
+   "name": "10 Mar 2005, calm period",
+   "score": 53.7,
+   "flagged": false,
+   "vix": 12.7,
+   "drawdown": -21.0
+  },
+  {
+   "event": "2005-03-15",
+   "date": "2005-03-15",
+   "label": "normal",
+   "name": "15 Mar 2005, calm period",
+   "score": 53.7,
+   "flagged": false,
+   "vix": 12.4,
+   "drawdown": -21.0
   },
   {
    "event": "2018-11-12",
@@ -1889,6 +1819,16 @@
    "drawdown": -14.1
   },
   {
+   "event": "2008-05-01",
+   "date": "2008-05-01",
+   "label": "stress",
+   "name": "1 May 2008, stress period",
+   "score": 53.9,
+   "flagged": false,
+   "vix": 20.8,
+   "drawdown": -11.5
+  },
+  {
    "event": "2012-11-30",
    "date": "2012-11-30",
    "label": "normal",
@@ -1907,6 +1847,16 @@
    "flagged": false,
    "vix": 27.2,
    "drawdown": -35.2
+  },
+  {
+   "event": "2002-05-31",
+   "date": "2002-05-31",
+   "label": "stress",
+   "name": "31 May 2002, stress period",
+   "score": 54.0,
+   "flagged": false,
+   "vix": 20.6,
+   "drawdown": -30.3
   },
   {
    "event": "2001-05-10",
@@ -1957,6 +1907,36 @@
    "flagged": false,
    "vix": 19.3,
    "drawdown": -5.4
+  },
+  {
+   "event": "2002-02-08",
+   "date": "2002-02-08",
+   "label": "stress",
+   "name": "8 Feb 2002, stress period",
+   "score": 54.1,
+   "flagged": false,
+   "vix": 25.1,
+   "drawdown": -29.3
+  },
+  {
+   "event": "2002-02-26",
+   "date": "2002-02-26",
+   "label": "stress",
+   "name": "26 Feb 2002, stress period",
+   "score": 54.1,
+   "flagged": false,
+   "vix": 21.8,
+   "drawdown": -27.4
+  },
+  {
+   "event": "2019-01-24",
+   "date": "2019-01-24",
+   "label": "normal",
+   "name": "24 Jan 2019, calm period",
+   "score": 54.1,
+   "flagged": false,
+   "vix": 19.5,
+   "drawdown": -10.0
   },
   {
    "event": "2002-04-26",
@@ -2019,6 +1999,16 @@
    "drawdown": -8.9
   },
   {
+   "event": "2007-11-22",
+   "date": "2007-11-22",
+   "label": "stress",
+   "name": "22 Nov 2007, stress period",
+   "score": 54.5,
+   "flagged": false,
+   "vix": 26.8,
+   "drawdown": -9.5
+  },
+  {
    "event": "2002-04-16",
    "date": "2002-04-16",
    "label": "stress",
@@ -2037,6 +2027,16 @@
    "flagged": false,
    "vix": 16.9,
    "drawdown": -31.0
+  },
+  {
+   "event": "2000-12-26",
+   "date": "2000-12-26",
+   "label": "stress",
+   "name": "26 Dec 2000, stress period",
+   "score": 54.7,
+   "flagged": false,
+   "vix": 27.5,
+   "drawdown": -14.5
   },
   {
    "event": "2001-02-19",
@@ -2069,14 +2069,34 @@
    "drawdown": -20.9
   },
   {
-   "event": "S07_China_shock_2015",
-   "date": "2015-08-24",
+   "event": "2007-09-17",
+   "date": "2007-09-17",
    "label": "stress",
-   "name": "Aug 2015, China shock",
-   "score": 54.9,
+   "name": "17 Sep 2007, stress period",
+   "score": 54.8,
    "flagged": false,
-   "vix": 28.0,
-   "drawdown": -7.5
+   "vix": 24.9,
+   "drawdown": -4.4
+  },
+  {
+   "event": "2006-11-02",
+   "date": "2006-11-02",
+   "label": "normal",
+   "name": "2 Nov 2006, calm period",
+   "score": 54.8,
+   "flagged": false,
+   "vix": 11.5,
+   "drawdown": -10.5
+  },
+  {
+   "event": "2019-05-31",
+   "date": "2019-05-31",
+   "label": "normal",
+   "name": "31 May 2019, calm period",
+   "score": 54.8,
+   "flagged": false,
+   "vix": 17.3,
+   "drawdown": -5.3
   },
   {
    "event": "2004-03-16",
@@ -2087,26 +2107,6 @@
    "flagged": false,
    "vix": 21.1,
    "drawdown": -27.7
-  },
-  {
-   "event": "2018_Trade_War",
-   "date": "2018-12-15",
-   "label": "stress",
-   "name": "15 Dec 2018, stress period",
-   "score": 55.2,
-   "flagged": true,
-   "vix": null,
-   "drawdown": null
-  },
-  {
-   "event": "T10_Feb2010_greece",
-   "date": "2010-02-05",
-   "label": "stress",
-   "name": "5 Feb 2010, stress period",
-   "score": 55.2,
-   "flagged": true,
-   "vix": 26.1,
-   "drawdown": -32.1
   },
   {
    "event": "2008-08-22",
@@ -2137,6 +2137,16 @@
    "flagged": true,
    "vix": 19.5,
    "drawdown": -32.6
+  },
+  {
+   "event": "2018-12-31",
+   "date": "2018-12-31",
+   "label": "stress",
+   "name": "31 Dec 2018, stress period",
+   "score": 55.3,
+   "flagged": true,
+   "vix": 28.3,
+   "drawdown": -15.2
   },
   {
    "event": "2001-04-25",
@@ -2187,6 +2197,16 @@
    "flagged": true,
    "vix": 24.1,
    "drawdown": -33.2
+  },
+  {
+   "event": "2007-08-01",
+   "date": "2007-08-01",
+   "label": "stress",
+   "name": "1 Aug 2007, stress period",
+   "score": 55.6,
+   "flagged": true,
+   "vix": 23.5,
+   "drawdown": -6.3
   },
   {
    "event": "2001-12-07",
@@ -2259,16 +2279,6 @@
    "drawdown": -41.5
   },
   {
-   "event": "T17_May2022_bear",
-   "date": "2022-05-20",
-   "label": "stress",
-   "name": "20 May 2022, stress period",
-   "score": 56.0,
-   "flagged": true,
-   "vix": 29.4,
-   "drawdown": -18.7
-  },
-  {
    "event": "2008-01-08",
    "date": "2008-01-08",
    "label": "stress",
@@ -2289,14 +2299,44 @@
    "drawdown": -19.2
   },
   {
-   "event": "S15_Yen_carry_spike_2024",
-   "date": "2024-08-05",
+   "event": "2008-07-21",
+   "date": "2008-07-21",
    "label": "stress",
-   "name": "Aug 2024, yen carry spike",
+   "name": "21 Jul 2008, stress period",
+   "score": 56.0,
+   "flagged": true,
+   "vix": 24.0,
+   "drawdown": -19.5
+  },
+  {
+   "event": "2010-05-13",
+   "date": "2010-05-13",
+   "label": "stress",
+   "name": "13 May 2010, stress period",
    "score": 56.1,
    "flagged": true,
-   "vix": 23.4,
-   "drawdown": -5.7
+   "vix": 25.5,
+   "drawdown": -25.1
+  },
+  {
+   "event": "2012-05-16",
+   "date": "2012-05-16",
+   "label": "normal",
+   "name": "16 May 2012, calm period",
+   "score": 56.1,
+   "flagged": true,
+   "vix": 22.0,
+   "drawdown": -15.0
+  },
+  {
+   "event": "2015-01-16",
+   "date": "2015-01-16",
+   "label": "normal",
+   "name": "16 Jan 2015, calm period",
+   "score": 56.1,
+   "flagged": true,
+   "vix": 22.4,
+   "drawdown": -4.7
   },
   {
    "event": "2008-03-06",
@@ -2307,16 +2347,6 @@
    "flagged": true,
    "vix": 24.6,
    "drawdown": -14.8
-  },
-  {
-   "event": "T02_Apr2001_nasdaq_low",
-   "date": "2001-04-04",
-   "label": "stress",
-   "name": "4 Apr 2001, stress period",
-   "score": 56.4,
-   "flagged": true,
-   "vix": 34.7,
-   "drawdown": -27.6
   },
   {
    "event": "2012-07-13",
@@ -2349,6 +2379,16 @@
    "drawdown": -25.4
   },
   {
+   "event": "2001-11-30",
+   "date": "2001-11-30",
+   "label": "stress",
+   "name": "30 Nov 2001, stress period",
+   "score": 56.6,
+   "flagged": true,
+   "vix": 25.2,
+   "drawdown": -25.4
+  },
+  {
    "event": "2000-12-20",
    "date": "2000-12-20",
    "label": "stress",
@@ -2357,26 +2397,6 @@
    "flagged": true,
    "vix": 27.2,
    "drawdown": -14.5
-  },
-  {
-   "event": "S12_Rate_shock_bear_2022",
-   "date": "2022-06-16",
-   "label": "stress",
-   "name": "Jun 2022, rate-shock bear market",
-   "score": 56.8,
-   "flagged": true,
-   "vix": 29.6,
-   "drawdown": -21.0
-  },
-  {
-   "event": "T04_Jul2002_scandals",
-   "date": "2002-07-23",
-   "label": "stress",
-   "name": "23 Jul 2002, stress period",
-   "score": 56.8,
-   "flagged": true,
-   "vix": 41.9,
-   "drawdown": -46.3
   },
   {
    "event": "2002-05-08",
@@ -2389,24 +2409,14 @@
    "drawdown": -31.3
   },
   {
-   "event": "S03_Post_Lehman_2008",
-   "date": "2008-09-29",
+   "event": "2022-04-19",
+   "date": "2022-04-19",
    "label": "stress",
-   "name": "Sep 2008, after Lehman",
-   "score": 56.9,
+   "name": "19 Apr 2022, stress period",
+   "score": 56.8,
    "flagged": true,
-   "vix": 34.7,
-   "drawdown": -22.5
-  },
-  {
-   "event": "S10_Q4_2018_low",
-   "date": "2018-12-24",
-   "label": "stress",
-   "name": "Dec 2018, trade-war low",
-   "score": 56.9,
-   "flagged": true,
-   "vix": 30.1,
-   "drawdown": -17.5
+   "vix": 22.2,
+   "drawdown": -8.4
   },
   {
    "event": "2000-11-30",
@@ -2437,26 +2447,6 @@
    "flagged": true,
    "vix": 23.9,
    "drawdown": -14.3
-  },
-  {
-   "event": "T12_Sep2015_china_low",
-   "date": "2015-09-29",
-   "label": "stress",
-   "name": "29 Sep 2015, stress period",
-   "score": 57.0,
-   "flagged": true,
-   "vix": 27.6,
-   "drawdown": -11.7
-  },
-  {
-   "event": "T07_Jan2008_global_selloff",
-   "date": "2008-01-22",
-   "label": "stress",
-   "name": "22 Jan 2008, stress period",
-   "score": 57.1,
-   "flagged": true,
-   "vix": 27.2,
-   "drawdown": -15.3
   },
   {
    "event": "2022-08-17",
@@ -2549,16 +2539,6 @@
    "drawdown": -17.0
   },
   {
-   "event": "S14_Tariff_selloff_2025",
-   "date": "2025-04-08",
-   "label": "stress",
-   "name": "Apr 2025, tariff selloff",
-   "score": 57.7,
-   "flagged": true,
-   "vix": 47.0,
-   "drawdown": -17.6
-  },
-  {
    "event": "2022-08-25",
    "date": "2022-08-25",
    "label": "stress",
@@ -2569,16 +2549,6 @@
    "drawdown": -13.7
   },
   {
-   "event": "2011_Euro_Crisis",
-   "date": "2011-09-01",
-   "label": "stress",
-   "name": "1 Sep 2011, stress period",
-   "score": 57.8,
-   "flagged": true,
-   "vix": null,
-   "drawdown": null
-  },
-  {
    "event": "2012-06-28",
    "date": "2012-06-28",
    "label": "normal",
@@ -2587,16 +2557,6 @@
    "flagged": true,
    "vix": 19.5,
    "drawdown": -14.9
-  },
-  {
-   "event": "S06_US_downgrade_2011",
-   "date": "2011-08-08",
-   "label": "stress",
-   "name": "Aug 2011, US downgrade",
-   "score": 58.0,
-   "flagged": true,
-   "vix": 32.0,
-   "drawdown": -23.4
   },
   {
    "event": "2022-02-24",
@@ -2659,14 +2619,54 @@
    "drawdown": -32.1
   },
   {
-   "event": "S05_Euro_scare_2010",
-   "date": "2010-05-20",
+   "event": "2002-08-14",
+   "date": "2002-08-14",
    "label": "stress",
-   "name": "May 2010, euro debt scare",
+   "name": "14 Aug 2002, stress period",
+   "score": 58.1,
+   "flagged": true,
+   "vix": 35.8,
+   "drawdown": -42.1
+  },
+  {
+   "event": "2016-02-15",
+   "date": "2016-02-15",
+   "label": "stress",
+   "name": "15 Feb 2016, stress period",
+   "score": 58.3,
+   "flagged": true,
+   "vix": 25.4,
+   "drawdown": -12.5
+  },
+  {
+   "event": "2015-01-23",
+   "date": "2015-01-23",
+   "label": "normal",
+   "name": "23 Jan 2015, calm period",
+   "score": 58.3,
+   "flagged": true,
+   "vix": 16.4,
+   "drawdown": -1.3
+  },
+  {
+   "event": "2008-07-16",
+   "date": "2008-07-16",
+   "label": "stress",
+   "name": "16 Jul 2008, stress period",
    "score": 58.5,
    "flagged": true,
-   "vix": 35.3,
-   "drawdown": -28.8
+   "vix": 28.5,
+   "drawdown": -22.4
+  },
+  {
+   "event": "2002-10-31",
+   "date": "2002-10-31",
+   "label": "stress",
+   "name": "31 Oct 2002, stress period",
+   "score": 58.6,
+   "flagged": true,
+   "vix": 31.2,
+   "drawdown": -41.7
   },
   {
    "event": "2001-11-09",
@@ -2677,6 +2677,16 @@
    "flagged": true,
    "vix": 28.6,
    "drawdown": -26.8
+  },
+  {
+   "event": "2011-08-16",
+   "date": "2011-08-16",
+   "label": "stress",
+   "name": "16 Aug 2011, stress period",
+   "score": 58.7,
+   "flagged": true,
+   "vix": 31.9,
+   "drawdown": -23.0
   },
   {
    "event": "2002-09-27",
@@ -2699,44 +2709,34 @@
    "drawdown": -22.3
   },
   {
-   "event": "S02_Bear_Stearns_2008",
-   "date": "2008-03-17",
+   "event": "2001-04-03",
+   "date": "2001-04-03",
    "label": "stress",
-   "name": "Mar 2008, Bear Stearns",
-   "score": 58.9,
+   "name": "3 Apr 2001, stress period",
+   "score": 58.8,
    "flagged": true,
    "vix": 31.2,
-   "drawdown": -17.7
+   "drawdown": -25.0
   },
   {
-   "event": "T19_Oct2023_rate_selloff",
-   "date": "2023-10-27",
+   "event": "2002-10-15",
+   "date": "2002-10-15",
    "label": "stress",
-   "name": "27 Oct 2023, stress period",
-   "score": 58.9,
+   "name": "15 Oct 2002, stress period",
+   "score": 58.8,
    "flagged": true,
-   "vix": 20.7,
-   "drawdown": -13.7
+   "vix": 36.0,
+   "drawdown": -44.9
   },
   {
-   "event": "T13_Jan2016_global_selloff",
-   "date": "2016-01-20",
-   "label": "stress",
-   "name": "20 Jan 2016, stress period",
-   "score": 59.0,
+   "event": "2012-06-08",
+   "date": "2012-06-08",
+   "label": "normal",
+   "name": "8 Jun 2012, calm period",
+   "score": 59.1,
    "flagged": true,
-   "vix": 26.0,
-   "drawdown": -11.7
-  },
-  {
-   "event": "T06_Mar2003_pre_Iraq",
-   "date": "2003-03-11",
-   "label": "stress",
-   "name": "11 Mar 2003, stress period",
-   "score": 59.3,
-   "flagged": true,
-   "vix": 33.3,
-   "drawdown": -47.1
+   "vix": 21.7,
+   "drawdown": -16.0
   },
   {
    "event": "2008-07-29",
@@ -2749,24 +2749,24 @@
    "drawdown": -21.1
   },
   {
-   "event": "S13_Oct2022_low",
-   "date": "2022-10-12",
+   "event": "2001-09-17",
+   "date": "2001-09-17",
    "label": "stress",
-   "name": "Oct 2022, bear market low",
-   "score": 59.8,
+   "name": "17 Sep 2001, stress period",
+   "score": 59.6,
    "flagged": true,
-   "vix": 33.6,
-   "drawdown": -25.2
+   "vix": 31.8,
+   "drawdown": -28.5
   },
   {
-   "event": "T05_Oct2002_bear_low",
-   "date": "2002-10-09",
+   "event": "2022-05-13",
+   "date": "2022-05-13",
    "label": "stress",
-   "name": "9 Oct 2002, stress period",
-   "score": 60.0,
+   "name": "13 May 2022, stress period",
+   "score": 59.9,
    "flagged": true,
-   "vix": 41.0,
-   "drawdown": -47.7
+   "vix": 31.8,
+   "drawdown": -18.1
   },
   {
    "event": "2002-09-20",
@@ -2779,6 +2779,26 @@
    "drawdown": -44.8
   },
   {
+   "event": "2020-03-09",
+   "date": "2020-03-09",
+   "label": "stress",
+   "name": "9 Mar 2020, stress period",
+   "score": 60.0,
+   "flagged": true,
+   "vix": 41.9,
+   "drawdown": -12.2
+  },
+  {
+   "event": "2022-09-26",
+   "date": "2022-09-26",
+   "label": "stress",
+   "name": "26 Sep 2022, stress period",
+   "score": 60.0,
+   "flagged": true,
+   "vix": 29.9,
+   "drawdown": -23.0
+  },
+  {
    "event": "2002-08-07",
    "date": "2002-08-07",
    "label": "stress",
@@ -2789,24 +2809,24 @@
    "drawdown": -43.7
   },
   {
-   "event": "T08_Jul2008_bear_market",
-   "date": "2008-07-15",
+   "event": "2008-09-19",
+   "date": "2008-09-19",
    "label": "stress",
-   "name": "15 Jul 2008, stress period",
-   "score": 60.3,
+   "name": "19 Sep 2008, stress period",
+   "score": 60.5,
    "flagged": true,
-   "vix": 28.5,
-   "drawdown": -21.5
+   "vix": 33.1,
+   "drawdown": -22.9
   },
   {
-   "event": "T18_Sep2022_low",
-   "date": "2022-09-30",
+   "event": "2008-10-01",
+   "date": "2008-10-01",
    "label": "stress",
-   "name": "30 Sep 2022, stress period",
-   "score": 60.4,
+   "name": "1 Oct 2008, stress period",
+   "score": 60.5,
    "flagged": true,
-   "vix": 31.8,
-   "drawdown": -24.1
+   "vix": 39.4,
+   "drawdown": -25.5
   },
   {
    "event": "2022-07-06",
@@ -2819,14 +2839,14 @@
    "drawdown": -20.1
   },
   {
-   "event": "S08_Oil_China_selloff_2016",
-   "date": "2016-02-11",
+   "event": "2022-06-14",
+   "date": "2022-06-14",
    "label": "stress",
-   "name": "Feb 2016, oil and China selloff",
+   "name": "14 Jun 2022, stress period",
    "score": 60.9,
    "flagged": true,
-   "vix": 26.3,
-   "drawdown": -13.1
+   "vix": 34.0,
+   "drawdown": -21.8
   },
   {
    "event": "2022-04-29",
@@ -2839,14 +2859,14 @@
    "drawdown": -10.6
   },
   {
-   "event": "2008_GFC_peak",
-   "date": "2008-10-15",
+   "event": "2016-01-22",
+   "date": "2016-01-22",
    "label": "stress",
-   "name": "15 Oct 2008, stress period",
-   "score": 61.7,
+   "name": "22 Jan 2016, stress period",
+   "score": 61.4,
    "flagged": true,
-   "vix": null,
-   "drawdown": null
+   "vix": 26.7,
+   "drawdown": -12.3
   },
   {
    "event": "2001-10-22",
@@ -2859,34 +2879,24 @@
    "drawdown": -29.7
   },
   {
-   "event": "T03_Sep2001_post_911",
-   "date": "2001-09-21",
+   "event": "2008-10-20",
+   "date": "2008-10-20",
    "label": "stress",
-   "name": "21 Sep 2001, stress period",
-   "score": 62.1,
+   "name": "20 Oct 2008, stress period",
+   "score": 64.1,
    "flagged": true,
-   "vix": 43.7,
-   "drawdown": -35.5
+   "vix": 70.3,
+   "drawdown": -39.9
   },
   {
-   "event": "T11_Oct2011_euro_low",
-   "date": "2011-10-03",
+   "event": "2008-10-10",
+   "date": "2008-10-10",
    "label": "stress",
-   "name": "3 Oct 2011, stress period",
-   "score": 63.4,
+   "name": "10 Oct 2008, stress period",
+   "score": 64.2,
    "flagged": true,
-   "vix": 43.0,
-   "drawdown": -27.7
-  },
-  {
-   "event": "S04_GFC_low_2009",
-   "date": "2009-03-09",
-   "label": "stress",
-   "name": "Mar 2009, financial crisis low",
-   "score": 64.3,
-   "flagged": true,
-   "vix": 49.3,
-   "drawdown": -56.3
+   "vix": 63.9,
+   "drawdown": -41.9
   },
   {
    "event": "2009-01-12",
@@ -2909,6 +2919,16 @@
    "drawdown": -48.0
   },
   {
+   "event": "2001-09-27",
+   "date": "2001-09-27",
+   "label": "stress",
+   "name": "27 Sep 2001, stress period",
+   "score": 65.2,
+   "flagged": true,
+   "vix": 35.3,
+   "drawdown": -34.1
+  },
+  {
    "event": "2001-10-08",
    "date": "2001-10-08",
    "label": "stress",
@@ -2917,6 +2937,16 @@
    "flagged": true,
    "vix": 33.4,
    "drawdown": -29.9
+  },
+  {
+   "event": "2008-12-25",
+   "date": "2008-12-25",
+   "label": "stress",
+   "name": "25 Dec 2008, stress period",
+   "score": 67.2,
+   "flagged": true,
+   "vix": 44.2,
+   "drawdown": -44.5
   },
   {
    "event": "2020-04-14",
@@ -2929,34 +2959,14 @@
    "drawdown": -18.4
   },
   {
-   "event": "T09_Nov2008_GFC_low",
-   "date": "2008-11-20",
+   "event": "2009-03-10",
+   "date": "2009-03-10",
    "label": "stress",
-   "name": "20 Nov 2008, stress period",
-   "score": 68.6,
+   "name": "10 Mar 2009, stress period",
+   "score": 68.9,
    "flagged": true,
-   "vix": 74.3,
-   "drawdown": -48.5
-  },
-  {
-   "event": "COVID_peak",
-   "date": "2020-03-23",
-   "label": "stress",
-   "name": "23 Mar 2020, stress period",
-   "score": 68.7,
-   "flagged": true,
-   "vix": null,
-   "drawdown": null
-  },
-  {
-   "event": "S11_COVID_VIX_peak_2020",
-   "date": "2020-03-16",
-   "label": "stress",
-   "name": "Mar 2020, COVID panic",
-   "score": 69.7,
-   "flagged": true,
-   "vix": 57.8,
-   "drawdown": -19.9
+   "vix": 49.7,
+   "drawdown": -56.8
   },
   {
    "event": "2008-12-05",
@@ -2967,16 +2977,6 @@
    "flagged": true,
    "vix": 63.6,
    "drawdown": -46.0
-  },
-  {
-   "event": "Ukraine_2022",
-   "date": "2022-03-08",
-   "label": "stress",
-   "name": "8 Mar 2022, stress period",
-   "score": 70.2,
-   "flagged": true,
-   "vix": null,
-   "drawdown": null
   },
   {
    "event": "2009-02-06",
@@ -3011,14 +3011,14 @@
  ],
  "compare": {
   "calm": {
-   "event": "M08_Mar2013",
-   "date": "2013-03-15",
+   "event": "2017-01-31",
+   "date": "2017-01-31",
    "label": "normal",
-   "name": "15 Mar 2013, calm period",
-   "score": 42.5,
+   "name": "31 Jan 2017, calm period",
+   "score": 43.1,
    "flagged": false,
-   "vix": 11.3,
-   "drawdown": -0.1
+   "vix": 11.9,
+   "drawdown": -0.8
   },
   "panic": {
    "event": "2009-01-26",
@@ -3032,16 +3032,16 @@
   }
  },
  "summary": {
-  "stress_total": 152,
-  "stress_flagged": 86,
-  "normal_total": 148,
-  "false_alarms": 6,
-  "avg_stress": 56.3,
-  "avg_normal": 49.8,
+  "stress_total": 150,
+  "stress_flagged": 80,
+  "normal_total": 150,
+  "false_alarms": 10,
+  "avg_stress": 56.2,
+  "avg_normal": 50.2,
   "total": 300,
-  "right": 228,
-  "auc": 0.89,
-  "missed_near_line": 60
+  "right": 220,
+  "auc": 0.87,
+  "missed_near_line": 66
  },
  "monthly": {
   "gfc": {

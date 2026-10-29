@@ -251,6 +251,46 @@ def config():
     }
 
 
+# ---------------------------------------------------------------- analysis jobs
+# Each analysis keeps its events in memory, so a visitor who leaves the page can come back to it, or see that it is still
+# running, from the same browser tab. A job belongs to the IP that started it and is dropped 30 minutes after it finishes.
+JOB_TTL_S = 1800
+_jobs: dict = {}
+_jobs_lock = threading.Lock()
+
+
+def _prune_jobs():
+    now = time.time()
+    with _jobs_lock:
+        for jid in [j for j, job in _jobs.items() if job["done"] and now - job["finished"] > JOB_TTL_S]:
+            del _jobs[jid]
+
+
+def _get_job(job_id: str, request: Request):
+    job = _jobs.get(job_id)
+    return job if job and job["ip"] == client_ip(request) else None
+
+
+async def _stream_job(job: dict, start: int = 0):
+    """Sends the job's events from `start`, then waits for new ones until the job is done."""
+    i, idle = start, 0.0
+    while True:
+        while i < len(job["events"]):
+            yield f"data: {json.dumps(job['events'][i])}\n\n"
+            i += 1
+            idle = 0.0
+        if job["done"] and i >= len(job["events"]):
+            break
+        await asyncio.sleep(0.25)
+        idle += 0.25
+        if idle >= 15:
+            idle = 0.0
+            yield ": keep-alive\n\n"
+
+
+_SSE_HEADERS = {"Cache-Control": "no-cache", "X-Accel-Buffering": "no"}
+
+
 @app.post("/api/analyze")
 async def analyze(request: Request):
     global _waiting
@@ -265,8 +305,11 @@ async def analyze(request: Request):
         limiter.refund(f"analyze:{ip}")
         return JSONResponse({"error": "The server is busy with other analyses. Please try again in a minute."}, status_code=503)
 
-    loop = asyncio.get_running_loop()
-    queue: asyncio.Queue = asyncio.Queue()
+    _prune_jobs()
+    job_id = uuid.uuid4().hex
+    job = {"ip": ip, "events": [{"type": "job", "id": job_id}], "done": False, "finished": 0.0}
+    with _jobs_lock:
+        _jobs[job_id] = job
     _waiting += 1
 
     def worker():
@@ -274,29 +317,40 @@ async def analyze(request: Request):
         try:
             with _graph_lock:
                 _waiting -= 1
-                loop.call_soon_threadsafe(queue.put_nowait, {"type": "start"})
-                run_pipeline(lambda ev: loop.call_soon_threadsafe(queue.put_nowait, ev))
+                job["events"].append({"type": "start"})
+                run_pipeline(job["events"].append)
         except Exception as exc:  # report a short, safe message to the browser
             print(f"[api] analysis failed: {exc!r}", flush=True)
-            loop.call_soon_threadsafe(queue.put_nowait, {"type": "error", "message": "The analysis failed. Please try again in a moment."})
+            job["events"].append({"type": "error", "message": "The analysis failed. Please try again in a moment."})
         finally:
-            loop.call_soon_threadsafe(queue.put_nowait, None)
+            job["finished"] = time.time()
+            job["done"] = True
 
     threading.Thread(target=worker, daemon=True).start()
+    return StreamingResponse(_stream_job(job), media_type="text/event-stream", headers=_SSE_HEADERS)
 
-    async def stream():
-        while True:
-            try:
-                ev = await asyncio.wait_for(queue.get(), timeout=15)
-            except asyncio.TimeoutError:
-                yield ": keep-alive\n\n"
-                continue
-            if ev is None:
-                break
-            yield f"data: {json.dumps(ev)}\n\n"
 
-    return StreamingResponse(stream(), media_type="text/event-stream",
-                             headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"})
+@app.get("/api/analyze/{job_id}/stream")
+async def analyze_stream(job_id: str, request: Request, start: int = 0):
+    """Reconnects to an analysis: replays its events from the start (or `start`), then follows it live."""
+    job = _get_job(job_id, request)
+    if job is None:
+        return JSONResponse({"error": "That analysis is no longer available."}, status_code=404)
+    return StreamingResponse(_stream_job(job, max(0, start)), media_type="text/event-stream", headers=_SSE_HEADERS)
+
+
+@app.get("/api/analyze/{job_id}/status")
+def analyze_status(job_id: str, request: Request):
+    """Small status for the 'analysis is running' marker on the other pages."""
+    job = _get_job(job_id, request)
+    if job is None:
+        return JSONResponse({"error": "That analysis is no longer available."}, status_code=404)
+    events = list(job["events"])
+    return {
+        "running": not job["done"],
+        "progress": max([e.get("progress", 0) for e in events if e.get("type") == "node"], default=0),
+        "has_result": any(e.get("type") == "result" for e in events),
+    }
 
 
 def evidence_summary() -> str:
@@ -308,7 +362,7 @@ def evidence_summary() -> str:
         timing = ("In monthly tests of 2008 and COVID the score reached the alarm line in the same month the official recession "
                   "began, so it gave no months of advance warning." if all(v == 0 for v in leads) else
                   "In monthly tests of 2008 and COVID the timing against official recession dates was mixed.")
-        return (f"Tested on {s['total']} past dates ({s['stress_total']} stress dates and {s['normal_total']} calm dates; the first 41 were used while building the model and the other 259 were scored afterwards with the settings fixed), "
+        return (f"Tested on {s['total']} past dates ({s['stress_total']} stress dates and {s['normal_total']} calm dates; every date drawn at random by a fixed rule from stress and calm periods chosen in advance, with the weights and alarm line fixed before scoring), "
                 f"the alarm switched on for {s['stress_flagged']} of {s['stress_total']} stress dates and for {s['false_alarms']} of {s['normal_total']} calm dates. "
                 f"That is {s['right']} of {s['total']} right ({s['right'] / s['total']:.0%}). The AUC, which shows how well the score ranks stress above calm, was {s['auc']} (1.00 is perfect and 0.50 is a coin flip). "
                 f"The average score was {s['avg_stress']} on stress dates and {s['avg_normal']} on calm dates. "
@@ -337,7 +391,7 @@ def honest_limits() -> str:
               if timing_zero else "In the monthly tests of 2008 and COVID the timing against official recession dates was mixed.")
     return f"""HONEST LIMITS, ranked from most to least important
 1. Timing. {timing}
-2. Modest, partly self-chosen test. It was checked on {total} past dates drawn from known stress and calm periods, the first 41 were used while building the model, and the weights and level boundaries are working values, not proven constants. Results could look different on other dates.
+2. Modest test with hand-defined periods. It was checked on {total} past dates that a computer drew at random, but only from stress and calm periods chosen in advance by hand, so it shows how well the score separates those periods, not how it scores every ordinary day. The weights and level boundaries are working values, not proven constants.
 3. Missed stress days. It missed {n_missed} of {s['stress_total']} stress dates, and {s['missed_near_line']} of those scored within 5 points of the alarm line. A lower alarm line catches more stress days but gives more false alarms.
 4. News reading. The AI's reading of news can move a few points between runs, so the news part is the least stable part. That is why news counts for only {CATEGORY_WEIGHTS['geopolitical']}% and why a separate news alert is shown. The news text for past test dates was written from the historical record, so that part of the tests is less independent.
 5. Compressed scale. Calm markets scored between {lo:.0f} and {hi:.0f}, and no test date went above {top:.0f}, so the top Crisis level has not been demonstrated.
@@ -450,6 +504,64 @@ async def chat(body: ChatIn, request: Request):
         print(f"[api] chat failed: {exc!r}", flush=True)
         return JSONResponse({"error": "Could not answer right now. Please try again."}, status_code=502)
     return {"answer": answer}
+
+
+@app.post("/api/chat/stream")
+async def chat_stream(body: ChatIn, request: Request):
+    """Same answer as /api/chat, but sent as plain text while the model writes it, so the page can show it word by word."""
+    ip = client_ip(request)
+    if not limiter.allow(f"chat:{ip}", CHATS_PER_IP_PER_HOUR, 3600):
+        return JSONResponse({"error": "Too many questions for now. Please try again later."}, status_code=429)
+
+    async def one(text: str):
+        yield text
+
+    if BLOCKED_REQUEST.search(body.question):
+        return StreamingResponse(one(BLOCKED_REPLY), media_type="text/plain; charset=utf-8", headers=_SSE_HEADERS)
+
+    from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
+    from langchain_openai import ChatOpenAI
+
+    messages = [SystemMessage(content=f"{CHAT_RULES}\n\n{project_facts()}")]
+    for turn in body.history[-8:]:
+        messages.append(HumanMessage(content=turn.content) if turn.role == "user" else AIMessage(content=turn.content))
+    messages.append(HumanMessage(content=f"CURRENT ANALYSIS\n{body.context}\n\nQUESTION\n{body.question}"))
+    llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.2, timeout=40, max_retries=1, streaming=True)
+
+    def clean(piece: str, carry: str) -> tuple[str, str]:
+        """Removes ** markers, holding back a single trailing * in case the other half arrives in the next piece."""
+        text = (carry + piece).replace("**", "")
+        return (text[:-1], "*") if text.endswith("*") else (text, "")
+
+    # wait for the first words before answering, so a failed call can still return a proper error (and one retry)
+    stream, first, carry = None, "", ""
+    for _ in range(2):
+        try:
+            stream = llm.astream(messages)
+            async for chunk in stream:
+                first, carry = clean(chunk.content or "", carry)
+                if first.strip():
+                    break
+            if first.strip():
+                break
+        except Exception as exc:
+            print(f"[api] chat stream failed: {exc!r}", flush=True)
+        stream, first, carry = None, "", ""
+    if stream is None:
+        return JSONResponse({"error": "Could not answer right now. Please try again."}, status_code=502)
+
+    async def body_stream():
+        nonlocal carry
+        yield first.lstrip()
+        try:
+            async for chunk in stream:
+                piece, carry = clean(chunk.content or "", carry)
+                if piece:
+                    yield piece
+        except Exception as exc:
+            print(f"[api] chat stream interrupted: {exc!r}", flush=True)
+
+    return StreamingResponse(body_stream(), media_type="text/plain; charset=utf-8", headers=_SSE_HEADERS)
 
 
 # ---------------------------------------------------------------- pages and static files

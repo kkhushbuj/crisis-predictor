@@ -4,6 +4,19 @@ export const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)"
 const gsap = window.gsap;
 if (gsap && window.ScrollTrigger) gsap.registerPlugin(window.ScrollTrigger);
 
+/* Waits (at most 1.5 s) for the two page fonts, so text does not jump when they arrive. */
+export function fontsReady() {
+  if (!document.fonts || !document.fonts.load) return Promise.resolve();
+  const loads = Promise.all([
+    document.fonts.load('800 1em "Bricolage Grotesque"'),
+    document.fonts.load('400 1em "Instrument Sans"'),
+  ]).catch(() => {});
+  return Promise.race([loads, new Promise((resolve) => setTimeout(resolve, 1500))]);
+}
+
+/* The page stays hidden until this is called (see bold.css), then fades in once, with fonts and first layout in place. */
+export function markReady() { document.documentElement.classList.add("ready"); }
+
 export function el(tag, attrs = {}, ...children) {
   const node = document.createElement(tag);
   for (const [k, v] of Object.entries(attrs || {})) {

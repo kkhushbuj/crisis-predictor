@@ -120,9 +120,13 @@ export function initHow(config, evidence) {
     }
   };
 
+  // at most one update per frame, however many scroll events arrive
+  let queued = false;
+  const pickSoon = () => { if (!queued) { queued = true; requestAnimationFrame(() => { queued = false; pick(); }); } };
+
   mount();
   pick();
-  window.addEventListener("scroll", pick, { passive: true });
-  window.addEventListener("resize", pick);
+  window.addEventListener("scroll", pickSoon, { passive: true });
+  window.addEventListener("resize", pickSoon);
   wide.addEventListener("change", () => { mount(); pick(); });
 }

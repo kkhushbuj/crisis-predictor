@@ -1,8 +1,15 @@
-import { el, loadConfig, buildScale, zoneFor, zoneColor, reduceMotion, gsap, formatTime } from "./common.js";
+import { el, loadConfig, buildScale, zoneFor, zoneColor, reduceMotion, gsap, formatTime, fontsReady, markReady } from "./common.js";
 import { initChrome, magnetic } from "./effects.js";
 
 const $ = (id) => document.getElementById(id);
 const HIST_KEY = "cp_history_v1";
+// The id of the analysis running for this tab. It lets this page reconnect to it after a visit to another page, and lets
+// the other pages show that it is still running (see status.js).
+const JOB_KEY = "cp_job_v1";
+const readJob = () => { try { return sessionStorage.getItem(JOB_KEY); } catch { return null; } };
+const writeJob = (id) => { try { if (id) sessionStorage.setItem(JOB_KEY, id); else sessionStorage.removeItem(JOB_KEY); } catch { /* storage unavailable */ } };
+// darker shades of the four level colours, so the big score number stays readable on the light page
+const LEVEL_INK = { Calm: "#217a4e", Elevated: "#9c7300", Stress: "#c2570a", Crisis: "#d3213f" };
 
 const STAGES = [
   { key: "credit_systemic", label: "Credit and systemic" },
@@ -49,6 +56,7 @@ function renderHistory() {
     const asked = chat ? chat.length : 0;
     const zone = zoneFor(result.composite, config.regimes);
     const b = el("button", { type: "button", class: id === currentId ? "current" : "" },
+      el("i", { class: "lv", style: `background:${zoneColor(zone.label)}` }),
       el("b", { text: result.composite.toFixed(1) }),
       el("span", { text: `${zone.label}, alarm ${result.status === "ON" ? "on" : "off"}` }),
       el("small", { text: formatTime(result.created_at) + (asked ? ` · ${asked} question${asked > 1 ? "s" : ""}` : "") }));
@@ -77,6 +85,8 @@ function resetResult() {
   $("signals-panel").hidden = true;
   $("pair").hidden = true;
   $("groups").textContent = "";
+  $("flat").textContent = "";
+  $("sig-sort").hidden = true;
   $("msgs").textContent = "";
   chatLog = [];
   $("news-callout").hidden = true;
@@ -117,7 +127,7 @@ function factorRow(f) {
     el("div", {},
       el("div", { class: "f-name", text: f.label }),
       el("div", { class: "f-val", text: f.value || "" }),
-      el("div", { class: "f-why", text: f.reasoning || "No reason recorded." })),
+      el("div", { class: "f-why-wrap" }, el("div", {}, el("div", { class: "f-why", text: f.reasoning || "No reason recorded." })))),
     bar,
     el("div", { class: `f-score ${cls}`, text: s > 0 ? `+${s}` : String(s) }));
   const toggle = () => {
@@ -157,6 +167,38 @@ function addFactors(catKey, factors, animate) {
   });
 }
 
+/* ---------------------------------------------------------------- live counter, order switch, sticky score */
+function updateScored() {
+  const done = $("groups").querySelectorAll(".factor").length;
+  const total = config.categories.reduce((n, c) => n + c.factors.length, 0);
+  $("scored").textContent = `${done} of ${total} signals scored`;
+}
+
+function setSort(mode) {
+  document.querySelectorAll("#sig-sort button").forEach((b) => b.classList.toggle("on", b.dataset.mode === mode));
+  const worst = mode === "worst" && current;
+  $("flat").hidden = !worst;
+  $("groups").hidden = !!worst;
+  if (!worst) return;
+  const flat = $("flat");
+  flat.textContent = "";
+  const rows = [];
+  current.categories.forEach((c) => Object.values(c.factors).forEach((f) => rows.push({ f, cat: c.label })));
+  rows.sort((a, b) => (a.f.score ?? 0) - (b.f.score ?? 0));
+  rows.forEach(({ f, cat }) => {
+    const row = factorRow(f);
+    row.querySelector(".f-name").append(el("span", { class: "f-cat", text: cat }));
+    flat.append(row);
+  });
+}
+
+function updateMini(result, zone) {
+  const mini = $("mini-bar");
+  mini.textContent = "";
+  mini.style.setProperty("--c", zoneColor(zone.label));
+  mini.append(el("i"), el("b", { text: result.composite.toFixed(1) }), el("span", { text: `${zone.label}, alarm ${result.status === "ON" ? "on" : "off"}` }));
+}
+
 /* ---------------------------------------------------------------- the answer */
 function setScoreText(v) {
   $("score-val").textContent = v.toFixed(1);
@@ -187,6 +229,7 @@ function showResult(result, { animate, fromHistory = false, chat = [] }) {
   const sn = $("score-num");
   sn.textContent = "";
   sn.append(el("span", { id: "score-val", text: animate && !reduceMotion ? "0.0" : composite.toFixed(1) }), el("span", { class: "score-of", text: "/ 100" }));
+  sn.style.color = LEVEL_INK[zone.label] || "";
   const host = $("result-scale");
   const { field } = buildScale(host, config.regimes, { height: 84 });
   const needle = el("div", { class: "needle", style: `height:${84 + 20}px;top:-10px;left:${animate && !reduceMotion ? 0 : composite}%` });
@@ -218,7 +261,7 @@ function showResult(result, { animate, fromHistory = false, chat = [] }) {
   rows.textContent = "";
   const fills = [];
   result.categories.forEach((c) => {
-    const fill = el("i", { style: `width:${animate && !reduceMotion ? 0 : c.crisis_pct}%` });
+    const fill = el("i", { style: `width:${animate && !reduceMotion ? 0 : c.crisis_pct}%;background:${zoneColor(zoneFor(c.crisis_pct, config.regimes).label)}` });
     fills.push([fill, c.crisis_pct]);
     rows.append(el("div", { class: "cat-row" },
       el("div", { class: "name" }, c.label, el("span", { text: `weight ${c.weight}%` })),
@@ -242,6 +285,9 @@ function showResult(result, { animate, fromHistory = false, chat = [] }) {
   fillList("bear-list", result.bearish);
   $("pair").hidden = !(result.bullish.length || result.bearish.length);
 
+  $("sig-sort").hidden = false;
+  setSort("cat");
+  updateMini(result, zone);
   $("followup").hidden = false;
   $("disclaimer").hidden = false;
   chatLog = chat.slice();
@@ -266,7 +312,7 @@ function showResult(result, { animate, fromHistory = false, chat = [] }) {
 }
 
 /* ---------------------------------------------------------------- running an analysis */
-async function startAnalysis() {
+async function startAnalysis(resumeId = null) {
   if (running) return;
   running = true;
   $("run").disabled = true;
@@ -276,6 +322,7 @@ async function startAnalysis() {
   currentId = null;
   const chips = buildStages();
   setStages(chips, 0);
+  updateScored();
   $("bar").style.width = "4%";
   showView("run");
   window.scrollTo({ top: 0, behavior: "auto" });
@@ -283,8 +330,12 @@ async function startAnalysis() {
   const nodeIndex = { credit_systemic: 1, liquidity_shock: 2, macro: 3, geopolitical: 4 };
   let finished = false;
   try {
-    const res = await fetch("/api/analyze", { method: "POST", headers: { Accept: "text/event-stream" } });
+    // a new run starts a job; a resumed one reconnects to the job and replays what it has done so far
+    const res = resumeId
+      ? await fetch(`/api/analyze/${resumeId}/stream`, { headers: { Accept: "text/event-stream" } })
+      : await fetch("/api/analyze", { method: "POST", headers: { Accept: "text/event-stream" } });
     if (!res.ok) {
+      if (resumeId) writeJob(null);
       let msg = "Something went wrong. Please try again.";
       try { msg = (await res.json()).error || msg; } catch { /* keep default */ }
       throw new Error(msg);
@@ -303,27 +354,32 @@ async function startAnalysis() {
         const line = chunk.split("\n").find((l) => l.startsWith("data: "));
         if (!line) continue;
         const ev = JSON.parse(line.slice(6));
-        if (ev.type === "node") {
+        if (ev.type === "job") {
+          writeJob(ev.id);
+        } else if (ev.type === "node") {
           $("bar").style.width = `${Math.max(4, ev.progress * 100)}%`;
           if (ev.category) {
             addFactors(ev.category, ev.factors, true);
+            updateScored();
             setStages(chips, nodeIndex[ev.category]);
           } else {
             setStages(chips, STAGES.length);
           }
         } else if (ev.type === "result") {
           finished = true;
+          writeJob(null);
           currentId = saveHistory(ev.result);
           showResult(ev.result, { animate: true });
         } else if (ev.type === "error") {
+          writeJob(null);
           throw new Error(ev.message);
         }
       }
     }
-    if (!finished) throw new Error("The analysis ended early. Please try again.");
+    if (!finished) { writeJob(null); throw new Error("The analysis ended early. Please try again."); }
   } catch (err) {
     const dropped = err instanceof TypeError; // fetch reports a dropped connection as a TypeError
-    showError(dropped ? "The connection was interrupted before the analysis finished. Please run it again." : err.message || "Something went wrong. Please try again.");
+    showError(dropped ? "The connection was interrupted. Your analysis may still be running: reload this page to pick it up again." : err.message || "Something went wrong. Please try again.");
     $("groups").textContent = "";
     $("signals-panel").hidden = true;
     showView("idle");
@@ -353,24 +409,59 @@ function renderSuggestions() {
   });
 }
 
-async function requestAnswer(question) {
+/* Reads the answer as the server writes it. onText gets each new piece; the full answer is returned at the end.
+   If nothing has arrived yet, a failed call is retried once. */
+async function requestAnswer(question, onText) {
   const history = chatLog.slice(-4).flatMap((m) => [{ role: "user", content: m.q }, { role: "assistant", content: m.a }]);
   let lastError = new Error("Could not answer right now. Please try again.");
-  for (let attempt = 0; attempt < 2; attempt++) { // one automatic retry for a failed or empty reply
+  for (let attempt = 0; attempt < 2; attempt++) {
+    let full = "";
     try {
-      const res = await fetch("/api/chat", {
+      const res = await fetch("/api/chat/stream", {
         method: "POST", headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ question, context: chatContext(), history }),
       });
-      const data = await res.json().catch(() => ({}));
-      if (res.ok && data.answer) return data.answer;
-      lastError = new Error(data.error || (data.detail ? "Please ask a longer question." : "Could not answer right now. Please try again."));
-      if (res.status === 429 || res.status === 422) break; // retrying will not help
+      if (!res.ok || !res.body) {
+        const data = await res.json().catch(() => ({}));
+        lastError = new Error(data.error || (data.detail ? "Please ask a longer question." : "Could not answer right now. Please try again."));
+        if (res.status === 429 || res.status === 422) break; // retrying will not help
+        continue;
+      }
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder();
+      for (;;) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        const piece = decoder.decode(value, { stream: true });
+        full += piece;
+        onText(piece);
+      }
+      if (full.trim()) return full.trim();
+      lastError = new Error("Could not answer right now. Please try again.");
     } catch (err) {
+      if (full.trim()) return full.trim(); // the connection dropped after most of the answer arrived: keep what we have
       lastError = new Error("The connection was interrupted. Please try again.");
     }
   }
   throw lastError;
+}
+
+/* Types text into a bubble at an even pace, however the pieces arrive: a larger backlog is shown faster, so it never lags far behind. */
+function typewriter(node) {
+  let queue = "", shown = "", finished = false, resolveDone;
+  const done = new Promise((r) => { resolveDone = r; });
+  const tick = () => {
+    if (queue) {
+      const n = (reduceMotion || document.hidden) ? queue.length : Math.max(1, Math.ceil(queue.length / 14));
+      shown += queue.slice(0, n);
+      queue = queue.slice(n);
+      node.textContent = shown;
+    }
+    if (queue || !finished) requestAnimationFrame(tick);
+    else resolveDone();
+  };
+  requestAnimationFrame(tick);
+  return { push(t) { queue += t; }, finish() { finished = true; }, done };
 }
 
 async function ask(question) {
@@ -380,15 +471,29 @@ async function ask(question) {
   $("suggest").textContent = "";
   const msgs = $("msgs");
   msgs.append(el("div", { class: "msg q", text: question }));
-  const thinking = el("div", { class: "msg a", text: "Thinking..." });
+  const thinking = el("div", { class: "msg a thinking", "aria-live": "polite" },
+    el("span", { class: "dots", "aria-hidden": "true" }, el("i"), el("i"), el("i")), el("span", { class: "think-label", text: "Reading the analysis" }));
   msgs.append(thinking);
   const owner = currentId; // the analysis this question belongs to
+  let typer = null;
   try {
-    const answer = await requestAnswer(question);
+    const answer = await requestAnswer(question, (piece) => {
+      if (!typer) {
+        thinking.textContent = ""; // the first words have arrived: swap the dots for the answer
+        thinking.classList.remove("thinking");
+        thinking.classList.add("streaming");
+        typer = typewriter(thinking);
+      }
+      typer.push(piece);
+    });
+    typer.finish();
+    await typer.done;
+    thinking.classList.remove("streaming");
     thinking.textContent = answer;
     chatLog.push({ q: question, a: answer });
     if (owner) { saveChat(owner, chatLog); renderHistory(); }
   } catch (err) {
+    if (typer) typer.finish();
     thinking.className = "msg err";
     thinking.textContent = err.message;
   } finally {
@@ -401,16 +506,28 @@ async function ask(question) {
 async function main() {
   initChrome();
   magnetic([$("run")]);
+  const cfg = loadConfig();
+  cfg.catch(() => {}); // handled below
+  await fontsReady();
+  markReady();
   try {
-    config = await loadConfig();
+    config = await cfg;
   } catch {
     showError("The service is not reachable right now. Please refresh the page.");
     $("run").disabled = true;
     return;
   }
   buildScale($("idle-scale"), config.regimes, { height: 84 });
+  const nFactors = config.categories.reduce((n, c) => n + c.factors.length, 0);
+  [[nFactors, "signals scored"], [config.categories.length, "categories"], ["45s", "about, start to finish"]].forEach(([v, t]) => {
+    $("facts").append(el("div", { class: "fact" }, el("b", { text: String(v) }), el("span", { text: t })));
+  });
+  document.querySelectorAll("#sig-sort button").forEach((b) => b.addEventListener("click", () => setSort(b.dataset.mode)));
+  if ("IntersectionObserver" in window) {
+    new IntersectionObserver(([e]) => $("mini-bar").classList.toggle("show", !e.isIntersecting && !$("view-answer").hidden), { rootMargin: "-70px 0px 0px 0px" }).observe($("score-num"));
+  }
   $("limit-note").textContent = `Each visitor can run ${config.limits.analyses_per_hour} analyses per hour, which keeps the service free for everyone. Your results are kept only for this visit.`;
-  $("run").addEventListener("click", startAnalysis);
+  $("run").addEventListener("click", () => startAnalysis());
   $("again").addEventListener("click", () => { currentId = null; resetResult(); showView("idle"); renderHistory(); window.scrollTo({ top: 0 }); });
   $("clear-hist").addEventListener("click", () => { writeHistory([]); renderHistory(); });
   $("ask-form").addEventListener("submit", (e) => {
@@ -422,6 +539,8 @@ async function main() {
     ask(q);
   });
   renderHistory();
+  const saved = readJob();
+  if (saved) startAnalysis(saved); // an analysis was running when this tab last left the page
 }
 
 main();
