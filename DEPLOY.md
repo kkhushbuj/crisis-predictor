@@ -13,6 +13,17 @@ uvicorn api.main:app --port 8000
 Open http://localhost:8000. You need a `.env` file in the project root with `OPENAI_API_KEY`,
 `FRED_API_KEY` and (optionally) `TAVILY_API_KEY`.
 
+## Live deployment (Oracle Cloud)
+
+The site is live at https://145-241-213-220.sslip.io on an Oracle Cloud Always Free ARM server
+(Ubuntu 22.04, 4 CPUs, 24 GB RAM). The setup is:
+
+- The project lives in `~/crisis` with its own Python virtual environment and a `.env` file that only exists on the server.
+- A systemd service (`crisis.service`) runs `uvicorn api.main:app --host 127.0.0.1 --port 8000` and restarts it on failure or reboot.
+- Caddy serves HTTPS for the free `sslip.io` name and proxies to port 8000 (streaming is not buffered, long timeouts).
+- The Oracle security list allows ports 22, 80 and 443.
+- One full analysis takes about 45 seconds and the app peaks at about 230 MB of memory.
+
 ## Deploy on Render
 
 1. Push the project to GitHub (the `.env` file is already in `.gitignore`).

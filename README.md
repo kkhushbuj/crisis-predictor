@@ -2,6 +2,8 @@
 
 An AI-assisted financial stress monitor. It reads 14 live signals from credit markets, stock markets, the economy and the news, scores each one, and combines them into a single **Crisis Score from 0 to 100**, a risk level (Calm, Elevated, Stress, Crisis) and an alarm.
 
+**Live site: https://145-241-213-220.sslip.io**
+
 It is an academic project and not financial advice.
 
 ## How it works
@@ -56,7 +58,7 @@ FRED_API_KEY=...
 TAVILY_API_KEY=...   # optional
 ```
 
-See [DEPLOY.md](DEPLOY.md) for deploying on Render.
+The live site runs on an Oracle Cloud ARM server (4 CPUs, 24 GB) behind Caddy with HTTPS. See [DEPLOY.md](DEPLOY.md) for how it is deployed there and on Render.
 
 ## Project layout
 
