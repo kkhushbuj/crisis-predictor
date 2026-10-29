@@ -85,6 +85,15 @@ export function initChrome() {
   measure();
   paint();
   window.addEventListener("scroll", schedule, { passive: true });
+  // while the page is moving, hover effects are switched off (see .is-scrolling in bold.css): otherwise every dot, row and card that
+  // slides under a still cursor fires its hover, tooltip and read-out at once, which is what made scrolling over the dots stutter
+  const root = document.documentElement;
+  let stillTimer = 0;
+  window.addEventListener("scroll", () => {
+    if (!root.classList.contains("is-scrolling")) root.classList.add("is-scrolling");
+    clearTimeout(stillTimer);
+    stillTimer = setTimeout(() => root.classList.remove("is-scrolling"), 160);
+  }, { passive: true });
   window.addEventListener("resize", () => { measure(); schedule(); });
   window.addEventListener("load", () => { measure(); schedule(); });
   if ("ResizeObserver" in window) new ResizeObserver(() => { measure(); schedule(); }).observe(document.body);

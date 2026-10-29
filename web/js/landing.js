@@ -103,12 +103,19 @@ function renderHero(config, evidence) {
   let fieldLeft = 0, fieldWidth = 1;
   const measureField = () => { const r = field.getBoundingClientRect(); fieldLeft = r.left; fieldWidth = r.width || 1; };
   field.addEventListener("pointerenter", measureField);
+  // at most one read-out update per frame, however many pointer events arrive
+  let scrubFrame = 0, scrubX = 0;
   field.addEventListener("pointermove", (e) => {
-    const pct = Math.min(100, Math.max(0, ((e.clientX - fieldLeft) / fieldWidth) * 100));
-    scrub.style.left = `${pct}%`;
-    const shown = Math.round(pct);
-    scrubLabel.textContent = `${shown}, ${zoneFor(shown, config.regimes).label}`;
-    scrub.classList.add("on");
+    scrubX = e.clientX;
+    if (scrubFrame) return;
+    scrubFrame = requestAnimationFrame(() => {
+      scrubFrame = 0;
+      const pct = Math.min(100, Math.max(0, ((scrubX - fieldLeft) / fieldWidth) * 100));
+      scrub.style.left = `${pct}%`;
+      const shown = Math.round(pct);
+      scrubLabel.textContent = `${shown}, ${zoneFor(shown, config.regimes).label}`;
+      scrub.classList.add("on");
+    });
   });
   field.addEventListener("pointerleave", () => scrub.classList.remove("on"));
 

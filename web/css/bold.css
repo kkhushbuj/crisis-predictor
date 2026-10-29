@@ -227,3 +227,7 @@ html { background: var(--ground); }
 .swap-in .factor, .swap-in .group h3 { animation: rise 0.55s cubic-bezier(0.2, 0.7, 0.2, 1) backwards; animation-delay: calc(var(--i, 0) * 45ms); }
 .swap-in .group h3 { animation-delay: 0s; }
 @media (prefers-reduced-motion: reduce) { .swap-in .factor, .swap-in .group h3 { animation: none; } }
+
+/* while the page is scrolling nothing reacts to the pointer, so content sliding under a still cursor cannot trigger hover work */
+.is-scrolling body, .is-scrolling .dots-layer .dot { pointer-events: none; }
+.is-scrolling .tip.show, .is-scrolling .scrub.on { opacity: 0; }
