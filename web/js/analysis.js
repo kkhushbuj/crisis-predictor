@@ -163,14 +163,15 @@ function openReveal(node, animate) {
   if (animate && !reduceMotion) {
     node.classList.add("animating");
     requestAnimationFrame(() => requestAnimationFrame(() => node.classList.add("open"))); // two frames, so the closed state is drawn first
+    setTimeout(() => node.classList.add("settled"), 1200); // once fully open it stops clipping its content
   } else {
     node.classList.remove("animating");
-    node.classList.add("open");
+    node.classList.add("open", "settled");
   }
 }
 function closeReveal(node) {
   node.hidden = true;
-  node.classList.remove("open", "animating");
+  node.classList.remove("open", "animating", "settled");
 }
 
 function groupBlock(catKey, animate) {

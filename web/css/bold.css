@@ -118,8 +118,16 @@ section.block { padding-block: clamp(60px, 8vw, 120px); }
 .seg button { border: 0; background: transparent; padding: 10px 18px; font-weight: 650; font-size: var(--t-small); color: var(--ink-2); }
 .seg button.on { background: var(--ink); color: #fff; }
 .diverge { height: 20px; }
-.factor { transition: background-color 0.2s ease, transform 0.2s ease; }
-.factor:hover { transform: translateX(4px); }
+/* a signal row never moves on hover: a soft highlight fades in behind it and a blue edge grows, and both cross-fade as the pointer moves from row to row */
+.factor { position: relative; isolation: isolate; }
+.factor::before { content: ""; position: absolute; inset: 2px -16px 0; background: var(--surface); opacity: 0; transition: opacity 0.28s ease; z-index: -1; }
+.factor::after { content: ""; position: absolute; left: -16px; top: 18px; bottom: 16px; width: 3px; background: var(--accent); transform: scaleY(0); transition: transform 0.35s cubic-bezier(0.2, 0.7, 0.2, 1); }
+.factor:hover::before, .factor:focus-visible::before { opacity: 1; } /* an open row keeps only the blue edge, so its white reason box stays visible */
+.factor:hover::after, .factor:focus-visible::after, .factor.open::after { transform: scaleY(1); }
+.factor .f-name { transition: color 0.25s ease; }
+/* once a block has finished opening it no longer clips, so the highlight can reach past its edges */
+.reveal-h.settled > .reveal-in { overflow: visible; }
+@media (prefers-reduced-motion: reduce) { .factor::before, .factor::after, .factor .f-name { transition: none; } }
 .f-cat { color: var(--ink-3); font-weight: 500; font-size: var(--t-small); margin-left: 8px; }
 
 .hist button { position: relative; padding-left: 34px; }
