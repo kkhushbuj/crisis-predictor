@@ -8,8 +8,7 @@ function smoothScroll() {
   const lenis = new Lenis({ lerp: 0.1 });
   if (gsap) {
     if (window.ScrollTrigger) lenis.on("scroll", window.ScrollTrigger.update);
-    gsap.ticker.add((t) => lenis.raf(t * 1000));
-    gsap.ticker.lagSmoothing(0);
+    gsap.ticker.add((t) => lenis.raf(t * 1000)); // GSAP's default lag smoothing stays on, so animations resume where they were after a tab switch instead of jumping ahead
   } else {
     const loop = (t) => { lenis.raf(t); requestAnimationFrame(loop); };
     requestAnimationFrame(loop);
@@ -56,6 +55,8 @@ function pageTransitions() {
    The page height is measured only when the window changes size, and the work is done at most once per frame. */
 export function initChrome() {
   smoothScroll();
+  // looping animations stand still while the tab is hidden, so they carry on from the same place when you come back
+  document.addEventListener("visibilitychange", () => document.documentElement.classList.toggle("tab-hidden", document.hidden));
   pageTransitions();
   const head = document.getElementById("site-head");
   const bar = document.getElementById("scroll-progress");

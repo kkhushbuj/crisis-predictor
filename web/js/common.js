@@ -2,7 +2,11 @@
 
 export const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const gsap = window.gsap;
-if (gsap && window.ScrollTrigger) gsap.registerPlugin(window.ScrollTrigger);
+if (gsap && window.ScrollTrigger) {
+  gsap.registerPlugin(window.ScrollTrigger);
+  // ScrollTrigger re-measures the whole page every time the tab becomes visible again, which makes the page flicker when you switch tabs; the window-resize and load refreshes are enough
+  window.ScrollTrigger.config({ autoRefreshEvents: "DOMContentLoaded,load,resize" });
+}
 
 /* Waits (at most 1.5 s) for the two page fonts, so text does not jump when they arrive. */
 export function fontsReady() {

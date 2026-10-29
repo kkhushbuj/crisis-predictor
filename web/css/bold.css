@@ -191,3 +191,6 @@ html { background: var(--ground); }
 .status-line { transition: opacity 0.25s ease; }
 .status-line.swap { opacity: 0; }
 @media (prefers-reduced-motion: reduce) { .stage, .stage i, .progress div, .status-line { transition: none; } .stage.active i { animation: none; } }
+
+/* nothing keeps animating in the background: when the tab is hidden everything pauses, and carries on from the same place when you return */
+.tab-hidden *, .tab-hidden *::before, .tab-hidden *::after { animation-play-state: paused !important; }
