@@ -447,7 +447,7 @@ async function requestAnswer(question, onText) {
 }
 
 /* Types text into a bubble at an even pace, however the pieces arrive: a larger backlog is shown faster, so it never lags far behind. */
-function typewriter(node) {
+function typewriter(node, onTick) {
   let queue = "", shown = "", finished = false, resolveDone, last = performance.now(), owed = 0;
   const done = new Promise((r) => { resolveDone = r; });
   const tick = (now) => {
@@ -462,6 +462,7 @@ function typewriter(node) {
         shown += queue.slice(0, n);
         queue = queue.slice(n);
         node.textContent = shown;
+        if (onTick) onTick();
       }
     }
     if (queue || !finished) requestAnimationFrame(tick);
@@ -483,13 +484,27 @@ async function ask(question) {
   msgs.append(thinking);
   const owner = currentId; // the analysis this question belongs to
   let typer = null;
+
+  // keep the newest text and the question box on screen while the answer grows, until the reader scrolls up on their own
+  let following = true;
+  const stopFollowing = (e) => { if (e.type !== "wheel" || e.deltaY < 0) following = false; };
+  const stopKeys = (e) => { if (["ArrowUp", "PageUp", "Home"].includes(e.key)) following = false; };
+  window.addEventListener("wheel", stopFollowing, { passive: true });
+  window.addEventListener("touchmove", stopFollowing, { passive: true });
+  window.addEventListener("keydown", stopKeys);
+  const follow = () => {
+    if (!following) return;
+    const over = $("ask-btn").getBoundingClientRect().bottom - (window.innerHeight - 28);
+    if (over > 0) window.scrollBy({ top: over, behavior: "instant" });
+  };
+  follow();
   try {
     const answer = await requestAnswer(question, (piece) => {
       if (!typer) {
         thinking.textContent = ""; // the first words have arrived: swap the dots for the answer
         thinking.classList.remove("thinking");
         thinking.classList.add("streaming");
-        typer = typewriter(thinking);
+        typer = typewriter(thinking, follow);
       }
       typer.push(piece);
     });
@@ -497,6 +512,7 @@ async function ask(question) {
     await typer.done;
     thinking.classList.remove("streaming");
     thinking.textContent = answer;
+    follow();
     chatLog.push({ q: question, a: answer });
     if (owner) { saveChat(owner, chatLog); renderHistory(); }
   } catch (err) {
@@ -504,6 +520,9 @@ async function ask(question) {
     thinking.className = "msg err";
     thinking.textContent = err.message;
   } finally {
+    window.removeEventListener("wheel", stopFollowing);
+    window.removeEventListener("touchmove", stopFollowing);
+    window.removeEventListener("keydown", stopKeys);
     chatBusy = false;
     $("ask-btn").disabled = false;
   }
