@@ -91,7 +91,7 @@ function showError(msg) {
 }
 function resetResult() {
   ["drivers", "followup", "disclaimer"].forEach((id) => ($(id).hidden = true));
-  $("signals-panel").hidden = true;
+  closeReveal($("signals-panel"));
   $("pair").hidden = true;
   $("groups").textContent = "";
   $("flat").textContent = "";
@@ -155,32 +155,41 @@ function factorRow(f) {
   return row;
 }
 
-function groupBlock(catKey) {
+/* Shows a hidden block. When it is new and animate is on, it grows open (see .reveal-h in bold.css) instead of appearing at full height. */
+function openReveal(node, animate) {
+  const wasHidden = node.hidden;
+  node.hidden = false;
+  if (!wasHidden && node.classList.contains("open")) return;
+  if (animate && !reduceMotion) {
+    node.classList.add("animating");
+    requestAnimationFrame(() => requestAnimationFrame(() => node.classList.add("open"))); // two frames, so the closed state is drawn first
+  } else {
+    node.classList.remove("animating");
+    node.classList.add("open");
+  }
+}
+function closeReveal(node) {
+  node.hidden = true;
+  node.classList.remove("open", "animating");
+}
+
+function groupBlock(catKey, animate) {
   let g = document.getElementById(`group-${catKey}`);
   if (g) return g.querySelector(".rows");
   const cat = config.categories.find((c) => c.key === catKey);
-  g = el("div", { class: "group", id: `group-${catKey}` },
+  g = el("div", { class: "group reveal-h", id: `group-${catKey}` }, el("div", { class: "reveal-in" },
     el("h3", {}, cat.label, el("span", { text: `${cat.weight}% of the score` })),
-    el("div", { class: "rows" }));
+    el("div", { class: "rows" })));
   $("groups").append(g);
+  openReveal(g, animate);
   return g.querySelector(".rows");
 }
 
 function addFactors(catKey, factors, animate) {
-  $("signals-panel").hidden = false;
-  const rows = groupBlock(catKey);
+  openReveal($("signals-panel"), animate);
+  const rows = groupBlock(catKey, animate);
   const cat = config.categories.find((c) => c.key === catKey);
-  const made = cat.factors.filter((f) => factors[f.key]).map((f) => {
-    const row = factorRow(factors[f.key]);
-    rows.append(row);
-    return row;
-  });
-  if (!animate || reduceMotion || !gsap) return;
-  gsap.from(made, { opacity: 0, y: 16, duration: 0.7, ease: "power3.out", stagger: 0.07 });
-  made.forEach((row, i) => {
-    const fill = row.querySelector(".diverge i");
-    if (fill) gsap.from(fill, { scaleX: 0, duration: 0.9, ease: "power3.out", delay: 0.2 + i * 0.07 });
-  });
+  cat.factors.filter((f) => factors[f.key]).forEach((f) => rows.append(factorRow(factors[f.key])));
 }
 
 /* ---------------------------------------------------------------- live counter, order switch, sticky score */
@@ -287,7 +296,7 @@ function showResult(result, { animate, fromHistory = false, chat = [] }) {
   $("drivers").hidden = false;
 
   // signals (rows already exist after a live run; rebuild when loading from history)
-  $("signals-panel").hidden = false;
+  openReveal($("signals-panel"), false);
   if (fromHistory || !$("groups").children.length) {
     $("groups").textContent = "";
     result.categories.forEach((c) => addFactors(c.key, c.factors, false));
@@ -403,7 +412,7 @@ async function startAnalysis(resumeId = null) {
     const dropped = err instanceof TypeError; // fetch reports a dropped connection as a TypeError
     showError(dropped ? "The connection was interrupted. Your analysis may still be running: reload this page to pick it up again." : err.message || "Something went wrong. Please try again.");
     $("groups").textContent = "";
-    $("signals-panel").hidden = true;
+    closeReveal($("signals-panel"));
     await fadeOutCurrent();
     showView("idle");
   } finally {
