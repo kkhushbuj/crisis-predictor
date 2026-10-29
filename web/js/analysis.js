@@ -354,7 +354,7 @@ async function startAnalysis(resumeId = null) {
     ? fetch(`/api/analyze/${resumeId}/stream`, { headers: { Accept: "text/event-stream" } })
     : fetch("/api/analyze", { method: "POST", headers: { Accept: "text/event-stream" } });
   pending.catch(() => {}); // a failure is reported below, where the response is read
-  await glideToTop();
+  await glideToTop(true);
   await fadeOutCurrent();
   showView("run");
   window.scrollTo({ top: 0, behavior: "auto" });
@@ -398,6 +398,8 @@ async function startAnalysis(resumeId = null) {
         } else if (ev.type === "result") {
           finished = true;
           writeJob(null);
+          // the reader is brought up to the top first (scrolling paused for a moment), so the score appears in front of them instead of the page jumping under them
+          await glideToTop(true);
           await fadeOutCurrent();
           currentId = saveHistory(ev.result);
           showResult(ev.result, { animate: true });

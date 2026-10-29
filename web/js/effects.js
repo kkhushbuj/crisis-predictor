@@ -53,13 +53,14 @@ function pageTransitions() {
   window.addEventListener("pageshow", (e) => { if (e.persisted) document.documentElement.classList.remove("leaving"); });
 }
 
-/* Glides back to the top of the page (about 0.7 s) and resolves when it gets there. Instant when motion is reduced or the page is already at the top. */
-export function glideToTop() {
+/* Glides back to the top of the page (about 0.8 s) and resolves when it gets there. Instant when motion is reduced or the page is already at the top.
+   With lock on, wheel and touch scrolling are ignored until it arrives, so a reader who is still scrolling cannot fight the movement. */
+export function glideToTop(lock = false) {
   if (window.scrollY < 4) return Promise.resolve();
   if (!lenisInstance) { window.scrollTo({ top: 0, behavior: "auto" }); return Promise.resolve(); }
   return new Promise((resolve) => {
     const safety = setTimeout(resolve, 1200);
-    lenisInstance.scrollTo(0, { duration: 0.7, easing: (t) => 1 - Math.pow(1 - t, 3), onComplete: () => { clearTimeout(safety); resolve(); } });
+    lenisInstance.scrollTo(0, { duration: 0.8, lock, force: lock, easing: (t) => 1 - Math.pow(1 - t, 3), onComplete: () => { clearTimeout(safety); resolve(); } });
   });
 }
 
