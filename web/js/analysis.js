@@ -623,10 +623,12 @@ async function main() {
   const cfg = loadConfig();
   cfg.catch(() => {}); // handled below
   await fontsReady();
-  markReady();
+  // the page stays hidden until the start screen is filled in (at most 1.5 s more), so it fades in complete instead of filling in while it fades
+  await Promise.race([cfg.then(() => true, () => true), new Promise((resolve) => setTimeout(resolve, 1500))]);
   try {
     config = await cfg;
   } catch {
+    markReady();
     showError("The service is not reachable right now. Please refresh the page.");
     $("run").disabled = true;
     return;
@@ -660,9 +662,11 @@ async function main() {
     if (entry) {
       currentId = entry.id;
       showResult(entry.result, { animate: true, fromHistory: true, chat: entry.chat || [] });
+      markReady();
       return;
     }
   }
+  markReady();
   const saved = readJob();
   if (saved) startAnalysis(saved); // an analysis was running when this tab last left the page
 }
