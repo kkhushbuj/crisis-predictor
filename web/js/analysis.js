@@ -1,5 +1,5 @@
 import { el, loadConfig, buildScale, zoneFor, zoneColor, reduceMotion, gsap, formatTime, fontsReady, markReady } from "./common.js";
-import { initChrome, magnetic } from "./effects.js";
+import { initChrome, magnetic, glideToTop } from "./effects.js";
 
 const $ = (id) => document.getElementById(id);
 const HIST_KEY = "cp_history_v1";
@@ -340,6 +340,12 @@ async function startAnalysis(resumeId = null) {
   setStages(chips, 0);
   updateScored();
   $("bar").style.width = "4%";
+  // the request starts straight away; the screen change plays at the same time and never delays the analysis
+  const pending = resumeId
+    ? fetch(`/api/analyze/${resumeId}/stream`, { headers: { Accept: "text/event-stream" } })
+    : fetch("/api/analyze", { method: "POST", headers: { Accept: "text/event-stream" } });
+  pending.catch(() => {}); // a failure is reported below, where the response is read
+  await glideToTop();
   await fadeOutCurrent();
   showView("run");
   window.scrollTo({ top: 0, behavior: "auto" });
@@ -348,9 +354,7 @@ async function startAnalysis(resumeId = null) {
   let finished = false;
   try {
     // a new run starts a job; a resumed one reconnects to the job and replays what it has done so far
-    const res = resumeId
-      ? await fetch(`/api/analyze/${resumeId}/stream`, { headers: { Accept: "text/event-stream" } })
-      : await fetch("/api/analyze", { method: "POST", headers: { Accept: "text/event-stream" } });
+    const res = await pending;
     if (!res.ok) {
       if (resumeId) writeJob(null);
       let msg = "Something went wrong. Please try again.";
@@ -400,6 +404,7 @@ async function startAnalysis(resumeId = null) {
     showError(dropped ? "The connection was interrupted. Your analysis may still be running: reload this page to pick it up again." : err.message || "Something went wrong. Please try again.");
     $("groups").textContent = "";
     $("signals-panel").hidden = true;
+    await fadeOutCurrent();
     showView("idle");
   } finally {
     running = false;

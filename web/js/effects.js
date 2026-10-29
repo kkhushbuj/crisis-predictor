@@ -2,10 +2,12 @@ import { reduceMotion, gsap } from "./common.js";
 
 /* Wheel and trackpad scrolling glides (Lenis). Skipped for reduced motion. It drives GSAP's clock so scroll-linked
    animations stay in step, and in-page links glide to their section instead of jumping. */
+let lenisInstance = null;
 function smoothScroll() {
   const Lenis = window.Lenis;
   if (!Lenis || reduceMotion) return null;
   const lenis = new Lenis({ lerp: 0.1 });
+  lenisInstance = lenis;
   if (gsap) {
     if (window.ScrollTrigger) lenis.on("scroll", window.ScrollTrigger.update);
     gsap.ticker.add((t) => lenis.raf(t * 1000)); // GSAP's default lag smoothing stays on, so animations resume where they were after a tab switch instead of jumping ahead
@@ -49,6 +51,16 @@ function pageTransitions() {
   });
   // coming back with the browser's back button can show the old page from memory: make sure it is visible again
   window.addEventListener("pageshow", (e) => { if (e.persisted) document.documentElement.classList.remove("leaving"); });
+}
+
+/* Glides back to the top of the page (about 0.7 s) and resolves when it gets there. Instant when motion is reduced or the page is already at the top. */
+export function glideToTop() {
+  if (window.scrollY < 4) return Promise.resolve();
+  if (!lenisInstance) { window.scrollTo({ top: 0, behavior: "auto" }); return Promise.resolve(); }
+  return new Promise((resolve) => {
+    const safety = setTimeout(resolve, 1200);
+    lenisInstance.scrollTo(0, { duration: 0.7, easing: (t) => 1 - Math.pow(1 - t, 3), onComplete: () => { clearTimeout(safety); resolve(); } });
+  });
 }
 
 /* Sticky header gets slimmer once you scroll, and a thin bar in the four risk colours shows how far down the page you are.
