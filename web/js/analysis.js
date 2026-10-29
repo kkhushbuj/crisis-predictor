@@ -448,14 +448,21 @@ async function requestAnswer(question, onText) {
 
 /* Types text into a bubble at an even pace, however the pieces arrive: a larger backlog is shown faster, so it never lags far behind. */
 function typewriter(node) {
-  let queue = "", shown = "", finished = false, resolveDone;
+  let queue = "", shown = "", finished = false, resolveDone, last = performance.now(), owed = 0;
   const done = new Promise((r) => { resolveDone = r; });
-  const tick = () => {
+  const tick = (now) => {
+    const dt = Math.min((now - last) / 1000, 0.1);
+    last = now;
     if (queue) {
-      const n = (reduceMotion || document.hidden) ? queue.length : Math.max(1, Math.ceil(queue.length / 14));
-      shown += queue.slice(0, n);
-      queue = queue.slice(n);
-      node.textContent = shown;
+      // a steady reading pace (about 55 characters a second), a little quicker when a long backlog builds up, never faster than 110
+      owed += Math.min(55 + queue.length * 0.1, 110) * dt;
+      const n = (reduceMotion || document.hidden) ? queue.length : Math.floor(owed);
+      if (n > 0) {
+        owed -= n;
+        shown += queue.slice(0, n);
+        queue = queue.slice(n);
+        node.textContent = shown;
+      }
     }
     if (queue || !finished) requestAnimationFrame(tick);
     else resolveDone();
