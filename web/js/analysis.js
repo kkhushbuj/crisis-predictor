@@ -216,7 +216,7 @@ function buildFlat() {
 /* Switching between "By category" and "Most worrying first": the list on screen fades out, the other one fades in, and the height
    glides from the old size to the new one, so nothing snaps and the page below does not jump. */
 let sortToken = 0;
-const clearSwapStyles = (n) => { n.classList.remove("fade-out"); ["height", "overflow", "opacity", "transition"].forEach((p) => n.style.removeProperty(p)); };
+const clearSwapStyles = (n) => { n.classList.remove("fade-out", "swap-in"); ["height", "overflow", "opacity", "transition"].forEach((p) => n.style.removeProperty(p)); };
 function setSort(mode, animate = false) {
   document.querySelectorAll("#sig-sort button").forEach((b) => b.classList.toggle("on", b.dataset.mode === mode));
   const worst = mode === "worst" && current;
@@ -240,14 +240,14 @@ function setSort(mode, animate = false) {
     if (worst) buildFlat();
     showing.hidden = false;
     const toH = showing.offsetHeight;
+    showing.querySelectorAll(".factor").forEach((r, i) => r.style.setProperty("--i", i)); // the rows rise in one after another
+    showing.classList.add("swap-in");
     showing.style.overflow = "hidden";
     showing.style.height = `${fromH}px`;
-    showing.style.opacity = "0";
     showing.getBoundingClientRect(); // draw the starting size before changing it
-    showing.style.transition = "height 0.5s cubic-bezier(0.2, 0.7, 0.2, 1), opacity 0.4s ease";
+    showing.style.transition = "height 0.6s cubic-bezier(0.2, 0.7, 0.2, 1)";
     showing.style.height = `${toH}px`;
-    showing.style.opacity = "1";
-    setTimeout(() => { if (token === sortToken) clearSwapStyles(showing); }, 560);
+    setTimeout(() => { if (token === sortToken) clearSwapStyles(showing); }, 1400);
   }, 190);
 }
 
