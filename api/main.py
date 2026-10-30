@@ -375,7 +375,7 @@ def evidence_summary() -> str:
                 f"That is {s['right']} of {s['total']} right ({s['right'] / s['total']:.0%}). The AUC, which shows how well the score ranks stress above calm, was {s['auc']} (1.00 is perfect and 0.50 is a coin flip). "
                 f"The average score was {s['avg_stress']} on stress dates and {s['avg_normal']} on calm dates. "
                 f"It missed {s['stress_total'] - s['stress_flagged']} stress dates, and {s['missed_near_line']} of those scored within 5 points of the alarm line. {timing} "
-                "The news text for past dates was written from the historical record, because a live search cannot look back.")
+                "For past dates the news factors were scored from real New York Times headlines from the 30 days before each date, picked by a fixed keyword rule. The news scores were almost the same on stress and calm dates, so the market and economic factors do most of the work.")
     except Exception:
         return "Backtest numbers are not available right now."
 
@@ -401,7 +401,7 @@ def honest_limits() -> str:
 1. Timing. {timing}
 2. Modest test with hand-defined periods. It was checked on {total} past dates that a computer drew at random, but only from stress and calm periods chosen in advance by hand, so it shows how well the score separates those periods, not how it scores every ordinary day. The weights and level boundaries are working values, not proven constants.
 3. Missed stress days. It missed {n_missed} of {s['stress_total']} stress dates, and {s['missed_near_line']} of those scored within 5 points of the alarm line. A lower alarm line catches more stress days but gives more false alarms.
-4. News reading. The AI's reading of news can move a few points between runs, so the news part is the least stable part. That is why news counts for only {CATEGORY_WEIGHTS['geopolitical']}% and why a separate news alert is shown. The news text for past test dates was written from the historical record, so that part of the tests is less independent.
+4. News reading. The AI's reading of news can move a few points between runs, so the news part is the least stable part. That is why news counts for only {CATEGORY_WEIGHTS['geopolitical']}% and why a separate news alert is shown. For past test dates the news was real New York Times headlines picked by a keyword rule, and the news scores barely differed between stress and calm dates, so the news adds little to the test results.
 5. Compressed scale. Calm markets scored between {lo:.0f} and {hi:.0f}, and no test date went above {top:.0f}, so the top Crisis level has not been demonstrated.
 6. Data gaps. Repo stress data only exists from 2018, so older test dates treat it as neutral.
 What has been done about it: the weights are fixed in code and the AI never sets the final number; most test dates were scored after the settings were fixed; the results are reported including the misses; the news weight is kept low and the news alert is shown separately; every signal shows its reason so a reader can check it.

@@ -22,26 +22,25 @@ It is an academic project and not financial advice.
 
 ## Backtest results (300 past dates, all 14 factors, alarm line 55)
 
-Run `python backtest/analyze_300_random.py` to reproduce these from the saved scores. It makes no API calls, but it needs the `.env` keys set (see "Run it") because the scoring code loads them when it starts.
+Run `python backtest/analyze_v8_nyt.py` to reproduce these from the saved scores. It makes no API calls, but it needs the `.env` keys set (see "Run it") because the scoring code loads them when it starts.
 
 | | Result |
 |---|---|
-| Right overall | 220 of 300 (73%) |
-| Stress dates caught | 80 of 150 (53%) |
-| False alarms on calm dates | 10 of 150 (7%) |
-| AUC (ranking stress above calm) | 0.87 |
+| Right overall | 219 of 300 (73%) |
+| Stress dates caught | 89 of 150 (59%) |
+| False alarms on calm dates | 20 of 150 (13%) |
+| AUC (ranking stress above calm) | 0.86 |
 
 All 300 dates were drawn by a computer using a fixed random rule (three batches: seeds 42, 7 and 2026; 150 stress days and 150 calm days). The rule picks days at random, but only from stress and calm periods that were chosen by hand in advance, such as 2000 to 2002, 2007 to 2009 and 2022. The weights and alarm line were fixed before these dates were scored, and no hand-picked dates are included.
 
 ## What it cannot do
 
 - **It detects stress. It has not been shown to predict it.** In monthly tests of 2008 and 2020 the score reached the alarm line in the same month the official recession began, not before. Walk-forward tests of leading signals did not show reliable crash prediction either.
-- **It misses many stress days.** 70 of 150 stress dates stayed below the alarm line, and most of them scored within 5 points of it.
-- **The news text for past dates was written from history**, because a live search cannot look back. That part of the tests is less independent than the market data.
+- **It misses many stress days.** 61 of 150 stress dates stayed below the alarm line, and most of them scored within 5 points of it.
+- **The news adds little.** For past dates, the 2 news factors were scored from real New York Times headlines from the 30 days before each date (nothing from the date itself or later). The news scores were almost the same on stress dates and calm dates, so the 12 market and economic factors do most of the work.
+- **The headlines were picked by a fixed keyword rule**, so some are a loose fit, and one newspaper gives one view of events. The AI model may also remember how past events ended, which is a known problem when testing AI on history.
 - **The sample is modest.** The dates were drawn from known stress and calm periods, and the level boundaries are working values.
 - **News scoring is the least stable part.** The AI's reading of headlines can move a few points between runs.
-
-An alternative setup was also tested: score from the 12 market and economic factors only, with the alarm at 52. It got 76% right (103 of 150 stress dates caught, 24 of 150 false alarms, AUC 0.89) on the same 300 dates. It is not used in the live app yet.
 
 ## Run it
 

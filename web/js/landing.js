@@ -301,7 +301,7 @@ function renderLimits(config, evidence) {
   const items = [
     ["It detects stress. It has not been shown to predict it.", "In the monthly tests of 2008 and 2020 the score reached the alarm line in the same month the official recession began, not before. So it confirms stress as it arrives and has not shown months of advance warning."],
     ["It misses many stress days.", `The alarm was on for ${s.stress_flagged} of ${s.stress_total} stress dates, so it missed ${missed}. ${s.missed_near_line} of the misses scored within 5 points of the alarm line. A lower alarm line catches more, but gives more false alarms.`],
-    ["The news in the tests was written from history.", "A live search cannot look back, so the news summaries for past dates were written from the historical record. Treat the news part of these results as less independent than the market data."],
+    ["The news adds little in the tests.", "For past dates the news was real New York Times headlines from the 30 days before each date, picked by a keyword rule. The news scores were almost the same on stress and calm dates, so the market and economic factors do most of the work."],
     [`${s.total} dates is still a modest sample.`, `The level boundaries (${cuts}) are working values, not proven constants. The dates were drawn from known stress and calm periods, so the results show how well it separates them, not how it would score every ordinary day.`],
     ["It is not advice.", "It is an academic tool built to explain risk. It does not tell anyone what to buy or sell."],
   ];

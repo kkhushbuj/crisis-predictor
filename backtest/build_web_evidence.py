@@ -6,9 +6,9 @@ No API calls. Re-run it whenever the weights or cutoffs change:
     python backtest/build_web_evidence.py
 
 Sources (all saved results already in this folder):
-  - backtest_v5_results.json, backtest_v6_results.json, backtest_v7_results.json
-                                        the 300 test dates (150 stress, 150 calm), every one drawn by a fixed random rule
-                                        (seeds 42, 7 and 2026) from known stress and calm periods, all 14 factors
+  - backtest_v8_results.json            the 300 test dates (150 stress, 150 calm), every one drawn by a fixed random rule
+                                        (seeds 42, 7 and 2026) from known stress and calm periods, all 14 factors;
+                                        the 2 news factors come from real New York Times headlines (see historical_llm_backtest_v8_nyt.py)
   - monthly_backtest_results.csv        monthly scores for 2008 GFC and COVID, with NBER recession flags
 Scores are recomputed from the saved per-factor scores with the CURRENT weights in
 tools/scoring_tools.py, so the page always matches the live model.
@@ -51,7 +51,7 @@ NAMES = {
 
 
 MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-RESULT_FILES = ["backtest_v5_results.json", "backtest_v6_results.json", "backtest_v7_results.json"]
+RESULT_FILES = ["backtest_v8_results.json"]
 DESC_FILES = ["backtest_v4_descriptions.json", "backtest_v6_descriptions.json", "backtest_v7_descriptions.json"]
 
 
@@ -86,14 +86,15 @@ def main():
     points = []
     for f in RESULT_FILES:
         for ev, r in load(f).items():
-            score = round(crisis_score(r["factor_scores"], CATEGORY_WEIGHTS), 1)
+            raw = crisis_score(r["factor_scores"], CATEGORY_WEIGHTS)
+            score = round(raw, 1)
             label = r["label"]
             name = NAMES.get(ev) or date_name(r["date"], label)
             d = descs.get(ev, descs.get(r["date"], {})).get("descriptions", {})
             vix = re.search(r"VIX was ([\d.]+)", d.get("vix", ""))
             dd = re.search(r"was (-?[\d.]+)% from", d.get("drawdown", ""))
             points.append({"event": ev, "date": r["date"], "label": label, "name": name, "score": score,
-                           "flagged": score >= THRESHOLD,
+                           "flagged": raw >= THRESHOLD,
                            "vix": float(vix.group(1)) if vix else None, "drawdown": float(dd.group(1)) if dd else None})
     points.sort(key=lambda p: p["score"])
     stress = [p for p in points if p["label"] == "stress"]

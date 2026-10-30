@@ -18,3 +18,7 @@ Thumbs.db
 node_modules/
 *.bak*
 web_backup_*/
+
+# NYT article text must not be published (copyright)
+backtest/backtest_v8_news_texts.json
+backtest/backtest_v8_nyt_cache/
