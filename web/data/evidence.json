@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30",
+ "generated": "2026-11-08",
  "weights": {
   "credit_systemic": 32.5,
   "liquidity_shock": 32.5,
@@ -3041,6 +3041,7 @@
   "total": 300,
   "right": 219,
   "auc": 0.86,
+  "auc_vix": 0.93,
   "missed_near_line": 57
  },
  "monthly": {

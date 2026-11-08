@@ -84,11 +84,13 @@ def main():
     for f in DESC_FILES:
         descs.update(load(f))
     points = []
+    vix_scores = {"stress": [], "normal": []}
     for f in RESULT_FILES:
         for ev, r in load(f).items():
             raw = crisis_score(r["factor_scores"], CATEGORY_WEIGHTS)
             score = round(raw, 1)
             label = r["label"]
+            vix_scores[label].append(r["factor_scores"]["vix"])
             name = NAMES.get(ev) or date_name(r["date"], label)
             d = descs.get(ev, descs.get(r["date"], {})).get("descriptions", {})
             vix = re.search(r"VIX was ([\d.]+)", d.get("vix", ""))
@@ -127,6 +129,7 @@ def main():
             "total": len(points),
             "right": sum(p["flagged"] for p in stress) + len(normal) - sum(p["flagged"] for p in normal),
             "auc": round(auc([p["score"] for p in stress], [p["score"] for p in normal]), 2),
+            "auc_vix": round(auc([-x for x in vix_scores["stress"]], [-x for x in vix_scores["normal"]]), 2),
             "missed_near_line": sum(p["score"] >= THRESHOLD - 5 for p in missed),
         },
         "monthly": {

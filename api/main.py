@@ -375,7 +375,8 @@ def evidence_summary() -> str:
                 f"That is {s['right']} of {s['total']} right ({s['right'] / s['total']:.0%}). The AUC, which shows how well the score ranks stress above calm, was {s['auc']} (1.00 is perfect and 0.50 is a coin flip). "
                 f"The average score was {s['avg_stress']} on stress dates and {s['avg_normal']} on calm dates. "
                 f"It missed {s['stress_total'] - s['stress_flagged']} stress dates, and {s['missed_near_line']} of those scored within 5 points of the alarm line. {timing} "
-                "For past dates the news factors were scored from real New York Times headlines from the 30 days before each date, picked by a fixed keyword rule. The news scores were almost the same on stress and calm dates, so the market and economic factors do most of the work.")
+                "For past dates the news factors were scored from real New York Times headlines from the 30 days before each date, picked by a fixed keyword rule. The news scores were almost the same on stress and calm dates, so the market and economic factors do most of the work. "
+                f"VIX used alone separated stress from calm better than the full score (AUC {s['auc_vix']} against {s['auc']}), which shows that the news factors added almost nothing in these tests.")
     except Exception:
         return "Backtest numbers are not available right now."
 
@@ -420,7 +421,7 @@ def project_facts() -> str:
 What it is: CrisisPredictor is an AI-assisted tool built to anticipate financial crises early. Its purpose is prediction: to catch the build-up of stress before it becomes a full crisis. It reads live market data, economic data and news, scores 14 signals, and combines them into one Crisis Score from 0 to 100, a risk level and an alarm. It is an academic research project and not financial advice.
 
 How it works:
-1. Live data. FRED provides the yield curve, credit spread, jobless claims, CPI, the repo rate against the Fed target and M2 money supply. Yahoo Finance provides the VIX, how far the S&P 500 is below its high, gold, the US dollar index, bank stocks against the market and oil. A live news search covers tariffs and sanctions and geopolitical conflict.
+1. Live data. FRED provides the yield curve, credit spread, jobless claims, CPI, the repo rate against the Fed target and M2 money supply. Yahoo Finance provides the VIX, how far the S&P 500 is below its high, gold, the US dollar index, bank stocks against the market and oil. A live news search (Tavily, with DuckDuckGo as a backup) covers tariffs and sanctions and geopolitical conflict. In the backtests, the news for past dates comes from real New York Times headlines, because a live search cannot look back.
 2. AI scoring. For each signal, an AI model (GPT-4o-mini) is given the matching section of a reference document with historical thresholds (retrieval, also called RAG). For example a VIX above 40 means panic. It scores the signal from -10 (danger) to +10 (calm) using only those thresholds.
 3. Fixed weights. Plain Python code, not the AI, averages the scores in each category and applies the weights. The AI never decides the final number.
 4. Result. The page shows the Crisis Score, the level, the alarm, a confidence rating, a short summary and a news alert if the headlines are very negative.
