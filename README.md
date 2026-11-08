@@ -8,9 +8,9 @@ It is an academic project and not financial advice.
 
 ## How it works
 
-1. **Live data.** FRED provides the yield curve, credit spread, jobless claims, CPI, repo stress and M2 money supply. Yahoo Finance provides the VIX, S&P 500 drawdown, gold, the US dollar, bank stocks and oil. A live news search covers tariffs, sanctions and geopolitical conflict.
+1. **Live data.** FRED provides the yield curve, credit spread, jobless claims, CPI, repo stress and M2 money supply. Yahoo Finance provides the VIX, S&P 500 drawdown, gold, the US dollar, bank stocks and oil. A live news search (Tavily, with DuckDuckGo as a backup) covers tariffs, sanctions and geopolitical conflict. In the backtests, the news for past dates comes from real New York Times headlines, because a live search cannot look back.
 2. **AI scoring.** For each signal, GPT-4o-mini is given the matching section of a reference document with historical thresholds (retrieval with FAISS) and scores the signal from -10 (danger) to +10 (calm).
-3. **Fixed weights.** Plain Python averages the scores per category and applies fixed weights: Credit 32.5%, Liquidity 32.5%, Macro 20%, News 15%. The AI never sets the final number.
+3. **Fixed weights.** Plain Python averages the scores per category and applies fixed weights: Credit 32.5%, Liquidity 32.5%, Macro 20%, News and geopolitics 15%. The AI never sets the final number.
 4. **Result.** The Crisis Score, a level and an alarm. The alarm switches on at a score of 55 or above.
 
 | Level | Score |
@@ -30,6 +30,7 @@ Run `python backtest/analyze_v8_nyt.py` to reproduce these from the saved scores
 | Stress dates caught | 89 of 150 (59%) |
 | False alarms on calm dates | 20 of 150 (13%) |
 | AUC (ranking stress above calm) | 0.86 |
+| AUC of VIX alone, for comparison | 0.93 |
 
 All 300 dates were drawn by a computer using a fixed random rule (three batches: seeds 42, 7 and 2026; 150 stress days and 150 calm days). The rule picks days at random, but only from stress and calm periods that were chosen by hand in advance, such as 2000 to 2002, 2007 to 2009 and 2022. The weights and alarm line were fixed before these dates were scored, and no hand-picked dates are included.
 
@@ -37,7 +38,7 @@ All 300 dates were drawn by a computer using a fixed random rule (three batches:
 
 - **It detects stress. It has not been shown to predict it.** In monthly tests of 2008 and 2020 the score reached the alarm line in the same month the official recession began, not before. Walk-forward tests of leading signals did not show reliable crash prediction either.
 - **It misses many stress days.** 61 of 150 stress dates stayed below the alarm line, and most of them scored within 5 points of it.
-- **The news adds little.** For past dates, the 2 news factors were scored from real New York Times headlines from the 30 days before each date (nothing from the date itself or later). The news scores were almost the same on stress dates and calm dates, so the 12 market and economic factors do most of the work.
+- **The news adds little.** For past dates, the 2 news factors were scored from real New York Times headlines from the 30 days before each date (nothing from the date itself or later). The news scores were almost the same on stress dates and calm dates, so the 12 market and economic factors do most of the work. VIX used alone separated stress from calm better than the full score (AUC 0.93 against 0.86), which shows that the news factors added almost nothing in these tests.
 - **The headlines were picked by a fixed keyword rule**, so some are a loose fit, and one newspaper gives one view of events. The AI model may also remember how past events ended, which is a known problem when testing AI on history.
 - **The sample is modest.** The dates were drawn from known stress and calm periods, and the level boundaries are working values.
 - **News scoring is the least stable part.** The AI's reading of headlines can move a few points between runs.
